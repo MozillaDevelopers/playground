@@ -1,0 +1,31 @@
+// ----------------------------------------------------------------------------
+// Type Mixins
+// ----------------------------------------------------------------------------
+/**
+Takes an exponent, and returns an REM value based on a modulare scale with
+a px fallback.
+To learn more visit resources such as gridlover.net, modularscale.com,
+and type-scale.com.
+usage ex: font-size: type(3);
+return: font-size: 2.82715rem;
+Meant to be used as a mixin, but includes a function helper.
+*/
+
+@function type($exponent) {
+  @return pow($scale, $exponent) * 1rem;
+}
+
+
+// This can be used to provide a px fallback.
+// Ex: @include typesize(3);
+// return:
+// font-size: 45.23px;
+// font-size: 2.82715rem;
+// scss-lint:disable DuplicateProperty
+
+@mixin typesize($exponent) {
+  // scss-lint:disable DuplicateProperty
+  font-size: $base-font-size * pow($scale, $exponent);
+  font-size: type($exponent);
+  // scss-lint:enable DuplicateProperty
+}

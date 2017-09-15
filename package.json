@@ -1,0 +1,45 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "Learn about CSS Grid Layouts and the Firefox CSS Grid Layout Panel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build && next export -o dist",
+    "start": "next start",
+    "deploy": "npm run build && touch dist/.nojekyll && gh-pages -d dist --dotfiles",
+    "meh": "gh-pages --help"
+  },
+  "author": "Dan Brown",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "7.1.4",
+    "babel-eslint": "^8.0.0",
+    "babel-plugin-module-resolver": "2.7.1",
+    "babel-plugin-wrap-in-js": "^1.1.0",
+    "classnames": "^2.2.5",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "gh-pages": "^1.0.0",
+    "glob": "7.1.2",
+    "mappy-breakpoints": "^0.2.3",
+    "next": "^3.2.2",
+    "node-sass": "^4.4.0",
+    "normalize.css": "7.0.0",
+    "postcss-easy-import": "3.0.0",
+    "postcss-loader": "2.0.6",
+    "prop-types": "^15.5.10",
+    "raw-loader": "^0.5.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "sass-loader": "^6.0.6",
+    "susy": "^3.0.1"
+  },
+  "devDependencies": {
+    "now": "^8.3.0"
+  }
+}

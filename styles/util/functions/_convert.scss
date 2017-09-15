@@ -1,0 +1,223 @@
+// ----------------------------------------------------------------------------
+// REM Helpers
+// ----------------------------------------------------------------------------
+
+// Remove the unit of a length
+// ----------------------------
+// @param {Number} $number - Number to remove unit from
+// @return {Number} - Unitless number
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+// Calculate REM
+// Takes a pixel unit and returns a REM unit
+@function calc-rem($size) {
+  $rem-size: $size / $base-font-size;
+
+  $rem-size-strip: strip-unit($rem-size);
+  @return #{$rem-size-strip}rem;
+}
+
+// Calculate REM Fallback
+// Takes a pixel unit and returns a REM unit with px fallback
+@function calc-rem-fallback($size) {
+  $rem-size: $size / $base-font-size;
+
+  $rem-size-strip: strip-unit($rem-size);
+  @return #{$rem-size-strip}rem;
+}
+
+
+// PX to REM or REM to PX (with PX fallback)
+// http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+// Consider PostCSS in future
+// Usage:
+//
+// .class {
+//   @include rem(font-size, 1.6rem);
+//   @include rem(padding, 20px 10px);
+// }
+//
+// Output:
+//
+// .class {
+//   font-size: 16px;  /* Fallback for IE8 */
+//   font-size: 1.6rem;
+//   padding: 20px 10px; /* Fallback for IE8 */
+//   padding: 2rem 1rem;
+// }
+
+@mixin rem($property, $values) {
+  $px : ();
+  $rem: ();
+
+  @each $value in $values {
+
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else {
+      $unit: unit($value);
+      $val: strip-unit($value);
+
+      @if $unit == 'px' {
+        $px : append($px, $value);
+        $rem: append($rem, ($val / $base-font-size + rem));
+      }
+
+      @if $unit == 'rem' {
+        $px : append($px, ($val * $base-font-size + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $px;
+    #{$property}: $rem;
+  }
+}
+
+
+// A big 'ol conversion function
+// -----------------------------
+// $value: a number (without any unit)
+// $current-unit: the unit of the value to convert
+// $convert-unit: what unit to convert to.
+// Last 2 params accept px, em, rem & px
+
+@function convert($value-raw, $current-unit, $convert-unit) {
+  $value: strip-unit($value-raw);
+  @if $current-unit == px{
+
+    @if $convert-unit == em{
+      @return $value / $base-font-size + em;
+    }
+
+    @if $convert-unit == rem{
+      @return $value / $base-font-size + rem;
+    }
+
+    @else if $convert-unit == percent{
+      @return percentage($value / $base-font-size);
+    }
+
+  }
+
+  @else if $current-unit == em{
+
+    @if $convert-unit == px{
+      @return $value * $base-font-size + px;
+    }
+
+    @else if $convert-unit == percent{
+       @return percentage($value);
+    }
+
+  }
+
+  @else if $current-unit == percent{
+
+    @if $convert-unit == px{
+      @return $value * $base-font-size / 100 + px;
+    }
+    @else if $convert-unit == em{
+      @return $value / 100 + em;
+    }
+    @else if $convert-unit == rem{
+      @return $value / 100 + rem;
+    }
+
+  }
+
+  @else if $current-unit == pts{
+
+    @if $convert-unit == px{
+      @return $value * 1.3333 + px;
+    }
+    @else if $convert-unit == em{
+      @return $value / 12 + em;
+    }
+    @else if $convert-unit == rem{
+      @return $value / 12 + rem;
+    }
+    @else if $convert-unit == percent{
+        @return percentage($value / 12)
+    }
+  }
+}
+
+// Helper function for the number function
+@function _length($number, $unit) {
+  $strings: 'px' 'cm' 'mm' '%' 'ch' 'pica' 'in' 'em' 'rem' 'pt' 'pc' 'ex' 'vw' 'vh' 'vmin' 'vmax';
+  $units:   1px  1cm  1mm  1%  1ch  1pica  1in  1em  1rem  1pt  1pc  1ex  1vw  1vh  1vmin  1vmax;
+  $index: index($strings, $unit);
+
+  @if not $index {
+    @warn "Unknown unit `#{$unit}`.";
+    @return false;
+  }
+
+  @return $number * nth($units, $index);
+}
+
+// Converts a string to a number
+@function number($string) {
+  // Matrices
+  $strings: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
+  $numbers:  0   1   2   3   4   5   6   7   8   9;
+
+  // Result
+  $result: 0;
+  $divider: 0;
+  $minus: false;
+
+  // Looping through all characters
+  @for $i from 1 through str-length($string) {
+    $character: str-slice($string, $i, $i);
+    $index: index($strings, $character);
+
+
+    @if $character == '-' {
+      $minus: true;
+    }
+
+    @else if $character == '.' {
+      $divider: 1;
+    }
+
+    @else {
+      @if not $index {
+        $result: if($minus, $result * -1, $result);
+        @return _length($result, str-slice($string, $i));
+      }
+
+      $number: nth($numbers, $index);
+
+      @if $divider == 0 {
+        $result: $result * 10;
+      }
+
+      @else {
+        // Move the decimal dot to the left
+        $divider: $divider * 10;
+        $number: $number / $divider;
+      }
+
+      $result: $result + $number;
+    }
+  }
+
+  @return if($minus, $result * -1, $result);
+}

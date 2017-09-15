@@ -1,0 +1,28 @@
+// ----------------------------------------------------------------------------
+// Hero
+// ----------------------------------------------------------------------------
+
+
+.hero {
+  padding: space(10) 0;
+  background-color: $blue;
+  text-align: center;
+  color: $white;
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    display: inline-block;
+    margin-bottom: space(4);
+  }
+
+  h2::after {
+    content: " ";
+    border-bottom: 4px solid $white;
+    display: block;
+    width: 100%;
+    margin-top: space(1);
+  }
+}

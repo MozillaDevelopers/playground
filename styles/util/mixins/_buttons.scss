@@ -1,0 +1,84 @@
+// ----------------------------------------------------------------------------
+// Buttons Mixin
+// ----------------------------------------------------------------------------
+/**
+Easily pump out default styles, as well as :hover, :focus, :active,
+and disabled options for all buttons
+Modified from Bootstrap
+*/
+
+
+/**
+Primary Button Mixin
+Takes a few variables and creates a new button style
+@param {color}: color of button text
+@param {color-hover} color of button text on hover
+@param {background}: color of button background
+@param {background-hover} color of button on hover
+@param {border} color of button border (defaults to background color)
+@param {border-hover} color of border on hover (defaults to hover bg color)
+*/
+
+@mixin button-variant($color, $color-hover, $background, $background-hover, $border: $background, $border-hover: $background-hover) {
+  $active-background: $background-hover;
+  $active-border: $border-hover;
+
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+
+  &:focus {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+
+  &:active {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+
+}
+
+/**
+Outline Button Mixin
+Takes a few variables and creates a new button style
+@param {color}: color of button text
+@param {border} color of button outline/border (default: $color)
+@param {background-hover}: color of background on hover (default: $color)
+@param {color-hover} color of text on hover (default: $white)
+@param {border-hover} color of border on hover (default: $background-hover)
+*/
+
+@mixin button-outline-variant($color, $border: $color, $background-hover: $color, $color-hover: $white, $border-hover: $background-hover) {
+  color: $color;
+  background-image: none;
+  background-color: transparent;
+  border-color: $border;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+
+  &:focus {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+
+  &:active {
+    color: $color-hover;
+    background-color: $background-hover;
+    border-color: $border-hover;
+  }
+
+}

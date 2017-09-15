@@ -1,0 +1,52 @@
+// ----------------------------------------------------------------------------
+// Utilities
+// ----------------------------------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  @include clearfix;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+// align
+.text-center {
+  text-align: center;
+}
+
+
+// Visibility
+// -------------------------
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.hidden-mobile {
+  @include bp(max-width medium) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.hidden-desktop {
+  @include bp(medium) {
+    display: none;
+    visibility: hidden;
+  }
+}

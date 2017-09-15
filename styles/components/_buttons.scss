@@ -1,0 +1,168 @@
+// ----------------------------------------------------------------------------
+// Buttons
+// ----------------------------------------------------------------------------
+
+/**
+This is a system for easiliy creating buttons, and spinning up new button
+styles.
+This uses a mixin that can be found at /util/mixins/_buttons.scss
+*/
+
+
+// Base button styles
+// ------------------
+
+button,
+.button {
+  @include typesize(0);
+  display: inline-block;
+  font-weight: inherit;
+  border-radius: $base-radius;
+  line-height: inherit;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  padding: spacing(.5) spacing(1);
+  border: 2px solid transparent;
+  background: $primary;
+  transition: all $base-time $base-ease;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: darken($primary, 20%);
+    text-decoration: none;
+    outline: 0;
+    background-image: none;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .65;
+    box-shadow: none;
+  }
+}
+
+// Variables
+// ---------
+
+$_button-primary-color: $white;
+$_button-primary-color-hover: $white;
+$_button-primary-bg:  $primary;
+$_button-primary-bg-hover: darken($primary, 10%);
+$_button-primary-border: $primary;
+$_button-primary-border-hover: darken($primary, 10%);
+
+$_button-secondary-color: $white;
+$_button-secondary-color-hover: $white;
+$_button-secondary-bg: #1a1a1a;
+$_button-secondary-bg-hover: lighten(#1a1a1a, 10%);
+
+
+/**
+Main Buttons
+Copied from buttons mixin. You can create a new button like so:
+.button--modifier {
+  @include button-variant($color, color-hover, background, $background-hover, $border, $border-hover)
+}
+Note that $background-hover, $border, & $border-hover are optional
+Takes a few variables and creates a new button style
+@param {color}: color of button text
+@param {color-hover} color of button text on hover
+@param {background}: color of button background
+@param {background-hover} color of button on hover
+@param {border} color of button border (defaults to background color)
+@param {border-hover} color of border on hover (defaults to hover bg color)
+*/
+
+// Button Variations
+// ------------------
+
+.button--primary {
+  @include button-variant(
+    $_button-primary-color,
+    $_button-primary-color-hover,
+    $_button-primary-bg,
+    $_button-primary-bg-hover,
+    $_button-primary-border,
+    $_button-primary-border-hover
+  );
+}
+
+.button--secondary {
+  @include button-variant(
+    $_button-secondary-color,
+    $_button-secondary-color-hover,
+    $_button-secondary-bg,
+    $_button-secondary-bg-hover
+  );
+}
+
+
+/**
+Outline Buttons
+Takes a few variables and creates a new button style
+Copied from buttons mixin. You can create a new button like so:
+.button-outline--modifier {
+  @include($color, $border, $background-hover, $color-hover, $border-hover)
+}
+only first param is required
+@param {color}: color of button text
+@param {border} color of button outline/border (default: $color)
+@param {background-hover}: color of background on hover (default: $color)
+@param {color-hover} color of text on hover (default: $white)
+@param {border-hover} color of border on hover (default: $background-hover)
+*/
+
+// Outline Button Variations
+// ----------------------
+
+.button-outline--primary {
+  @include button-outline-variant($_button-primary-bg);
+}
+
+.button-outline--secondary {
+  @include button-outline-variant($_button-secondary-bg);
+}
+
+
+
+// Button Sizes
+// ------------
+
+.button--large {
+  @include typesize(1);
+  padding: .75rem 1.25rem;
+}
+
+.button--small {
+  @include typesize(-1);
+  padding: .25rem .75rem;
+}
+
+
+
+// Block button
+// ------------
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.button--block + .button--block {
+  margin-top: spacing(1);
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.button--block {
+    width: 100%;
+  }
+}

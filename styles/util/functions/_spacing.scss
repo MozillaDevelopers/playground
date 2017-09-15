@@ -1,0 +1,18 @@
+// ----------------------------------------------------------------------------
+// Whitespace
+// ----------------------------------------------------------------------------
+
+/**
+This is used to calculate spacing and help maintain vertical rhythm.
+Takes a factor, multiplies it with the current settings base spacing to output values that are multiples or dividends of the current vertical rhythm
+@param {Number} $factor [1] A factor with which to multiply the base-spacing value
+@return {Value} Value of base-spacing multiplied by the factor provided
+*/
+
+@function spacing($factor: 1) {
+  @return $unit * $factor;
+}
+
+@function space($factor: 1) {
+  @return $unit * $factor;
+}

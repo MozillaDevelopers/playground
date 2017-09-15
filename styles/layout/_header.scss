@@ -1,0 +1,19 @@
+// ----------------------------------------------------------------------------
+// Header
+// ----------------------------------------------------------------------------
+
+.header {
+  background-color: $blue-dark;
+  padding: space(3) 0;
+}
+
+.header__logo {
+  float: left;
+  display: inline-block;
+}
+
+.header__cta {
+  float: right;
+  border: 2px solid $white;
+  color: $white;
+}

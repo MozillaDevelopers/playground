@@ -1,0 +1,56 @@
+// ----------------------------------------------------------------------------
+// Global
+// ----------------------------------------------------------------------------
+
+
+// Default Body Styles
+// -------------------
+
+body {
+  background-color: $body-bg;
+}
+
+
+// wrapper
+.wrapper {
+  // height: 100vh;
+  // overflow: hidden;
+}
+
+
+// Images
+// ------
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+// Removes Dotted Border
+// ---------------------
+
+:focus {
+  outline: 0;
+}
+
+
+// Textarea takes on height automatically
+// --------------------------------------
+
+textarea {
+  height: auto;
+  min-height: 50px;
+  border-radius: $base-radius;
+}
+
+
+// Select elements are 100% width by default
+// -----------------------------------------
+
+select {
+  width: 100%;
+  border-radius: $base-radius;
+}

@@ -1,0 +1,80 @@
+
+severity: warning
+
+linters:
+
+  BemDepth:
+    enabled: true
+    max_elements: 1
+
+  BorderZero:
+    enabled: true
+    convention: zero
+
+  BemDepth:
+    enabled: true
+
+  Comment:
+    enabled: false
+
+  DeclarationOrder:
+    enabled: true
+
+  ExtendDirective:
+    enabled: true
+
+  ElsePlacement:
+    enabled: false
+
+  IdSelector:
+    enabled: true
+
+  LeadingZero:
+    enabled: false
+
+  MergeableSelector:
+    enabled: false
+    force_nesting: false
+
+  NameFormat:
+    enabled: true
+
+  NestingDepth:
+    enabled: true
+    max_depth: 2
+
+  PrivateNamingConvention:
+    enabled: true
+    prefix: _
+
+  PropertySortOrder:
+    enabled: false
+
+  PropertyUnits:
+    enabled: false
+
+  QualifyingElement:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+    class_convention: ^(?!js-).*
+    class_convention_explanation: should not be written in the form js-*
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: false
+
+  SpaceAfterVariableName:
+    enabled: false
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes
+
+  TrailingZero:
+    enabled: true
+
+  UrlFormat:
+    enabled: false
