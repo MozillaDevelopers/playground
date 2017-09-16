@@ -2,70 +2,64 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import Link from 'next/link';
-
-// The line between side-nav items
-const SideLine = (props) => {
-  if (props.last !== true) {
-    return <div className="side-nav__line" />;
-  }
-  return null;
-};
+import pageData from '../../data/pageData';
 
 // individual side-nav items
 const SideItem = props => (
-  <Link href="?id=1">
+  <Link href={props.link}>
     <div
       className={classNames(
         'side-nav__item',
-        { 'is-active': props.pageNum === props.num },
-        { 'is-done': props.num < props.pageNum },
+        { 'is-active': props.currentPageNum === props.order },
+        { 'is-done': props.order < props.currentPageNum },
       )}
     >
       <div className="side-nav__wrap">
         <div className="side-nav__circle">
           <div className="side-nav__circle-inner" />
         </div>
-        <span className="side-nav__page">{props.page}</span>
+        <span className="side-nav__page">{props.title}</span>
       </div>
-      <SideLine last={props.last} />
+      <div
+        className={
+          props.currentPageNum >= props.order && props.order !== pageData.length ? (
+            'side-nav__line is-active'
+          ) : (
+            'side-nav__line'
+          )
+        }
+      />
     </div>
   </Link>
 );
 
 // The entire sidebar
-const Side = props => (
-  <div className="side">
-    <SideItem pageNum={props.pageNum} num={1} page="Terminology" active />
-    <SideItem pageNum={props.pageNum} num={2} page="Your First Grid" />
-    <SideItem pageNum={props.pageNum} num={3} page="Your First Grid" />
-    <SideItem pageNum={props.pageNum} num={4} page="Your First Grid" />
-    <SideItem pageNum={props.pageNum} num={5} page="Your First Grid" last />
-  </div>
-);
-
-SideLine.propTypes = {
-  last: PropTypes.bool,
+const Side = (props) => {
+  const pages = pageData.map(page => (
+    <SideItem
+      key={page.order}
+      currentPageNum={props.currentPageNum}
+      order={page.order}
+      title={page.title}
+      link={page.link}
+    />
+  ));
+  return <div className="side">{pages}</div>;
 };
 
 SideItem.propTypes = {
-  pageNum: PropTypes.number.isRequired,
-  num: PropTypes.number.isRequired,
-  page: PropTypes.string.isRequired,
-  last: PropTypes.bool,
+  currentPageNum: PropTypes.number.isRequired,
+  order: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 Side.propTypes = {
-  pageNum: PropTypes.number.isRequired,
-};
-
-SideLine.defaultProps = {
-  last: false,
+  currentPageNum: PropTypes.number.isRequired,
 };
 
 SideItem.defaultProps = {
   active: false,
-  last: false,
 };
-
 
 export default Side;

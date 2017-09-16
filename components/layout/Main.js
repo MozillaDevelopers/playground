@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 
-import Layout from './Layout';
-
 // Components
 import Side from './Side';
 
-const Main = ({ children, pageNum }) => (
+const Main = ({ children, currentPageNum }) => (
   <div className="main">
     <div className="contain">
-      <Side pageNum={pageNum} />
+      <Side currentPageNum={currentPageNum} />
       <div className="content">{children}</div>
     </div>
   </div>
@@ -16,7 +14,7 @@ const Main = ({ children, pageNum }) => (
 
 Main.propTypes = {
   children: PropTypes.node.isRequired,
-  pageNum: PropTypes.number.isRequired,
+  currentPageNum: PropTypes.number.isRequired,
 };
 
 export default Main;

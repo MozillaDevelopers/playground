@@ -3,15 +3,14 @@
 // ----------------------------------------------------------------------------
 
 $_circle-radius: 40px;
-$_circle-color-done: #c0cFF3;
+$_circle-color-done: #C0D0F3;
 $_circle-color: #EEEEEE;
 $_circle-active-color-1: #FFC73D;
 $_circle-active-color-2: #FF722A;
 
 .side {
   @include span(3);
-  min-height: calc(100vh - 380px);
-  border-right: 1px solid #C4C4C4;
+
 }
 
 .side-nav__circle {
@@ -56,13 +55,18 @@ $_circle-active-color-2: #FF722A;
 }
 
 .side-nav__line {
-  background-color: $_circle-color;
+  background-color: $_circle-color-done;
   width: 4px;
   height: space(3);
   border-radius: 2px;
   margin-left: ($_circle-radius / 2) - 2;
   margin-top: space(1);
   margin-bottom: space(1);
+  visibility: hidden;
+
+  &.is-active {
+    visibility: visible;
+  }
 }
 
 .side-nav__wrap {

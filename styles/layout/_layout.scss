@@ -5,9 +5,11 @@
 .main {
   padding-top: space(6);
   padding-bottom: space(6);
+  min-height: calc(100vh - 380px);
 }
 
 .content {
   @include span(9);
   padding-left: space(9);
+  border-left: 1px solid #EDEDED;
 }
