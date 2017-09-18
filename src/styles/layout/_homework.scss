@@ -4,5 +4,40 @@
 
 .homework {
   background-color: #1F2534;
-  padding: space(8);
+  padding: space(4);
+  color: white;
+  text-align: center;
+}
+
+.homework__logo {
+  height: 85px;
+  display: block;
+  margin-bottom: space(4);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homework__title {
+  border-bottom: 0;
+  display: inline-block;
+  margin-bottom: space(4);
+  padding-bottom: 0;
+
+  &::after {
+    content: " ";
+    border-bottom: 2px solid #306FFD;
+    display: block;
+    width: 100%;
+    margin-top: space(1);
+  }
+}
+
+.homework__content {
+  @include span(6);
+  margin-left: span(3);
+  text-align: left;
+
+  p code {
+    background-color: $black;
+  }
 }

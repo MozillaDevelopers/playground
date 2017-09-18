@@ -98,7 +98,20 @@ grid-gap: 1rem;
 
 const Homework = () => (
   <DevHomework>
-    <p>this is some homework</p>
+    <p>Try inspecting the above grid and changing the grid-template column to the following:</p>
+
+    <CodeBlock>
+      {`
+grid-template-columns: 10px, repeat(2, 1fr);
+      `}
+    </CodeBlock>
+    <p>
+      What happened? As you can see, you can not only use the repeat() notation
+      for just part of the track listing, but you can also mix units
+      (in this case, px and fr).
+    </p>
+
+    <p>We will learn more about mixing units in the next section.</p>
   </DevHomework>
 );
 
