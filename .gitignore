@@ -1,21 +1,11 @@
-# build output
-dist
-.next
-
-# dependencies
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-
-# logs
-*.log
-
-# coverage
-.nyc_output
-coverage
-
-# test output
-test/**/out
+.cache/
+# Build directory
+public/
 .DS_Store
-
-# other
-.env
+yarn-error.log
+yarn.lock
 haters
+old

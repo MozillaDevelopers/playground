@@ -1,0 +1,180 @@
+// ----------------------------------------------------------------------------
+// Type
+// ----------------------------------------------------------------------------
+
+// Global Type
+// -----------
+
+html, {
+  color: $base-font-color;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+p {
+  margin-bottom: space(2);
+}
+
+p.lead {
+  @include typesize(1);
+  font-weight: 300;
+}
+
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+
+strong,
+b {
+  font-weight: $base-bold-weight;
+}
+
+
+small,
+.small {
+  @include typesize(-1);
+}
+
+
+// Headings
+// --------
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: $header-font-family;
+  font-weight: $base-bold-weight;
+  line-height: $base-line-height;
+}
+
+h1,
+.h1 {
+  @include typesize(3);
+  font-family: 'Antonio', $sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: space(2);
+  line-height: $leading * 2;
+}
+
+h2,
+.h2 {
+  @include typesize(2);
+  margin-bottom: space(2);
+  line-height: $leading;
+  font-family: 'Antonio', $sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  padding-bottom: space(5);
+  margin-bottom: space(5);
+}
+
+h3,
+.h3 {
+  @include typesize(1);
+  font-family: 'Antonio', $sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: space(1);
+  line-height: $leading;
+}
+
+h4,
+.h4 {
+  @include typesize(0);
+  margin-bottom: space(2);
+  line-height: $leading;
+}
+
+h5,
+.h5 {
+  @include typesize(-1);
+  margin-bottom: space(1);
+  line-height: $leading;
+}
+
+
+// Links
+// -----
+
+a {
+  color: $base-link-color;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color $base-time $base-ease;
+
+  &:hover,
+  &:focus {
+    color: $base-link-hover;
+  }
+
+  img {
+    border: 0;
+  }
+
+}
+
+// Horizontal Rule
+// ---------------
+
+hr {
+  height: 1px;
+  background-color: lighten($black, 80%);
+  border: 0;
+  margin: space(2) 0;
+}
+
+
+// Lists
+// ------
+
+$_list-side-margin: 1.25rem !default;
+$_list-line-height: inherit !default;
+
+ul,
+ol,
+dl {
+  list-style-position: inside;
+  line-height: $_list-line-height;
+  margin-bottom: space(2);
+}
+
+ul,
+ol {
+  list-style-type: disc;
+  margin-left: $_list-side-margin;
+}
+
+p code {
+  background-color: #f3f3f3;
+  padding: 0 2px;
+}
+
+
+
+// Blockquotes
+// -----------
+
+blockquote {
+  @include typesize(1);
+  line-height: $base-line-height;
+  margin: 0 0 spacing(1);
+  padding: space(1) space(2);
+  font-weight: 300;
+  border-left: 5px solid lighten($black, 95%);
+}

@@ -1,0 +1,72 @@
+// ----------------------------------------------------------------------------
+// Configuration
+// ----------------------------------------------------------------------------
+
+// Colors
+// -------------------------
+
+$white          : #fff;
+$black          : #000;
+$primary        : #306FFD;
+$primary-high   : #1b7eff;
+$primary-low    : #0069f2;
+$blue           : #306FFD;
+$blue-dark      : #2D68EE;
+$cyan           : #2FCCE1;
+
+
+// Breakpoints
+// -------------------------
+$breakpoints: (
+  xsmall:     450px,
+  small:      750px,
+  medium:     950px,
+  large:      1200px
+);
+
+// Import Fonts
+// -------------------------
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+// Type
+// -------------------------
+$base-font-size     : 16px;
+$base-line-height   : 1.5;
+$base-font-color    : $black;
+$scale              : 1.333;
+$leading            : $base-line-height * 1rem;
+$sans-serif         : 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$serif              : 'Cambria', 'Georgia', 'serif';
+$mono               : 'Lucida Console', Monaco, monospace !default;
+$base-font-family   : $sans-serif;
+$header-font-family : $sans-serif;
+$base-bold-weight   : 600;
+$base-link-color    : $primary;
+$base-link-hover    : $primary-low;
+
+$unit: .5rem;
+
+
+// Defaults
+// -------------------------
+
+$base-unit          : .5rem; // if font-size is 16px, this should be 8px (8pt scale)
+$unit               : $base-unit;
+$base-radius        : 2px;
+$base-time          : .3s;
+$base-ease          : ease;
+
+// z-index
+// -------------------------
+
+$z-index: (
+  bury:               -1,
+  content:            10,
+  header:             20,
+  navtrigger:         22,
+  modal:              40,
+);
+
+// Style
+// -------------------------
+$body-bg            : $white;

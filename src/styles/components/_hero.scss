@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// Hero
+// ----------------------------------------------------------------------------
+
+
+.hero {
+  padding: space(10) 0 space(14);
+  background-color: $blue;
+  background-image: linear-gradient(60deg, #306EFE 0%, #003AB7);
+  text-align: center;
+  color: $white;
+  position: relative;
+
+  h1 {
+    margin: 0;
+  }
+
+  h3 {
+    display: inline-block;
+    margin-bottom: space(4);
+  }
+
+  h3::after {
+    content: " ";
+    border-bottom: 3px solid $white;
+    display: block;
+    width: 100%;
+    margin-top: space(1);
+  }
+}
+
+.hero__div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}

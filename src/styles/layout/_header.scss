@@ -1,0 +1,26 @@
+// ----------------------------------------------------------------------------
+// Header
+// ----------------------------------------------------------------------------
+
+.header {
+  background-color: $blue-dark;
+  background-image: linear-gradient(60deg, darken(#306EFE, 6%) 0%, darken(#003AB7, 6%));
+  padding: space(3) 0;
+}
+
+.header__logo {
+  float: left;
+  display: inline-block;
+  height: 35px;
+}
+
+.header__cta {
+  float: right;
+  border: 2px solid $white;
+  color: $white;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 space(1);
+  line-height: 35px;
+}

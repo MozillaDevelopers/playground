@@ -1,0 +1,14 @@
+// ----------------------------------------------------------------------------
+// General Layout
+// ----------------------------------------------------------------------------
+
+.main {
+  padding-top: space(6);
+  min-height: calc(100vh - 380px);
+}
+
+.content {
+  @include span(9);
+  padding-bottom: space(6);
+  padding-left: space(9);
+}

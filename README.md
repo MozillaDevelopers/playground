@@ -1,37 +1,13 @@
-# Old Fashioned
-A Next.js starter with scss, autoprefixer, SSR, and static generator
+# gatsby-starter-default
+The default Gatsby starter
 
-## Installation
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
 
-Requires [Node](https://nodejs.org/en/)
+Install this starter (assuming Gatsby is installed) by running from your CLI:
 ```
-$ npm install
-```
-
-## Develop
-After running, you can access at localhost:3000
-```
-$ npm run dev
+gatsby new gatsby-example-site
 ```
 
-## Build
-```
-$ npm run build
-```
+## Deploy
 
-## Deploy to Github Pages
-```
-$ npm run deploy
-```
-
-## Other
-if you are publishing to a static site, set your production URL in variables.js
-
-
-## Issues
-A current limitation of next.js static site exporting is that it needs to be in the root directory. This can present an issue when hosting on Github pages without a custom domain. Setting variables.js is a workaround, but it will still throw a console error. If you are using a custom domain or hosting at the root, then you won't have any issues.
-
-## License
-Full license [here](LICENSE)
-
-This project is licensed under the terms of the **MIT** license.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

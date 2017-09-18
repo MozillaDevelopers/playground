@@ -1,0 +1,99 @@
+import React from 'react';
+import Main from '../components/layout/Main';
+import CodeBlock from '../components/CodeBlock';
+import DevHomework from '../components/layout/DevHomework';
+
+const Tutorial = () => (
+  <div>
+    <h2>Named Lines</h2>
+
+    <p>
+      In a previous example, we learned how to place an item on the grid by providing the
+      grid-column and grid-row properties with specific grid lines. You can also name some or all of
+      your lines when you define your grid. This allows you to use those names instead of grid
+      lines.
+    </p>
+
+    <p>To name a grid line, you simply provide the name in square brackets:</p>
+
+    <CodeBlock>
+      {`
+.container {
+  display: grid;
+  width: 100%;
+  height: 600px;
+  grid-gap: 1rem;
+  grid-template-columns:
+    [main-start sidebar-start] 200px
+    [sidebar-end content-start] 1fr
+    [column3-start] 1fr
+    [content-end main-end];
+  grid-template-rows:
+    [row1-start] 80px
+    [row2-start] 1fr
+    [row3-start] 1fr
+    [row4-start] 100px
+    [row4-end];
+}
+      `}
+    </CodeBlock>
+
+    <p>
+      Now that we have line names, we can use those names when placing items. Let's recreate our
+      basic layout using named lines, instead of line numbers:
+    </p>
+
+    <CodeBlock>
+      {`
+.header {
+  grid-column: main-start / main-end;
+  grid-row: row1-start / row2-start;
+}
+
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: row2-start / row4-start;
+}
+
+.content-1 {
+  grid-column: content-start / content-end;
+  grid-row: row2-start / row3-start;
+}
+
+.content-2 {
+  grid-column: content-start / column3-start;
+  grid-row: row3-start / row4-start;
+}
+
+.content-3 {
+  grid-column: column3-start / content-end;
+  grid-row: row3-start / row4-start;
+}
+
+.footer {
+  grid-column: main-start / main-end;
+  grid-row: row4-start / row4-end;
+}
+      `}
+    </CodeBlock>
+
+    <p>And here is the result:</p>
+
+    <div className="container-9">
+      <div className="item header-9">header</div>
+      <div className="item sidebar-9">sidebar</div>
+      <div className="item content-1-9">Content-1</div>
+      <div className="item content-2-9">Content-2</div>
+      <div className="item content-3-9">Content-3</div>
+      <div className="item footer-9">footer</div>
+    </div>
+  </div>
+);
+
+const Homework = () => (
+  <DevHomework>
+    <p>this is some homework</p>
+  </DevHomework>
+);
+
+export default () => <Main currentPageNum={9} tutorial={<Tutorial />} homework={<Homework />} />;
