@@ -3,13 +3,16 @@ import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
 
+// images
+import numbers from '../components/img/terms/numbers.svg';
+import grid from '../components/img/terms/grid.svg';
+
 const style = {
   width: '100%',
   margin: '1.5rem 0',
 };
 
 // images
-import numbers from '../components/img/terms/numbers.svg';
 
 const Tutorial = () => (
   <div>
@@ -23,7 +26,7 @@ const Tutorial = () => (
       with a basic example. Consider a simple 3x2 grid:
     </p>
 
-    <img style={style} src={numbers} alt="a 3x2 grid" />
+    <img style={style} src={grid} alt="a 3x2 grid" />
 
     <p>Each item within this grid will be placed automatically in the default order.</p>
 

@@ -1,21 +1,9 @@
 // ----------------------------------------------------------------------------
-// Header
+// Download Button
 // ----------------------------------------------------------------------------
 
-.header {
-  background-color: $blue-dark;
-  background-image: linear-gradient(60deg, darken(#306EFE, 6%) 0%, darken(#003AB7, 6%));
-  padding: space(3) 0;
-}
 
-.header__logo {
-  float: left;
-  display: inline-block;
-  height: 35px;
-}
-
-.header__cta {
-  float: right;
+.download-button {
   border: 2px solid $white;
   color: $white;
   background-color: transparent;
@@ -28,8 +16,16 @@
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
+
+  &.float-left {
+    float: left;
+  }
+
+  &.float-right {
+    float: right;
+  }
 }
 
-.header__cta-download {
+.download-button__icon {
   margin-right: space(1);
 }

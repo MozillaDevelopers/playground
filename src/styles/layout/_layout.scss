@@ -8,7 +8,10 @@
 }
 
 .content {
-  @include span(9);
   padding-bottom: space(6);
-  padding-left: space(9);
+  
+  @include bp(medium) {
+    @include span(9);
+    padding-left: space(9);
+  }
 }

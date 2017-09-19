@@ -33,8 +33,6 @@
 }
 
 .homework__content {
-  @include span(6);
-  margin-left: span(3);
   text-align: left;
 
   p code {
@@ -44,5 +42,10 @@
   a {
     color: white;
     text-decoration: underline;
+  }
+
+  @include bp(medium) {
+    @include span(8);
+    margin-left: span(2);
   }
 }

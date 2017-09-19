@@ -1,5 +1,7 @@
 import React from 'react';
 import Main from '../components/layout/Main';
+import DevHomework from '../components/layout/DevHomework';
+import DownloadButton from '../components/DownloadButton';
 
 const Tutorial = () => (
   <div>
@@ -51,4 +53,26 @@ const Tutorial = () => (
   </div>
 );
 
-export default () => <Main currentPageNum={10} tutorial={<Tutorial />} />;
+const Homework = () => (
+  <DevHomework>
+    <p>
+      Ready to be on the cutting edge? Firefox is constantly adding new features and tools that help
+      developers build for the open web.
+    </p>
+    <strong>Firefox Developer Edition</strong>
+    <p>Build, test, scale and more with the only browser built just for developers.</p>
+    <div>
+      <DownloadButton url="https://www.mozilla.org/firefox/" className="mb4">
+        Get Firefox Developer Edition
+      </DownloadButton>
+    </div>
+
+    <h4>Firefox Developer Edition</h4>
+    <p>Get a sneak peek at the future. Firefox nightly receives daily updates with </p>
+    <DownloadButton url="https://www.mozilla.org/firefox/channel/desktop/#nightly" className="mb4">
+      Get Firefox Developer Edition
+    </DownloadButton>
+  </DevHomework>
+);
+
+export default () => <Main currentPageNum={10} tutorial={<Tutorial />} homework={<Homework />} />;

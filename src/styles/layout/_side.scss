@@ -12,7 +12,11 @@ $_circle-active-color-2: #FF722A;
   @include span(3);
   border-right: 1px solid #EDEDED;
   padding-bottom: space(4);
+  display: none;
 
+  @include bp(medium) {
+    display: block;
+  }
 }
 
 .side-nav__circle {
@@ -24,6 +28,7 @@ $_circle-active-color-2: #FF722A;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color .2s ease;
 
   .is-active & {
     background-color: $_circle-active-color-1;
@@ -34,6 +39,8 @@ $_circle-active-color-2: #FF722A;
     background-color: $_circle-color-done;
   }
 }
+
+
 
 .side-nav__circle-inner {
   background-color: $white;
@@ -76,4 +83,10 @@ $_circle-active-color-2: #FF722A;
 .side-nav__wrap {
   height: $_circle-radius;
   cursor: pointer;
+
+  &:hover {
+    .side-nav__circle {
+      background-color: darken($_circle-color, 10%);
+    }
+  }
 }
