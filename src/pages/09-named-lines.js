@@ -92,7 +92,13 @@ const Tutorial = () => (
 
 const Homework = () => (
   <DevHomework>
-    <p>this is some homework</p>
+    <p>
+      Did you know you can customize the color of the grid overlay in Firefox DevTools? The above
+      example is on a white background, and the default purple may not be the best color to use. When selecting an
+      overlay grid to display, you will see a circle next to the grid name that indicates the color
+      of the overlay. Click on that circle, and you can customize the color to whatever you'd like.
+      Try a different color, such as red.
+    </p>
   </DevHomework>
 );
 

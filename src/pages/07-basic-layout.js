@@ -89,7 +89,12 @@ const Tutorial = () => (
 
 const Homework = () => (
   <DevHomework>
-    <p>this is some homework</p>
+    <p>
+      This is the perfect time to test out the 'display line numbers' setting on the Firefox CSS
+      Grid Layout Panel. Inspect the result above and select the layout panel. Here you can activate
+      the overlay grid and check the box to 'display line numbers'. Handy right? This tool makes it
+      very easy to visualize your grid when positioning items.
+    </p>
   </DevHomework>
 );
 

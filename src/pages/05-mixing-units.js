@@ -46,7 +46,24 @@ const Tutorial = () => (
 
 const Homework = () => (
   <DevHomework>
-    <p>this is some homework</p>
+    <p>
+      Inspect the grid above, and change the <code>grid-template-columns</code> property to the
+      following:
+    </p>
+    <CodeBlock>
+      {`
+grid-template-columns: 100px 30% 2fr 1fr;
+      `}
+    </CodeBlock>
+
+    <p>
+      Do you see what happened? Instead of 3 columns, you now have a 3rd column that is{' '}
+      <code>2fr</code> and occupies 2/3 of the remaining space, and a 4th column that is{' '}
+      <code>1fr</code> and occupies the final 1/3 of the remaining space. Continue to play around in
+      DevTools and try different units and combinations.
+    </p>
+
+    <p>When you are ready, continue on to learn about how to position items on the grid.</p>
   </DevHomework>
 );
 

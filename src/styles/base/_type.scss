@@ -160,6 +160,13 @@ ol {
   margin-left: $_list-side-margin;
 }
 
+ul.list{
+  li {
+    list-style-type: disc;
+    margin-left: space(2);
+  }
+}
+
 p code {
   background-color: #f3f3f3;
   padding: 0 2px;

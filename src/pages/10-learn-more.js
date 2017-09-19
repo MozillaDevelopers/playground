@@ -1,6 +1,5 @@
 import React from 'react';
 import Main from '../components/layout/Main';
-import DevHomework from '../components/layout/DevHomework';
 
 const Tutorial = () => (
   <div>
@@ -14,12 +13,12 @@ const Tutorial = () => (
 
     <p>If you are ready to dive deeper and learn more, there are a ton of great resources:</p>
 
-    <h5>Jen Simmons</h5>
+    <h4>Jen Simmons</h4>
     <p>
       Jen Simmons is a Designer Advocate at Mozilla. She is also a developer, writer, speaker, and
       is a part of the CSS Working Group.
     </p>
-    <ul>
+    <ul className="list">
       <li>
         <a href="http://jensimmons.com">jensimmons.com</a>
       </li>
@@ -28,12 +27,12 @@ const Tutorial = () => (
       </li>
     </ul>
 
-    <h5>Rachel Andrew</h5>
+    <h4>Rachel Andrew</h4>
     <p>
       Rachel Andrew is a developer, speaker and author who is also a part of the CSS Working Group
       and has provided several resources for learning about CSS Grid Layout.
     </p>
-    <ul>
+    <ul className="list">
       <li>
         <a href="https://gridbyexample.com/">gridbyexample.com</a>
       </li>
@@ -42,9 +41,9 @@ const Tutorial = () => (
       </li>
     </ul>
 
-    <h5>MDN</h5>
+    <h4>MDN</h4>
     <p>MDN has comprehensive tutorials and documentation for every feature of CSS Grid Layout</p>
-    <ul>
+    <ul className="list">
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">MDN</a>
       </li>
@@ -52,10 +51,4 @@ const Tutorial = () => (
   </div>
 );
 
-const Homework = () => (
-  <DevHomework>
-    <p>this is some homework</p>
-  </DevHomework>
-);
-
-export default () => <Main currentPageNum={10} tutorial={<Tutorial />} homework={<Homework />} />;
+export default () => <Main currentPageNum={10} tutorial={<Tutorial />} />;

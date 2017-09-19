@@ -98,20 +98,20 @@ grid-gap: 1rem;
 
 const Homework = () => (
   <DevHomework>
-    <p>Try inspecting the above grid and changing the grid-template column to the following:</p>
-
-    <CodeBlock>
-      {`
-grid-template-columns: 10px, repeat(2, 1fr);
-      `}
-    </CodeBlock>
     <p>
-      What happened? As you can see, you can not only use the repeat() notation
-      for just part of the track listing, but you can also mix units
-      (in this case, px and fr).
+      Amazing right? Inspect the grid above with your browser's developer tools. Try changing the
+      column width, or the row height. Swap out the <code>grid-gap</code> property with the
+      <code>grid-column-gap</code> and <code>grid-row-gap</code> properties and play around
+      with different widths and heights.
     </p>
 
-    <p>We will learn more about mixing units in the next section.</p>
+    <p>
+      Having a good set of developer tools when working with CSS Grid Layout is essential. Firefox
+      has some fantastic features that are specifically built to help you create and design grids.
+      Intrigued?
+    </p>
+
+    <p>Click to the next sectionto learn about Firefox's CSS Grid Layout Panel.</p>
   </DevHomework>
 );
 

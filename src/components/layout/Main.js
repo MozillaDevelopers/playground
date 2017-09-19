@@ -13,7 +13,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => (
         <Side currentPageNum={currentPageNum} />
         <div className="content">{tutorial}</div>
       </div>
-      <div className="homework">{homework}</div>
+      {homework ? <div>{homework}</div> : ''}
     </div>
     <BottomNav currentPageNum={currentPageNum} />
   </div>

@@ -3,6 +3,14 @@ import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
 
+const style = {
+  width: '100%',
+  margin: '1.5rem 0',
+};
+
+// images
+import numbers from '../components/img/terms/numbers.svg';
+
 const Tutorial = () => (
   <div>
     <h2>Position Items</h2>
@@ -15,7 +23,7 @@ const Tutorial = () => (
       with a basic example. Consider a simple 3x2 grid:
     </p>
 
-    <img src="http://placehold.it/500x200" alt="a 3x2 grid" />
+    <img style={style} src={numbers} alt="a 3x2 grid" />
 
     <p>Each item within this grid will be placed automatically in the default order.</p>
 
@@ -26,7 +34,7 @@ const Tutorial = () => (
       like so:
     </p>
 
-    <img src="http://placehold.it/500x200" alt="a 3x2 grid" />
+    <img style={style} src={numbers} alt="a 3x2 grid with numbers" />
 
     <h4>Position an item</h4>
 
@@ -76,7 +84,32 @@ const Tutorial = () => (
 
 const Homework = () => (
   <DevHomework>
-    <p>this is some homework</p>
+    <p>
+      Try changing the <code>grid-row</code> property of item1 to the following:
+    </p>
+    <CodeBlock>
+      {`
+.item1 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+      `}
+    </CodeBlock>
+    <p>
+      See what happened? The item spanned multiple columns from grid line 1 to 3. It also was placed
+      between grid row lines 3 and 4 which results in a new row being created. This new row is an
+      implicit row, and its height is set by the <code>grid-auto-rows</code> property on the parent
+      grid. You can learn more about default rules for auto-placement on{' '}
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout#Default_rules_for_auto-placement"
+      >
+        MDN
+      </a>.
+    </p>
+
+    <p>Now let's put this new knowledge to work by creating a basic layout.</p>
   </DevHomework>
 );
 

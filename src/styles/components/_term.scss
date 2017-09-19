@@ -1,0 +1,20 @@
+.term {
+  @include clearfix;
+  margin-bottom: space(3);
+}
+
+.term__img {
+  float: left;
+  @include span(4);
+}
+
+.term__text {
+  @include span(8);
+  padding-left: space(2);
+  float: left;
+  padding-top: space(2);
+}
+
+.term__name {
+  font-weight: bold;
+}
