@@ -1,13 +1,26 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Mozilla Playground: CSS Grid Layout
+A Website to learn how to build with CSS Grid Layout and Firefox DevTools
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+[View the website](https://mozilladevelopers.github.io/playground)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This website was built with Gatsby.
+
+### Develop
+
+To run this locally, install dependencies with NPM and then:
+
 ```
-gatsby new gatsby-example-site
+npm run dev
 ```
 
-## Deploy
+### Build
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```
+npm run build
+```
+
+### Deploy (github pages)
+
+```
+npm run deploy
+```

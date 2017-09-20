@@ -75,7 +75,7 @@ h2,
 .h2 {
   @include typesize(2);
   margin-bottom: space(2);
-  line-height: $leading * 2;
+  line-height: 2rem;
   font-family: 'Antonio', $sans-serif;
   font-weight: 300;
   text-transform: uppercase;
