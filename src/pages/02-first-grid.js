@@ -76,10 +76,10 @@ grid-gap: 1rem;
     <CodeBlock>
       {`
 .container {
-display: grid;
-grid-template-columns: 150px 150px 150px;
-grid-template-rows: 150px 150px;
-grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 1rem;
 }
       `}
     </CodeBlock>
