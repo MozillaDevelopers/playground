@@ -9,6 +9,7 @@
 
 .content {
   padding-bottom: space(6);
+  overflow-y: scroll;
   
   @include bp(medium) {
     @include span(9);

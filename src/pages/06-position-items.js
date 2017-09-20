@@ -41,6 +41,21 @@ const Tutorial = () => (
 
     <h4>Position an item</h4>
 
+    <p>Here is the HTML we will be using for this example:</p>
+
+    <CodeBlock>
+      {`
+<div className="container-6">
+  <div className="item item1">1</div>
+  <div className="item item2">2</div>
+  <div className="item item3">3</div>
+  <div className="item item4">4</div>
+  <div className="item item5">5</div>
+  <div className="item item5">6</div>
+</div>
+      `}
+    </CodeBlock>
+
     <p>
       Say we want to position our first grid item (with a class of item1) to be in the second row
       and occupy the second column. This item will need to start at the second row line, and span to

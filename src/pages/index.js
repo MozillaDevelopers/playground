@@ -31,7 +31,7 @@ const Tutorial = () => (
     </Term>
 
     <Term img={area} name="Grid Area">
-      A rectangular space surrounded by four grid lines. A Grid Area can contain any number of grid
+      A rectangular space surrounded by four grid lines. A grid area can contain any number of grid
       cells.
     </Term>
 

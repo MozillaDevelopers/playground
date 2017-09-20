@@ -30,8 +30,25 @@ const Tutorial = () => (
       Here, we have declared a grid with three columns. The first column is a fixed width of 100px.
       The second column will occupy 30% of the available space, and the third column is 1fr which
       means it will take up a fraction of the available space. In this case, it will take up all of
-      the remaining space (1/1). Here is the result:
+      the remaining space (1/1).
     </p>
+
+    <p>Here is our HTML:</p>
+
+    <CodeBlock>
+      {`
+<div className="container">
+  <div className="item" />
+  <div className="item" />
+  <div className="item" />
+  <div className="item" />
+  <div className="item" />
+  <div className="item" />
+</div>
+      `}
+    </CodeBlock>
+
+    <p>And here is the result:</p>
 
     <div className="container-5">
       <div className="item" />

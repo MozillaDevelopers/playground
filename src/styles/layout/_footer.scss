@@ -3,6 +3,57 @@
 // ----------------------------------------------------------------------------
 
 .footer {
-  height: space(10);
+  @include clearfix;
+  padding: space(8);
   background-color: $black;
+  color: $white;
+}
+
+.footer__logo {
+  height: space(4);
+}
+
+.footer__header {
+  font-weight: bold;
+  margin-bottom: space(2);
+  margin-top: space(4);
+  display: block;
+
+  @include bp(medium) {
+    margin-top: 0;
+  }
+}
+
+.footer__list {
+  margin: 0;
+
+  a {
+    color: $white;
+  }
+
+  a:hover {
+    color: darken($white, 10%);
+  }
+
+  li {
+    margin-bottom: space(1);
+  }
+}
+
+.footer__div {
+  background-color: #3e3e3e;
+}
+
+.footer__legal {
+  @include typesize(-1);
+  margin: 0;
+
+  li {
+    float: left;
+    margin-right: space(3);
+  }
+
+  a {
+    color: $white;
+  }
 }

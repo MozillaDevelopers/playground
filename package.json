@@ -17,7 +17,7 @@
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.15",
     "gatsby-plugin-postcss-sass": "^1.0.12",
-    "gatsby-plugin-react-helmet": "^1.0.5",
+    "gatsby-plugin-react-helmet": "^1.0.6",
     "gh-pages": "^1.0.0",
     "mappy-breakpoints": "^0.2.3",
     "prop-types": "^15.5.10",
@@ -33,6 +33,8 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier-eslint \"src/**/*.js\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "gh-pages": "gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

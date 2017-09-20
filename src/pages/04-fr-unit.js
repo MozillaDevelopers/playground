@@ -11,8 +11,8 @@ const Tutorial = () => (
       In our first grid, we created columns with a fixed px width. That's great, but it isn't very
       flexible. Thankfully, CSS Grid Layout introduces a new unit of length called fr (short for
       fraction). MDN defines the fr unit as a unit which "represents a fraction of the available
-      space in the grid container". Say we want to create rewrite our previous grid to be 800px wide
-      with three equal-width columns. We could write our CSS:
+      space in the grid container". If we want to create rewrite our previous grid to have 3 three
+      equal-width columns, we could change our CSS to use the fr unit:
     </p>
 
     <CodeBlock>
@@ -61,7 +61,10 @@ const Tutorial = () => (
 
 const Homework = () => (
   <DevHomework>
-    <p>Try inspecting the above grid and changing the <code>grid-template-columns</code> to the following:</p>
+    <p>
+      Inspect the above grid and change the <code>grid-template-columns</code> property on the grid container to the
+      following:
+    </p>
 
     <CodeBlock>
       {`
@@ -69,9 +72,8 @@ grid-template-columns: 10px, repeat(2, 1fr);
       `}
     </CodeBlock>
     <p>
-      What happened? As you can see, you can not only use the repeat() notation
-      for just part of the track listing, but you can also mix units
-      (in this case, px and fr).
+      What happened? As you can see, you can not only use the repeat() notation for just part of the
+      track listing, but you can also mix units (in this case, px and fr).
     </p>
 
     <p>We will learn more about mixing units in the next section.</p>

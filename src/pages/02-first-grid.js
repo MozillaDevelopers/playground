@@ -18,9 +18,9 @@ const Tutorial = () => (
     <p>
       There are many ways to do define rows and columns, but for our first grid, we will be using
       the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties. These
-      properties allow us to define the size of the row and column tracks for our grid. If we want
-      to create three fixed-height rows of 150px and three fixed-width columns of 150px, then we
-      simply add:
+      properties allow us to define the size of the rows and columns for our grid. If we want to
+      create three fixed-height rows of 150px and three fixed-width columns of 150px, then we simply
+      write:
     </p>
 
     <CodeBlock>
@@ -30,7 +30,7 @@ grid-template-rows: 150px 150px;
       `}
     </CodeBlock>
 
-    <p>If you wanted to add a fourth column that is 70px wide, you could instead write:</p>
+    <p>If we want to add a fourth column that is 70px wide, we can write:</p>
 
     <CodeBlock>
       {`
@@ -51,22 +51,22 @@ grid-gap: 1rem;
     </CodeBlock>
 
     <p>
-      With that simple line, you now have an equal-sized gutter between all rows and columns. If you
+      With that simple line, we now have an equal-sized gutter between all rows and columns. If you
       wish to define the gutter size for columns and rows individually, you can use the
-      grid-column-gap and grid-row-gap properties instead.
+      <code>grid-column-gap</code> and <code>grid-row-gap</code> properties instead.
     </p>
 
-    <p>Now let&apos;s put that all together. Here is our HTML:</p>
+    <p>Now let's put that all together. Here is our HTML:</p>
 
     <CodeBlock>
       {`
 <div class="container">
-<div class="item item1"></div>
-<div class="item item2"></div>
-<div class="item item3"></div>
-<div class="item item4"></div>
-<div class="item item5"></div>
-<div class="item item5"></div>
+  <div class="item item1"></div>
+  <div class="item item2"></div>
+  <div class="item item3"></div>
+  <div class="item item4"></div>
+  <div class="item item5"></div>
+  <div class="item item5"></div>
 </div>
       `}
     </CodeBlock>
@@ -101,8 +101,8 @@ const Homework = () => (
     <p>
       Amazing right? Inspect the grid above with your browser's developer tools. Try changing the
       column width, or the row height. Swap out the <code>grid-gap</code> property with the
-      <code>grid-column-gap</code> and <code>grid-row-gap</code> properties and play around
-      with different widths and heights.
+      <code>grid-column-gap</code> and <code>grid-row-gap</code> properties and play around with
+      different widths and heights.
     </p>
 
     <p>
@@ -111,7 +111,7 @@ const Homework = () => (
       Intrigued?
     </p>
 
-    <p>Click to the next sectionto learn about Firefox's CSS Grid Layout Panel.</p>
+    <p>Click to the next section to learn about Firefox's CSS Grid Layout Panel.</p>
   </DevHomework>
 );
 

@@ -9,12 +9,12 @@ const Tutorial = () => (
 
     <p>
       In a previous example, we learned how to place an item on the grid by providing the
-      grid-column and grid-row properties with specific grid lines. You can also name some or all of
-      your lines when you define your grid. This allows you to use those names instead of grid
+      <code>grid-column</code> and <code>grid-row</code> properties with specific grid lines. We can also name some or all of
+      your lines when you define your grid. This allows us to use those names instead of grid
       lines.
     </p>
 
-    <p>To name a grid line, you simply provide the name in square brackets:</p>
+    <p>To name a grid line, we simply provide the name in square brackets:</p>
 
     <CodeBlock>
       {`
@@ -74,6 +74,21 @@ const Tutorial = () => (
   grid-column: main-start / main-end;
   grid-row: row4-start / row4-end;
 }
+      `}
+    </CodeBlock>
+
+    <p>Here is our HTML:</p>
+
+    <CodeBlock>
+      {`
+<div className="container">
+  <div className="item header">header</div>
+  <div className="item sidebar">sidebar</div>
+  <div className="item content-1">Content-1</div>
+  <div className="item content-2">Content-2</div>
+  <div className="item content-3">Content-3</div>
+  <div className="item footer">footer</div>
+</div>
       `}
     </CodeBlock>
 
