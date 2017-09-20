@@ -30,6 +30,7 @@ button,
   transition: all $base-time $base-ease;
   text-decoration: none;
 
+
   &:active,
   &:hover,
   &:focus {
@@ -44,6 +45,22 @@ button,
     opacity: .65;
     box-shadow: none;
   }
+}
+
+.button-download {
+   display: block;
+   margin-bottom: space(2);
+   background-color: #306efe;
+   border-radius: 100px;
+   color: $white;
+   padding: space(2) space(4);
+   border: none;
+   transition: all .3s ease;
+   font-weight: bold;
+
+   &:hover {
+     background-color: darken(#306efe, 10%);
+   }
 }
 
 // Variables
