@@ -16,7 +16,7 @@ const Tutorial = () => (
     <CodeBlock>
       {`
 .container {
-  width: 800px;
+  width: 100%;
   display: grid;
   grid-template-columns: 100px 30% 1fr;
   grid-template-rows: 200px 100px;

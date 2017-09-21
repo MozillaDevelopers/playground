@@ -62,13 +62,16 @@ const Homework = () => (
     <strong>Firefox Developer Edition</strong>
     <p>Build, test, scale and more with the only browser built just for developers.</p>
     <div>
-      <DownloadButton url="https://www.mozilla.org/firefox/" className="mb4">
+      <DownloadButton
+        url="https://www.mozilla.org/firefox/developer/"
+        className="mb4"
+      >
         Get Firefox Developer Edition
       </DownloadButton>
     </div>
 
-    <h4>Firefox Developer Edition</h4>
-    <p>Get a sneak peek at the future. Firefox nightly receives daily updates with </p>
+    <h4>Firefox Nightly</h4>
+    <p>Get a sneak peek at the future. Firefox nightly has daily updates and provides access to new features and tools before they are released.</p>
     <DownloadButton url="https://www.mozilla.org/firefox/channel/desktop/#nightly" className="mb4">
       Get Firefox Developer Edition
     </DownloadButton>

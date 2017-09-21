@@ -6,7 +6,6 @@ import 'typeface-antonio';
 import faviconico from './img/favicon.ico';
 import faviconpng from './img/favicon.png';
 import facebook from './img/fb.png';
-import twitter from './img/twitter.png';
 
 // styles
 import '../styles/style.scss';

@@ -17,7 +17,7 @@ const Tutorial = () => (
     <h2>Firefox DevTools</h2>
 
     <p>
-      Designers and developers are rapidly falling in love with CSS Grid Layout. That’s why Mozila
+      Designers and developers are rapidly falling in love with CSS Grid Layout. That’s why Mozilla
       has been working hard on the Firefox Developer Tools Layout panel, adding powerful upgrades to
       the CSS Grid Inspector and Box Model.
     </p>
