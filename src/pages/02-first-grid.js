@@ -9,18 +9,17 @@ const Tutorial = () => (
 
     <h4>Create a grid</h4>
     <p>
-      The first thing we want to do is to create a grid container. We can do this by declaring{' '}
+      The first thing we want to do is create a grid container. We can do this by declaring{' '}
       <code>display: grid</code> on the container element. In this example we are using a div with
       the class of <code>container</code>.
     </p>
 
     <h4>Define rows and columns</h4>
     <p>
-      There are many ways to do define rows and columns, but for our first grid, we will be using
-      the <code>grid-template-columns</code> and <code>grid-template-rows</code> properties. These
-      properties allow us to define the size of the rows and columns for our grid. If we want to
-      create three fixed-height rows of 150px and three fixed-width columns of 150px, then we simply
-      write:
+      There are several ways to define rows and columns. For our first grid, we will use properties
+      <code>grid-template-columns</code> and <code>grid-template-rows</code>. These properties allow
+      us to define the size of the rows and columns for our grid. To create three fixed-height rows
+      of 150px and three fixed-width columns of 150px, simply write:
     </p>
 
     <CodeBlock>
@@ -30,7 +29,7 @@ grid-template-rows: 150px 150px;
       `}
     </CodeBlock>
 
-    <p>If we want to add a fourth column that is 70px wide, we can write:</p>
+    <p>To add a fourth column that is 70px wide, write:</p>
 
     <CodeBlock>
       {`
@@ -38,7 +37,7 @@ grid-template-columns: 150px 150px 70px;
       `}
     </CodeBlock>
 
-    <p>...and so on.</p>
+    <p>...and so on to add more columns.</p>
 
     <h4>Add a gutter</h4>
 
@@ -51,9 +50,9 @@ grid-gap: 1rem;
     </CodeBlock>
 
     <p>
-      With that simple line, we now have an equal-sized gutter between all rows and columns. If you
-      wish to define the gutter size for columns and rows individually, you can use the
-      <code>grid-column-gap</code> and <code>grid-row-gap</code> properties instead.
+      That simple line gives you an equal-sized gutter between all rows and columns. To define the
+      gutter size for columns and rows individually, you can use the <code>grid-column-gap</code>{' '}
+      and <code>grid-row-gap</code> properties instead.
     </p>
 
     <p>Now let's put that all together. Here is our HTML:</p>
@@ -83,7 +82,7 @@ grid-gap: 1rem;
 }
       `}
     </CodeBlock>
-    <p>And the result:</p>
+    <p>Here is the result:</p>
 
     <div className="container-2">
       <div className="item" />

@@ -8,10 +8,10 @@ const Tutorial = () => (
     <h2>Named Lines</h2>
 
     <p>
-      In a previous example, we learned how to place an item on the grid by providing the
-      <code>grid-column</code> and <code>grid-row</code> properties with specific grid lines. We can also name some or all of
-      your lines when you define your grid. This allows us to use those names instead of grid
-      lines.
+      In a previous example, we learned how to place an item on the grid by providing the {' '}
+      <code>grid-column</code> and <code>grid-row properties</code> with specific grid lines. 
+      We can also name some or all of those grid lines when defining a grid. This allows us to
+      use those names instead of grid lines. To name a grid line, simply add the name in square brackets:
     </p>
 
     <p>To name a grid line, we simply provide the name in square brackets:</p>
@@ -92,7 +92,7 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <p>And here is the result:</p>
+    <p>Here is the result:</p>
 
     <div className="container-9">
       <div className="item header-9">header</div>
@@ -109,10 +109,10 @@ const Homework = () => (
   <DevHomework>
     <p>
       Did you know you can customize the color of the grid overlay in Firefox DevTools? The above
-      example is on a white background, and the default purple may not be the best color to use. When selecting an
-      overlay grid to display, you will see a circle next to the grid name that indicates the color
-      of the overlay. Click on that circle, and you can customize the color to whatever you'd like.
-      Try a different color, such as red.
+      example is on a white background, and the default purple may not be the best color to use.
+      When selecting an overlay grid to display, you will see a circle next to the grid name that
+      indicates the color of the overlay. Click on that circle, and you can customize the color to
+      whatever you'd like. Try a different color, such as red.
     </p>
   </DevHomework>
 );

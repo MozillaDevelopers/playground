@@ -24,31 +24,31 @@ const Tutorial = () => (
 
     <h3 className="mt3">CSS Grid Overlay</h3>
     <p>
-      The new Layout Panel lists all the available CSS Grid containers on the page and includes an
+      The new CSS Layout panel lists all the available CSS Grid containers on the page and includes an
       overlay to help you visualize the grid itself. You can customize the information displayed on
       the overlay, including grid line numbers and dimensions.
     </p>
     <img style={imgStyle} src={gif1} alt="enable grid overlay on a grid" />
 
-    <h3>Interactive Grid</h3>
+    <h3>Interactive grid</h3>
     <p>
       There is a new interactive grid outline in the sidebar. Mouse over the outline to highlight
       parts of the grid on the pages and display size, area, and position information.
     </p>
     <img style={imgStyle} src={gif2} alt="grid outline" />
 
-    <h3>Display Grid Area</h3>
+    <h3>Display grid area</h3>
     <p>
       The new “Display grid areas” setting shows the bounding areas and the associated area name in
       every cell. We'll learn more about how to set a grid area name in a bit.
     </p>
     <img style={imgStyle} src={gif3} alt="grid area" />
 
-    <h3>Visualize Transitions</h3>
+    <h3>Visualize transitions</h3>
     <p>
       The Grid Inspector is capable of visualizing transformations applied to the grid container.
-      This lets developers accurately see where their grid lines are on the page for any grids that
-      are translated, skewed, rotated or scaled.
+      This lets you accurately see where the grid lines are on the page for any grids that
+      are translated, skewed, rotated, or scaled.
     </p>
     <img style={imgStyle} src={gif4} alt="grid transition" />
 
@@ -56,7 +56,7 @@ const Tutorial = () => (
       These features and improvements are currently available in Firefox Nightly and Firefox
       Developer edition. It is recommended that you download and install one of these browsers
       before continuing. These features are only available in Firefox and will help you as you learn
-      about the ins-and-outs of CSS Grid Layout.
+      about the ins and outs of CSS Grid Layout.
     </p>
 
     <a

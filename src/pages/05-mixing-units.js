@@ -10,7 +10,7 @@ const Tutorial = () => (
     <p>
       When declaring track sizes, you can use fixed sizes with units such as px and em. You can also
       use flexible sizes such as percentages or the fr unit. The real magic of CSS Grid Layout,
-      however, is having the ability to mix these units. The best way to understand is with an
+      however, is the ability to mix these units. The best way to understand is with an
       example:
     </p>
     <CodeBlock>
@@ -48,7 +48,7 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <p>And here is the result:</p>
+    <p>Here is the result:</p>
 
     <div className="container-5">
       <div className="item" />

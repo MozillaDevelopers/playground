@@ -24,7 +24,7 @@ export default () => (
             </li>
             <li>
               <a
-                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                href="https://developer.mozilla.org/docs/Web/CSS/CSS_Grid_Layout"
                 rel="noopener noreferrer"
                 target="_blank"
               >

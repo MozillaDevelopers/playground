@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import 'typeface-antonio';
 
+// scripts for analytics
+import '../utils/ga';
+
 // images
 import faviconico from './img/favicon.ico';
 import faviconpng from './img/favicon.png';
@@ -20,6 +23,8 @@ const Layout = ({ children }) => (
     <Helmet>
       <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
       <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
+      <script async src="https://www.google-analytics.com/analytics.js" />
+
       <meta
         name="description"
         content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."

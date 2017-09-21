@@ -18,7 +18,7 @@ const Tutorial = () => (
   <div>
     <h2>Position Items</h2>
 
-    <h4>Understanding Grid Lines</h4>
+    <h4>Understanding grid lines</h4>
 
     <p>
       Now that we are comfortable creating a grid and defining the row and column sizes, we can move
@@ -51,7 +51,7 @@ const Tutorial = () => (
   <div className="item item3">3</div>
   <div className="item item4">4</div>
   <div className="item item5">5</div>
-  <div className="item item5">6</div>
+  <div className="item item6">6</div>
 </div>
       `}
     </CodeBlock>
@@ -74,7 +74,7 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <h4>Shorthand Property</h4>
+    <h4>Shorthand property</h4>
 
     <p>We can also rewrite this with shorthand properties:</p>
 

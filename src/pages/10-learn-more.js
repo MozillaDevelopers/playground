@@ -13,12 +13,11 @@ const Tutorial = () => (
       scratched the surface of what is possible.
     </p>
 
-    <p>If you are ready to dive deeper and learn more, there are a ton of great resources:</p>
+    <p>If you are ready to dive deeper and learn more, here are a ton of great resources to explore.</p>
 
     <h4>Jen Simmons</h4>
     <p>
-      Jen Simmons is a Designer Advocate at Mozilla. She is also a developer, writer, speaker, and
-      is a part of the CSS Working Group.
+      Jen Simmons is a Designer Advocate at Mozilla. She is also a developer, writer, and speaker and is a member of the CSS Working Group.
     </p>
     <ul className="list">
       <li>
@@ -31,8 +30,7 @@ const Tutorial = () => (
 
     <h4>Rachel Andrew</h4>
     <p>
-      Rachel Andrew is a developer, speaker and author who is also a part of the CSS Working Group
-      and has provided several resources for learning about CSS Grid Layout.
+      Rachel Andrew is a developer, speaker, and author. She is a member of the CSS Working Group and develops resources for learning about CSS Grid Layout.
     </p>
     <ul className="list">
       <li>

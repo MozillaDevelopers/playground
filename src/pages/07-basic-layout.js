@@ -5,13 +5,13 @@ import DevHomework from '../components/layout/DevHomework';
 
 const Tutorial = () => (
   <div>
-    <h2>Creating a basic layout</h2>
+    <h2>Creating a Basic Layout</h2>
 
     <p>
       Now that we have learned how to create a grid and position items on that grid, let's create a
       basic layout. We won't be introducing any new concepts here. We'll simply be using the
       <code>grid-row</code> and <code>grid-column</code> shorthand properties to manually place
-      items such as a header, footer etc.
+      items such as a header, footer, and so on.
     </p>
 
     <p>Here is the HTML:</p>
@@ -74,7 +74,7 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <p>And here is the result:</p>
+    <p>Here is the result:</p>
 
     <div className="container-7">
       <div className="item header-7">header</div>

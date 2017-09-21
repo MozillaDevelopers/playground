@@ -9,9 +9,9 @@ const Tutorial = () => (
 
     <p>
       In our first grid, we created columns with a fixed px width. That's great, but it isn't very
-      flexible. Thankfully, CSS Grid Layout introduces a new unit of length called fr (short for
-      fraction). MDN defines the fr unit as a unit which "represents a fraction of the available
-      space in the grid container". If we want to create rewrite our previous grid to have 3 three
+      flexible. Thankfully, CSS Grid Layout introduces a new unit of length called fr, which is
+      short for “fraction”. MDN defines the fr unit as a unit which represents a fraction of the
+      available space in the grid container. If we want to rewrite our previous grid to have three
       equal-width columns, we could change our CSS to use the fr unit:
     </p>
 
@@ -27,11 +27,11 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <h4>repeat() notation</h4>
+    <h4>The repeat() notation</h4>
 
     <p>
-      A handy tip if you find yourself repeating length units, is to use the repeat() notation. The
-      above code could be rewritten like so:
+      Handy tip: If you find yourself repeating length units, use the repeat() notation. Rewrite the
+      above code like so:
     </p>
 
     <CodeBlock>
@@ -46,7 +46,7 @@ const Tutorial = () => (
       `}
     </CodeBlock>
 
-    <p>This provides us with the following result:</p>
+    <p>Here is the result:</p>
 
     <div className="container-4">
       <div className="item" />
@@ -62,8 +62,8 @@ const Tutorial = () => (
 const Homework = () => (
   <DevHomework>
     <p>
-      Inspect the above grid and change the <code>grid-template-columns</code> property on the grid container to the
-      following:
+      Inspect the above grid and change the <code>grid-template-columns</code> property on the grid
+      container to the following:
     </p>
 
     <CodeBlock>

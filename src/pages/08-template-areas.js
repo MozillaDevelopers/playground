@@ -10,7 +10,7 @@ const Tutorial = () => (
       In our previous example, we learned how to create a basic layout by positioning items with
       grid lines. Another method for positioning items is to use named grid areas with the{' '}
       <code>grid-template-areas</code> and <code>grid-area</code> properties. The best way to
-      explain this is with example. Let's recreate the grid from our previous example with the
+      explain this is with an example. Let's recreate the grid from our previous example with the
       grid-template-areas property:
     </p>
     <CodeBlock>
@@ -31,9 +31,9 @@ const Tutorial = () => (
       `}
     </CodeBlock>
     <p>
-      Here we have defined 3 columns and 4 rows. Instead of placing each individual item, we can
+      Here we have defined three columns and four rows. Instead of placing each individual item, we can
       define the entire layout using the <code>grid-template-areas</code> property. We can then
-      assign those areas to each of our grid items using the <code>grid-area</code> property.
+      assign those areas to each grid item using the <code>grid-area</code> property.
     </p>
     <p>Our HTML:</p>
     <CodeBlock>
@@ -76,7 +76,7 @@ const Tutorial = () => (
 }
       `}
     </CodeBlock>
-    <p>And here is the result:</p>
+    <p>Here is the result:</p>
     <div className="container-8">
       <div className="item header-8">header</div>
       <div className="item sidebar-8">sidebar</div>
