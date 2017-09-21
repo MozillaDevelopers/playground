@@ -5,10 +5,8 @@
 * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 // create namespace
-let Mozilla;
-
 if (typeof Mozilla === 'undefined') {
-    Mozilla = {};
+    var Mozilla = {};
 }
 
 /**
@@ -20,8 +18,7 @@ if (typeof Mozilla === 'undefined') {
  * @params {string} [ua] - An optional mock userAgent string to ease unit testing.
  * @returns {boolean} true if enabled else false
  */
-
-Mozilla.dntEnabled = (dnt, ua) => {
+Mozilla.dntEnabled = function(dnt, ua) {
     'use strict';
 
     // for old version of IE we need to use the msDoNotTrack property of navigator
@@ -57,5 +54,3 @@ Mozilla.dntEnabled = (dnt, ua) => {
 
     return dntStatus === 'Enabled' ? true : false;
 };
-
-export default Mozilla;

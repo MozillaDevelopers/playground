@@ -1,12 +1,11 @@
-import './autotrack';
-import Mozilla from './dnt';
+/* eslint-disable */
 
-export default (() => {
+(function() {
   // If doNotTrack is not enabled, it is ok to add GTM
   if (typeof Mozilla.dntEnabled === 'function' && !Mozilla.dntEnabled()) {
     window.ga =
       window.ga ||
-      function () {
+      function() {
         (ga.q = ga.q || []).push(arguments);
       };
     ga.l = +new Date();
