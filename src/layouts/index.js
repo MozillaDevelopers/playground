@@ -15,21 +15,11 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/layout/Hero';
 
-// google analytics
-// checking for window and checking for window to ignore errors during build
-if (typeof window !== 'undefined') {
-  require('../utils/ga/ga'); // eslint-disable-line
-}
-
 const Layout = ({ children }) => (
   <div className="wrapper">
     <Helmet>
       <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
       <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
-      <script async src={`${__PATH_PREFIX__}/js/dnt.js`} />
-      <script async src={`${__PATH_PREFIX__}/js/ga.js`} />
-      <script async src={`${__PATH_PREFIX__}/js/autotrack.js`} />
-      <script async src="https://www.google-analytics.com/analytics.js" />
 
       <meta
         name="description"

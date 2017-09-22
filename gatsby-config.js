@@ -12,6 +12,12 @@ module.exports = {
         postCssPlugins: [autoprefixer()],
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-35433268-86',
+      },
+    },
   ],
   pathPrefix: '/playground',
 };
