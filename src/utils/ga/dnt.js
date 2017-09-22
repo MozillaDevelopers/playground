@@ -8,6 +8,7 @@
 let Mozilla;
 
 if (typeof Mozilla === 'undefined') {
+  console.log('bang4');
   Mozilla = {};
 }
 

@@ -2,8 +2,11 @@ import './autotrack';
 import Mozilla from './dnt';
 
 export default (() => {
+  console.log('bang2');
+  console.log('mozilla', Mozilla);
   // If doNotTrack is not enabled, it is ok to add GTM
   if (typeof Mozilla.dntEnabled === 'function' && !Mozilla.dntEnabled()) {
+    console.log('bang3');
     window.ga =
       window.ga ||
       function () {

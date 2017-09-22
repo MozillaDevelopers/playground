@@ -16,6 +16,7 @@
     "eslint-plugin-react": "^7.1.0",
     "gatsby": "^1.9.36",
     "gatsby-link": "^1.6.15",
+    "gatsby-plugin-google-analytics": "^1.0.7",
     "gatsby-plugin-postcss-sass": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.6",
     "gh-pages": "^1.0.0",

@@ -15,52 +15,95 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/layout/Hero';
 
-// google analytics
-// checking for window and checking for window to ignore errors during build
-if (typeof window !== 'undefined') {
-  require('../utils/ga/ga'); // eslint-disable-line
+
+class Layout extends React.Component {
+  componentDidMount() {
+    require('../utils/ga/ga'); // eslint-disable-line
+  }
+
+  render() {
+    return (
+      <div className="wrapper">
+        <Helmet>
+          <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
+          <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
+
+          <meta
+            name="description"
+            content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
+          />
+          <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
+          <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
+          <meta
+            property="og:description"
+            content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+          />
+          <meta property="og:image" content={facebook} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@mozilla" />
+          <meta name="twitter:creator" content="@mozilla" />
+          <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
+          <meta
+            name="twitter:description"
+            content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+          />
+          <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
+        </Helmet>
+
+        <Header />
+
+        <Hero />
+
+        {this.props.children()}
+
+        <Footer />
+      </div>
+    );
+  }
 }
 
-const Layout = ({ children }) => (
-  <div className="wrapper">
-    <Helmet>
-      <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
-      <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
-      <script async src={`${__PATH_PREFIX__}/js/dnt.js`} />
-      <script async src={`${__PATH_PREFIX__}/js/ga.js`} />
-      <script async src={`${__PATH_PREFIX__}/js/autotrack.js`} />
-      <script async src="https://www.google-analytics.com/analytics.js" />
+Layout.propTypes = {
 
-      <meta
-        name="description"
-        content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
-      />
-      <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
-      <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
-      <meta
-        property="og:description"
-        content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
-      />
-      <meta property="og:image" content={facebook} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@mozilla" />
-      <meta name="twitter:creator" content="@mozilla" />
-      <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
-      <meta
-        name="twitter:description"
-        content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
-      />
-      <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
-    </Helmet>
-
-    <Header />
-
-    <Hero />
-
-    {children()}
-
-    <Footer />
-  </div>
-);
+};
 
 export default Layout;
+
+// const Layout = ({ children }) => (
+//   <div className="wrapper">
+//     <Helmet>
+//       <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
+//       <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
+
+//       <meta
+//         name="description"
+//         content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
+//       />
+//       <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
+//       <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
+//       <meta
+//         property="og:description"
+//         content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+//       />
+//       <meta property="og:image" content={facebook} />
+//       <meta name="twitter:card" content="summary_large_image" />
+//       <meta name="twitter:site" content="@mozilla" />
+//       <meta name="twitter:creator" content="@mozilla" />
+//       <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
+//       <meta
+//         name="twitter:description"
+//         content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+//       />
+//       <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
+//     </Helmet>
+
+//     <Header />
+
+//     <Hero />
+
+//     {children()}
+
+//     <Footer />
+//   </div>
+// );
+
+// export default Layout;
