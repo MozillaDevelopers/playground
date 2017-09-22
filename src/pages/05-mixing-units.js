@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -10,8 +11,7 @@ const Tutorial = () => (
     <p>
       When declaring track sizes, you can use fixed sizes with units such as px and em. You can also
       use flexible sizes such as percentages or the fr unit. The real magic of CSS Grid Layout,
-      however, is the ability to mix these units. The best way to understand is with an
-      example:
+      however, is the ability to mix these units. The best way to understand is with an example:
     </p>
     <CodeBlock>
       {`
@@ -58,6 +58,9 @@ const Tutorial = () => (
       <div className="item" />
       <div className="item" />
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/JrReJE" />
+
   </div>
 );
 
@@ -77,7 +80,7 @@ grid-template-columns: 100px 30% 2fr 1fr;
       Do you see what happened? Instead of 3 columns, you now have a 3rd column that is{' '}
       <code>2fr</code> and occupies 2/3 of the remaining space, and a 4th column that is{' '}
       <code>1fr</code> and occupies the final 1/3 of the remaining space. Continue to play around in
-      DevTools and try different units and combinations.
+      Firefox DevTools and try different units and combinations.
     </p>
 
     <p>When you are ready, continue on to learn about how to position items on the grid.</p>

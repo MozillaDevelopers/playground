@@ -17,8 +17,3 @@
 .gallery {
   @include gallery(4 of 12);
 }
-
-.meh {
-  height: 200px;
-  background-color: red;
-}

@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -84,6 +85,9 @@ const Tutorial = () => (
       <div className="item content-3-7">Content-3</div>
       <div className="item footer-7">footer</div>
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/GMjwvG" />
+
   </div>
 );
 
@@ -93,7 +97,10 @@ const Homework = () => (
       This is the perfect time to test out the 'display line numbers' setting on the Firefox CSS
       Grid Layout Panel. Inspect the result above and select the layout panel. Here you can activate
       the overlay grid and check the box to 'display line numbers'. Handy right? This tool makes it
-      very easy to visualize your grid when positioning items.
+      very easy to visualize your grid when positioning items. Don't have Firefox?{' '}
+      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
+        Download Firefox Nightly
+      </a>.
     </p>
   </DevHomework>
 );

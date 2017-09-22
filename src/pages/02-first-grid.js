@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -92,6 +93,8 @@ grid-gap: 1rem;
       <div className="item" />
       <div className="item" />
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/veXQmp" />
   </div>
 );
 
@@ -107,10 +110,14 @@ const Homework = () => (
     <p>
       Having a good set of developer tools when working with CSS Grid Layout is essential. Firefox
       has some fantastic features that are specifically built to help you create and design grids.
-      Intrigued?
+      Intrigued?{' '}
+      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
+        Download Firefox Nightly
+      </a>{' '}
+      to get the browser with the best CSS Grid Layout tools.
     </p>
 
-    <p>Click to the next section to learn about Firefox's CSS Grid Layout Panel.</p>
+    <p>Click to the next section to learn about Firefox's new CSS Grid Layout panel.</p>
   </DevHomework>
 );
 

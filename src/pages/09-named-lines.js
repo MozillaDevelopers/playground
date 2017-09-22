@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -9,9 +10,9 @@ const Tutorial = () => (
 
     <p>
       In a previous example, we learned how to place an item on the grid by providing the {' '}
-      <code>grid-column</code> and <code>grid-row properties</code> with specific grid lines. 
-      We can also name some or all of those grid lines when defining a grid. This allows us to
-      use those names instead of grid lines. To name a grid line, simply add the name in square brackets:
+      <code>grid-column</code> and <code>grid-row properties</code> with specific grid lines. We can
+      also name some or all of those grid lines when defining a grid. This allows us to use those
+      names instead of grid lines. To name a grid line, simply add the name in square brackets:
     </p>
 
     <p>To name a grid line, we simply provide the name in square brackets:</p>
@@ -102,6 +103,7 @@ const Tutorial = () => (
       <div className="item content-3-9">Content-3</div>
       <div className="item footer-9">footer</div>
     </div>
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/dVpQVV" />
   </div>
 );
 
@@ -112,7 +114,10 @@ const Homework = () => (
       example is on a white background, and the default purple may not be the best color to use.
       When selecting an overlay grid to display, you will see a circle next to the grid name that
       indicates the color of the overlay. Click on that circle, and you can customize the color to
-      whatever you'd like. Try a different color, such as red.
+      whatever you'd like. Try a different color, such as red. Don't have Firefox?{' '}
+      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
+        Download Firefox Nightly
+      </a>.
     </p>
   </DevHomework>
 );

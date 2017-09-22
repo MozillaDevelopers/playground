@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 // images
 import numbers from '../components/img/terms/numbers.svg';
@@ -97,6 +98,9 @@ const Tutorial = () => (
       <div className="item item5">5</div>
       <div className="item item5">6</div>
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/veXQZp" />
+
   </div>
 );
 

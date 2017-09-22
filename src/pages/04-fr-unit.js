@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -56,6 +57,9 @@ const Tutorial = () => (
       <div className="item" />
       <div className="item" />
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/eGdQRN" />
+
   </div>
 );
 

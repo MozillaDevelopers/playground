@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/layout/Main';
 import CodeBlock from '../components/CodeBlock';
 import DevHomework from '../components/layout/DevHomework';
+import CodepenLink from '../components/CodepenLink';
 
 const Tutorial = () => (
   <div>
@@ -31,8 +32,8 @@ const Tutorial = () => (
       `}
     </CodeBlock>
     <p>
-      Here we have defined three columns and four rows. Instead of placing each individual item, we can
-      define the entire layout using the <code>grid-template-areas</code> property. We can then
+      Here we have defined three columns and four rows. Instead of placing each individual item, we
+      can define the entire layout using the <code>grid-template-areas</code> property. We can then
       assign those areas to each grid item using the <code>grid-area</code> property.
     </p>
     <p>Our HTML:</p>
@@ -85,6 +86,8 @@ const Tutorial = () => (
       <div className="item content-3-8">Content-3</div>
       <div className="item footer-8">footer</div>
     </div>
+
+    <CodepenLink link="https://codepen.io/mozilladevelopers/pen/Xejyed" />
   </div>
 );
 
@@ -93,7 +96,10 @@ const Homework = () => (
     <p>
       Did you know that FireFox DevTools can display the area names? Try it out! Inspect the grid
       above and open the layout panel. From here you can toggle the overlay grid and the 'Display
-      Area Names' feature.
+      Area Names' feature. Don't have Firefox?{' '}
+      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
+        Download Firefox Nightly
+      </a>.
     </p>
   </DevHomework>
 );
