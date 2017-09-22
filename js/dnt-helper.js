@@ -5,8 +5,9 @@
 * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 // create namespace
+let Mozilla;
 if (typeof Mozilla === 'undefined') {
-    var Mozilla = {};
+    Mozilla = {};
 }
 
 /**
