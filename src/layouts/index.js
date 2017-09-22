@@ -15,6 +15,12 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import Hero from '../components/layout/Hero';
 
+// google analytics
+// checking for window and checking for window to ignore errors during build
+if (typeof window !== 'undefined') {
+  require('../utils/ga/ga'); // eslint-disable-line
+}
+
 const Layout = ({ children }) => (
   <div className="wrapper">
     <Helmet>
