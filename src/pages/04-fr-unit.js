@@ -72,7 +72,7 @@ const Homework = () => (
 
     <CodeBlock>
       {`
-grid-template-columns: 10px, repeat(2, 1fr);
+grid-template-columns: 10px repeat(2, 1fr);
       `}
     </CodeBlock>
     <p>
