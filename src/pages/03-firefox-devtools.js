@@ -44,7 +44,7 @@ const Tutorial = () => (
     </p>
     <img style={imgStyle} src={gif3} alt="grid area" />
 
-    <h3>Visualize transitions</h3>
+    <h3>Visualize transformations</h3>
     <p>
       The Grid Inspector is capable of visualizing transformations applied to the grid container.
       This lets you accurately see where the grid lines are on the page for any grids that
