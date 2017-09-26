@@ -82,13 +82,13 @@ const Tutorial = () => (
 
     <CodeBlock>
       {`
-<div className="container">
-  <div className="item header">header</div>
-  <div className="item sidebar">sidebar</div>
-  <div className="item content-1">Content-1</div>
-  <div className="item content-2">Content-2</div>
-  <div className="item content-3">Content-3</div>
-  <div className="item footer">footer</div>
+<div class="container">
+  <div class="item header">header</div>
+  <div class="item sidebar">sidebar</div>
+  <div class="item content-1">Content-1</div>
+  <div class="item content-2">Content-2</div>
+  <div class="item content-3">Content-3</div>
+  <div class="item footer">footer</div>
 </div>
       `}
     </CodeBlock>

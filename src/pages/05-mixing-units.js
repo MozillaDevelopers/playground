@@ -37,13 +37,13 @@ const Tutorial = () => (
 
     <CodeBlock>
       {`
-<div className="container">
-  <div className="item" />
-  <div className="item" />
-  <div className="item" />
-  <div className="item" />
-  <div className="item" />
-  <div className="item" />
+<div class="container">
+  <div class="item" />
+  <div class="item" />
+  <div class="item" />
+  <div class="item" />
+  <div class="item" />
+  <div class="item" />
 </div>
       `}
     </CodeBlock>
