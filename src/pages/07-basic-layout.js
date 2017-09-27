@@ -34,7 +34,7 @@ const Tutorial = () => (
 
     <CodeBlock>
       {`
-.main {
+.container {
   display: grid;
   width: 750px;
   height: 600px;

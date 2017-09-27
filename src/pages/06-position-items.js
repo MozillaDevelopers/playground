@@ -46,7 +46,7 @@ const Tutorial = () => (
 
     <CodeBlock>
       {`
-<div class="container-6">
+<div class="container">
   <div class="item item1">1</div>
   <div class="item item2">2</div>
   <div class="item item3">3</div>
