@@ -17,7 +17,7 @@ const Tutorial = () => (
 
     <h4>Define rows and columns</h4>
     <p>
-      There are several ways to define rows and columns. For our first grid, we will use properties 
+      There are several ways to define rows and columns. For our first grid, we will use properties{' '}
       <code>grid-template-columns</code> and <code>grid-template-rows</code>. These properties allow
       us to define the size of the rows and columns for our grid. To create two fixed-height rows
       of 150px and three fixed-width columns of 150px, simply write:
