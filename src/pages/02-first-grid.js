@@ -34,7 +34,7 @@ grid-template-rows: 150px 150px;
 
     <CodeBlock>
       {`
-grid-template-columns: 150px 150px 70px;
+grid-template-columns: 150px 150px 150px 70px;
       `}
     </CodeBlock>
 
