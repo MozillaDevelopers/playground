@@ -19,7 +19,7 @@ const Tutorial = () => (
     <p>
       There are several ways to define rows and columns. For our first grid, we will use properties
       <code>grid-template-columns</code> and <code>grid-template-rows</code>. These properties allow
-      us to define the size of the rows and columns for our grid. To create three fixed-height rows
+      us to define the size of the rows and columns for our grid. To create two fixed-height rows
       of 150px and three fixed-width columns of 150px, simply write:
     </p>
 
@@ -34,7 +34,7 @@ grid-template-rows: 150px 150px;
 
     <CodeBlock>
       {`
-grid-template-columns: 150px 150px 70px;
+grid-template-columns: 150px 150px 150px 70px;
       `}
     </CodeBlock>
 
