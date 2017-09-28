@@ -10,7 +10,7 @@ const Tutorial = () => (
 
     <p>
       In a previous example, we learned how to place an item on the grid by providing the {' '}
-      <code>grid-column</code> and <code>grid-row properties</code> with specific grid lines. We can
+      <code>grid-column</code> and <code>grid-row</code> properties with specific grid lines. We can
       also name some or all of those grid lines when defining a grid. This allows us to use those
       names instead of grid lines. To name a grid line, simply add the name in square brackets:
     </p>
