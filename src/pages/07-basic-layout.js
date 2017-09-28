@@ -87,7 +87,6 @@ const Tutorial = () => (
     </div>
 
     <CodepenLink link="https://codepen.io/mozilladevelopers/pen/GMjwvG" />
-
   </div>
 );
 
@@ -98,9 +97,7 @@ const Homework = () => (
       Grid Layout Panel. Inspect the result above and select the layout panel. Here you can activate
       the overlay grid and check the box to 'display line numbers'. Handy right? This tool makes it
       very easy to visualize your grid when positioning items. Don't have Firefox?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
-        Download Firefox Nightly
-      </a>.
+      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a>.
     </p>
   </DevHomework>
 );

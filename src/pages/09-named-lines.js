@@ -115,9 +115,7 @@ const Homework = () => (
       When selecting an overlay grid to display, you will see a circle next to the grid name that
       indicates the color of the overlay. Click on that circle, and you can customize the color to
       whatever you'd like. Try a different color, such as red. Don't have Firefox?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
-        Download Firefox Nightly
-      </a>.
+      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a>.
     </p>
   </DevHomework>
 );

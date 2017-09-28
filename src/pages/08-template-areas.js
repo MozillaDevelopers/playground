@@ -86,7 +86,6 @@ const Tutorial = () => (
       <div className="item content-3-8">Content-3</div>
       <div className="item footer-8">footer</div>
     </div>
-
     <CodepenLink link="https://codepen.io/mozilladevelopers/pen/Xejyed" />
   </div>
 );
@@ -97,9 +96,7 @@ const Homework = () => (
       Did you know that FireFox DevTools can display the area names? Try it out! Inspect the grid
       above and open the layout panel. From here you can toggle the overlay grid and the 'Display
       Area Names' feature. Don't have Firefox?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
-        Download Firefox Nightly
-      </a>.
+      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a>.
     </p>
   </DevHomework>
 );

@@ -10,12 +10,13 @@ import DownloadButton from '../../components/DownloadButton';
 const Header = () => (
   <header className="header">
     <div className="contain">
-      <Link to='/'>
+      <Link to="/">
         <img alt="logo" className="header__logo" src={logo} />
       </Link>
 
-      <DownloadButton float="right" url="https://www.mozilla.org/firefox/channel/desktop/#nightly">Download Firefox</DownloadButton>
-
+      <DownloadButton float="right" url="https://www.mozilla.org/en-US/firefox/developer/">
+        Download Firefox
+      </DownloadButton>
     </div>
   </header>
 );

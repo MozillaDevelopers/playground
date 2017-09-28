@@ -19,8 +19,8 @@ const Tutorial = () => (
     <p>
       There are several ways to define rows and columns. For our first grid, we will use properties{' '}
       <code>grid-template-columns</code> and <code>grid-template-rows</code>. These properties allow
-      us to define the size of the rows and columns for our grid. To create two fixed-height rows
-      of 150px and three fixed-width columns of 150px, simply write:
+      us to define the size of the rows and columns for our grid. To create two fixed-height rows of
+      150px and three fixed-width columns of 150px, simply write:
     </p>
 
     <CodeBlock>
@@ -111,10 +111,8 @@ const Homework = () => (
       Having a good set of developer tools when working with CSS Grid Layout is essential. Firefox
       has some fantastic features that are specifically built to help you create and design grids.
       Intrigued?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/channel/desktop/#nightly">
-        Download Firefox Nightly
-      </a>{' '}
-      to get the browser with the best CSS Grid Layout tools.
+      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a> to get
+      the browser with the best CSS Grid Layout tools.
     </p>
 
     <p>Click to the next section to learn about Firefox's new CSS Grid Layout panel.</p>
