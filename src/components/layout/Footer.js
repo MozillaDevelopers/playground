@@ -67,12 +67,12 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="https://www.mozilla.org/privacy/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.mozilla.org/privacy/websites/#cookies" rel="noopener noreferrer" target="_blank">
             Cookies
           </a>
         </li>
         <li>
-          <a href="https://www.mozilla.org/privacy/" rel="noopener noreferrer" target="_blank">
+          <a href="https://www.mozilla.org/legal/" rel="noopener noreferrer" target="_blank">
             Legal
           </a>
         </li>
