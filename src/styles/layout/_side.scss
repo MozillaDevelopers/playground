@@ -83,8 +83,11 @@ $_circle-active-color-2: #FF722A;
 .side-nav__wrap {
   height: $_circle-radius;
   cursor: pointer;
+}
 
-  &:hover {
+a {
+  &:hover,
+  &:focus {
     .side-nav__circle {
       background-color: darken($_circle-color, 10%);
     }

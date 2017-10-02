@@ -7,6 +7,18 @@
   padding: space(8);
   background-color: $black;
   color: $white;
+
+  a {
+    border-bottom: 2px solid transparent;
+    color: $white;
+    transition: border-bottom .2s ease;
+  
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 2px solid white;
+    }
+  }
 }
 
 .footer__logo {
@@ -27,14 +39,6 @@
 .footer__list {
   margin: 0;
 
-  a {
-    color: $white;
-  }
-
-  a:hover {
-    color: darken($white, 10%);
-  }
-
   li {
     margin-bottom: space(1);
   }
@@ -51,9 +55,5 @@
   li {
     float: left;
     margin-right: space(3);
-  }
-
-  a {
-    color: $white;
   }
 }

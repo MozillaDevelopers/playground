@@ -15,4 +15,15 @@
     @include span(9);
     padding-left: space(9);
   }
+
+  a {
+    color: black;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #306efe;
+    }
+  }
 }

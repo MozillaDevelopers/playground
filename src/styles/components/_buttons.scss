@@ -58,7 +58,9 @@ button,
    transition: all .3s ease;
    font-weight: bold;
 
-   &:hover {
+   &:active,
+   &:hover,
+   &:focus {
      background-color: darken(#306efe, 10%);
    }
 }
