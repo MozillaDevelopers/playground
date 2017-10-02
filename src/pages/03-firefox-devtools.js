@@ -59,8 +59,8 @@ const Tutorial = () => (
       about the ins and outs of CSS Grid Layout.
     </p>
 
-    <a href="https://www.mozilla.org/firefox/developer/" target="_blank" rel="noopener noreferrer">
-      <button className="button-download">Download Firefox Developer Edition</button>
+    <a className="button-download" href="https://www.mozilla.org/firefox/developer/" target="_blank" rel="noopener noreferrer">
+      Download Firefox Developer Edition
     </a>
   </div>
 );
