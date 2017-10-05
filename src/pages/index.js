@@ -8,9 +8,10 @@ import Term from '../components/Term';
 import line from '../components/img/terms/line.svg';
 import cell from '../components/img/terms/cell.svg';
 import area from '../components/img/terms/area.svg';
+import track from '../components/img/terms/track.svg';
+import row from '../components/img/terms/row.svg';
 import column from '../components/img/terms/column.svg';
 import gutter from '../components/img/terms/gutter.svg';
-import row from '../components/img/terms/row.svg';
 
 const Tutorial = () => (
   <div>
@@ -33,7 +34,7 @@ const Tutorial = () => (
       cells.
     </Term>
 
-    <Term img={column} name="Grid track">
+    <Term img={track} name="Grid track">
       The space between two grid lines. This space can be horizontal or vertical
     </Term>
 
