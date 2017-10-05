@@ -66,7 +66,7 @@ grid-gap: 1rem;
   <div class="item item3"></div>
   <div class="item item4"></div>
   <div class="item item5"></div>
-  <div class="item item5"></div>
+  <div class="item item6"></div>
 </div>
       `}
     </CodeBlock>
