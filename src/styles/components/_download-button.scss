@@ -6,15 +6,19 @@
 .download-button {
   border: 2px solid $white;
   color: $white;
+  display: inline-block;
   background-color: transparent;
   font-size: 14px;
   font-weight: bold;
   padding: 0 space(1);
   line-height: 35px;
   transition: background-color .2s ease;
+  text-decoration: none;
 
+  &:focus,
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    color: white;
   }
 
   &.float-left {
@@ -28,4 +32,9 @@
 
 .download-button__icon {
   margin-right: space(1);
+}
+
+// override homework__content default link style
+.homework__content a.download-button {
+  @extend .download-button;
 }

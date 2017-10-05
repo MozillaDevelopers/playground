@@ -43,6 +43,12 @@
   a {
     color: white;
     text-decoration: underline;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: #306efe;
+    }
   }
 
   @include bp(medium) {

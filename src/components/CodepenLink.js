@@ -7,14 +7,9 @@ const style = {
   marginTop: '1rem',
 };
 
-const linkStyle = {
-  color: 'black',
-  textDecoration: 'underline',
-};
-
 const CodepenLink = props => (
   <span style={style}>
-    <a style={linkStyle} href={props.link} target="_blank" rel="noopener noreferrer">
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
       View on Codepen
     </a>
   </span>

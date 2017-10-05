@@ -50,11 +50,17 @@
   transition: border-bottom .2s ease;
   border-bottom: 2px solid transparent;
 
-  &:hover {
-    border-bottom: 2px solid $white;
-  }
-
   @include bp(medium) {
     @include typesize(2);
+  }
+}
+
+a {
+  &:active,
+  &:focus,
+  &:hover {
+    .bottom-nav__title {
+      border-bottom: 2px solid $white;
+    }
   }
 }

@@ -48,19 +48,27 @@ button,
 }
 
 .button-download {
-   display: block;
+   display: inline-block;
    margin-bottom: space(2);
    background-color: #306efe;
    border-radius: 100px;
    color: $white;
    padding: space(2) space(4);
    border: none;
+   text-decoration: none;
    transition: all .3s ease;
    font-weight: bold;
 
-   &:hover {
+   &:active,
+   &:hover,
+   &:focus {
      background-color: darken(#306efe, 10%);
+     color: white;
    }
+}
+
+.content a.button-download {
+  @extend .button-download;
 }
 
 // Variables

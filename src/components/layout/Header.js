@@ -10,7 +10,7 @@ import DownloadButton from '../../components/DownloadButton';
 const Header = () => (
   <header className="header">
     <div className="contain">
-      <Link to="/">
+      <Link to="/" className="header__logo-link">
         <img alt="logo" className="header__logo" src={logo} />
       </Link>
 

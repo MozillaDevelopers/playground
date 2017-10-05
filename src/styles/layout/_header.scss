@@ -8,6 +8,15 @@
   padding: space(3) 0;
 }
 
+.header__logo-link {
+  display: inline-block;
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 6px white;
+  }
+}
+
 .header__logo {
   float: left;
   display: inline-block;
