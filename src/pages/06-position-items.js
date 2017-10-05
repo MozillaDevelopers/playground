@@ -82,8 +82,8 @@ const Tutorial = () => (
     <CodeBlock>
       {`
 .item1 {
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
       `}
     </CodeBlock>
