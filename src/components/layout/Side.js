@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Link from 'gatsby-link';
-import pageData from '../../data/pageData';
 
 // images
 import done from '../img/done.svg';
@@ -30,7 +29,7 @@ const SideItem = props => (
       </div>
       <div
         className={
-          props.currentPageNum > props.order && props.order !== pageData.length
+          props.currentPageNum > props.order && props.order !== props.pageData.length
             ? 'side-nav__line is-active'
             : 'side-nav__line'
         }
@@ -41,13 +40,14 @@ const SideItem = props => (
 
 // The entire sidebar
 const Side = (props) => {
-  const pages = pageData.map(page => (
+  const pages = props.pageData.map(page => (
     <SideItem
       key={page.order}
       currentPageNum={props.currentPageNum}
       order={page.order}
       title={page.title}
       link={page.link}
+      pageData={props.pageData}
     />
   ));
   return <div className="side">{pages}</div>;

@@ -97,7 +97,7 @@ $susy: (
   clear: both;
 }
 
-.contain {
+.container {
   @include clearfix;
   @include container($debug: false);
   height: 100%;

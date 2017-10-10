@@ -1,7 +1,7 @@
 import React from 'react';
-import Main from '../components/layout/Main';
-import DevHomework from '../components/layout/DevHomework';
-import DownloadButton from '../components/DownloadButton';
+import Main from './components/_Main';
+import DevHomework from '../../components/layout/DevHomework';
+import DownloadButton from '../../components/DownloadButton';
 
 const Tutorial = () => (
   <div>

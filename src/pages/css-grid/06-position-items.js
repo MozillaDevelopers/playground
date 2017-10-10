@@ -1,12 +1,12 @@
 import React from 'react';
-import Main from '../components/layout/Main';
-import CodeBlock from '../components/CodeBlock';
-import DevHomework from '../components/layout/DevHomework';
-import CodepenLink from '../components/CodepenLink';
+import Main from './components/_Main';
+import CodeBlock from '../../components/CodeBlock';
+import DevHomework from '../../components/layout/DevHomework';
+import CodepenLink from '../../components/CodepenLink';
 
 // images
-import numbers from '../components/img/terms/numbers.svg';
-import grid from '../components/img/terms/grid.svg';
+import numbers from '../../components/img/terms/numbers.svg';
+import grid from '../../components/img/terms/grid.svg';
 
 const style = {
   width: '100%',

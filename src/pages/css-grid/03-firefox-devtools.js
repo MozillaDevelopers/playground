@@ -1,11 +1,11 @@
 import React from 'react';
-import Main from '../components/layout/Main';
+import Main from './components/_Main';
 
 // images
-import gif1 from '../components/img/dtgif/gif1.gif';
-import gif2 from '../components/img/dtgif/gif2.gif';
-import gif3 from '../components/img/dtgif/gif3.gif';
-import gif4 from '../components/img/dtgif/gif4.gif';
+import gif1 from '../../components/img/dtgif/gif1.gif';
+import gif2 from '../../components/img/dtgif/gif2.gif';
+import gif3 from '../../components/img/dtgif/gif3.gif';
+import gif4 from '../../components/img/dtgif/gif4.gif';
 
 const imgStyle = {
   width: '100%',

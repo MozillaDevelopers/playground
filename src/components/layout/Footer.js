@@ -4,7 +4,7 @@ import logo from '../img/logo-white.svg';
 
 export default () => (
   <footer className="footer">
-    <div className="contain">
+    <div className="container">
       <div className="row">
         <div className="col-md-4">
           <img className="footer__logo" src={logo} alt="Mozilla Logo" />
