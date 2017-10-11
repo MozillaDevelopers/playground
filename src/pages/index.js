@@ -52,8 +52,8 @@ const Tutorial = () => (
 
     <span className="term__name">Grid container</span>
     <p>
-      The container that holds the entire CSS grid. It will be the element that has the
-      <code>display: grid</code> or <code>display: inline-grid</code> property on it.
+      The container that holds the entire CSS grid. It will be the element that has
+      the <code>display: grid</code> or <code>display: inline-grid</code> property on it.
     </p>
 
     <span className="term__name">Grid item</span>
