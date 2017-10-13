@@ -12,6 +12,7 @@ import '../styles/style.scss';
 // Components
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import CTA from '../components/layout/CTA';
 
 const Layout = ({ children }) => (
   <div className="wrapper">
@@ -24,6 +25,7 @@ const Layout = ({ children }) => (
 
     {children()}
 
+    <CTA />
     <Footer />
   </div>
 );

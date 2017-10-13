@@ -1,0 +1,60 @@
+// ----------------------------------------------------------------------------
+// Bottom CTA
+// ----------------------------------------------------------------------------
+
+.cta {
+  padding: space(8) 0;
+  background-color: blue;
+  background-color: #0727A9;
+  background-image: linear-gradient(90deg, #0727A9 0%, #0772AC);
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include bp(medium) {
+    flex-direction: row;
+  }
+}
+
+.cta__logo {
+  margin-bottom: space(4);
+
+  @include bp(medium) {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+.cta__text {
+  @include typesize(3);
+  text-transform: uppercase;
+  line-height: space(8);
+  font-family: $header-alt;
+  color: $white;
+  text-align: center;
+  margin-bottom: space(4);
+
+  @include bp(medium) {
+    flex: 2 0 0;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0 space(2);
+  }
+
+  @include bp(large) {
+    @include typesize(4);
+  }
+}
+
+.cta__download {
+  @include bp(medium) {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 0;
+  }
+}
