@@ -16,7 +16,7 @@ $_columns: 12;
 // Susy Configuration
 $susy: (
   'columns': susy-repeat($_columns),
-  'gutters': .2,
+  'gutters': .4,
   'svg-grid-colors': hsla(180, 50%, 50%, 0.25), //scss-lint-ignore-line
 );
 

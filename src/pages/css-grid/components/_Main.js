@@ -11,7 +11,7 @@ import facebook from './img/fb.png';
 // Components
 import Side from '../../../components/layout/Side';
 import BottomNav from '../../../components/layout/BottomNav';
-import Hero from './_Hero';
+import Hero from '../../../components/layout/Hero';
 
 const Main = ({ currentPageNum, tutorial, homework }) => {
   // Get current page data from data/pageData.js
@@ -42,7 +42,10 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
         <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
       </Helmet>
 
-      <Hero />
+      <Hero>
+        <h3>Firefox DevTools</h3>
+        <h1>Introduction to CSS Grid Layout</h1>
+      </Hero>
       <div className="main">
         <div className="container">
           <Side currentPageNum={currentPageNum} pageData={pageData} />

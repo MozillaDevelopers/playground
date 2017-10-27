@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Hero = () => (
+const Hero = props => (
   <div className="hero">
-    <h3>Firefox DevTools</h3>
-    <h1>Introduction to CSS Grid Layout</h1>
+
+    {props.children}
 
     <svg
       width="100%"
