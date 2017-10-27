@@ -22,6 +22,7 @@
     "gh-pages": "^1.0.0",
     "mappy-breakpoints": "^0.2.3",
     "prop-types": "^15.5.10",
+    "react-bodymovin": "^1.1.0",
     "susy": "^3.0.1",
     "typeface-antonio": "^1.0.0"
   },

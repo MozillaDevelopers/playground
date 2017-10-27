@@ -1,8 +1,7 @@
 import React from 'react';
 
 const Hero = props => (
-  <div className="hero">
-
+  <div className={`hero ${props.className}`}>
     {props.children}
 
     <svg
@@ -25,5 +24,9 @@ const Hero = props => (
     </svg>
   </div>
 );
+
+Hero.defaultProps = {
+  background: '#FFF',
+};
 
 export default Hero;

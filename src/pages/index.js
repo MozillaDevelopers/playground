@@ -2,12 +2,10 @@ import React from 'react';
 
 // components
 import Hero from '../components/layout/Hero';
-import TutorialItem from '../components/TutorialItem';
 import DownloadWhite from '../components/DownloadWhite';
+import TutorialList from '../components/TutorialList';
 
 // photos
-import cssgridPhoto from './img/cssgrid.png';
-import debuggerPhoto from './img/debugger.png';
 import logo from '../components/img/ff-logo.png';
 
 const logoStyle = {
@@ -31,23 +29,7 @@ const index = () => (
         </div>
       </div>
     </Hero>
-    <div className="tutorial-list">
-      {/* <h2 className="tutorial-list__title">Explore DevTools Playground</h2> */}
-      <div className="container">
-        <TutorialItem
-          photo={cssgridPhoto}
-          title="CSS Grid"
-          desc="Climb leg lick the plastic bag hide when guests come over, yet meowing non stop for food i can haz, or spend all night ensuring people don't sleep sleep all day thug cat."
-          link="/css-grid"
-        />
-        <TutorialItem
-          photo={debuggerPhoto}
-          title="Debugger"
-          desc="Climb leg lick the plastic bag hide when guests come over, yet meowing non stop for food i can haz, or spend all night ensuring people don't sleep sleep all day thug cat."
-          link="/debugger"
-        />
-      </div>
-    </div>
+    <TutorialList />
   </div>
 );
 

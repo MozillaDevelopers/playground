@@ -1,0 +1,39 @@
+// ----------------------------------------------------------------------------
+// 404
+// ----------------------------------------------------------------------------
+
+.not-found__dino {
+  height: 300px;
+  @include bp(medium) {
+    @include span(6);
+  }
+}
+
+.not-found__dino img {
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  @include bp(medium) {
+    float: right;
+    margin: 0;
+
+  }
+}
+
+.not-found__text {
+  color: black;
+  text-align: center;
+  margin-top: space(3);
+
+  @include bp(medium) {
+    @include span(6);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
