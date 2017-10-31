@@ -3,6 +3,7 @@ import Main from './components/_Main';
 import CodeBlock from '../../components/CodeBlock';
 import DevHomework from '../../components/layout/DevHomework';
 import CodepenLink from '../../components/CodepenLink';
+import DownloadLink from '../../components/DownloadLink';
 
 const Tutorial = () => (
   <div>
@@ -111,7 +112,7 @@ const Homework = () => (
       Having a good set of developer tools when working with CSS Grid Layout is essential. Firefox
       has some fantastic features that are specifically built to help you create and design grids.
       Intrigued?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a> to get
+      <DownloadLink content="cssgrid-page-2">Download Firefox Developer Edition</DownloadLink> to get
       the browser with the best CSS Grid Layout tools.
     </p>
 

@@ -18,7 +18,7 @@ const NotFoundPage = () => {
             </div>
             <div className="not-found__text">
               <h1>This page has moved!</h1>
-              <p className="mt2">We recently moved a few pages around. Scroll down to find different playgrounds and tutorials.</p>
+              <p className="mt2">The page you are looking for doesn't exist, or has moved. Scroll down to find the current tutorials & playgrounds that are available.</p>
             </div>
           </div>
         </div>

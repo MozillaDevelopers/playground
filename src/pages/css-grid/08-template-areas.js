@@ -3,6 +3,7 @@ import Main from './components/_Main';
 import CodeBlock from '../../components/CodeBlock';
 import DevHomework from '../../components/layout/DevHomework';
 import CodepenLink from '../../components/CodepenLink';
+import DownloadLink from '../../components/DownloadLink';
 
 const Tutorial = () => (
   <div>
@@ -96,7 +97,7 @@ const Homework = () => (
       Did you know that FireFox DevTools can display the area names? Try it out! Inspect the grid
       above and open the layout panel. From here you can toggle the overlay grid and the 'Display
       Area Names' feature. Don't have Firefox?{' '}
-      <a href="https://www.mozilla.org/en-US/firefox/developer/">Download Firefox Developer Edition</a>.
+      <DownloadLink content="cssgrid-page-8">Download Firefox Developer Edition</DownloadLink>.
     </p>
   </DevHomework>
 );

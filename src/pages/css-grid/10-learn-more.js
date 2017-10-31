@@ -2,6 +2,7 @@ import React from 'react';
 import Main from './components/_Main';
 import DevHomework from '../../components/layout/DevHomework';
 import DownloadButton from '../../components/DownloadButton';
+import DownloadLink from '../../components/DownloadLink';
 
 const Tutorial = () => (
   <div>
@@ -13,11 +14,14 @@ const Tutorial = () => (
       scratched the surface of what is possible.
     </p>
 
-    <p>If you are ready to dive deeper and learn more, here are a ton of great resources to explore.</p>
+    <p>
+      If you are ready to dive deeper and learn more, here are a ton of great resources to explore.
+    </p>
 
     <h4>Jen Simmons</h4>
     <p>
-      Jen Simmons is a Designer Advocate at Mozilla. She is also a developer, writer, and speaker and is a member of the CSS Working Group.
+      Jen Simmons is a Designer Advocate at Mozilla. She is also a developer, writer, and speaker
+      and is a member of the CSS Working Group.
     </p>
     <ul className="list">
       <li>
@@ -30,7 +34,8 @@ const Tutorial = () => (
 
     <h4>Rachel Andrew</h4>
     <p>
-      Rachel Andrew is a developer, speaker, and author. She is a member of the CSS Working Group and develops resources for learning about CSS Grid Layout.
+      Rachel Andrew is a developer, speaker, and author. She is a member of the CSS Working Group
+      and develops resources for learning about CSS Grid Layout.
     </p>
     <ul className="list">
       <li>
@@ -60,22 +65,23 @@ const Homework = () => (
     <strong>Firefox Developer Edition</strong>
     <p>Build, test, scale and more with the only browser built just for developers.</p>
     <div>
-      <DownloadButton
-        url="https://www.mozilla.org/firefox/developer/"
-        className="mb4"
-      >
-        Get Firefox Developer Edition
-      </DownloadButton>
+      <DownloadLink content="cssgrid-learn-more">
+        <DownloadButton className="mb4">Get Firefox Developer Edition</DownloadButton>
+      </DownloadLink>
     </div>
 
     <h4>Firefox Nightly</h4>
-    <p>Get a sneak peek at the future. Firefox Nightly has daily updates and provides access to new features and tools before they are released.</p>
-    <DownloadButton
-      url="https://www.mozilla.org/firefox/nightly"
-      className="mb4"
+    <p>
+      Get a sneak peek at the future. Firefox Nightly has daily updates and provides access to new
+      features and tools before they are released.
+    </p>
+    <a
+      href="https://www.mozilla.org/firefox/nightly/?utm_source=moz-playground&utm_medium=referral&utm_content=cssgrid-learn-more"
+      target="_blank"
+      rel="noopener noreferrer"
     >
-      Get Firefox Nightly
-    </DownloadButton>
+      <DownloadButton className="mb4">Get Firefox Nightly</DownloadButton>
+    </a>
   </DevHomework>
 );
 
