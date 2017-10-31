@@ -5,7 +5,7 @@ import Hero from '../components/layout/Hero';
 import TutorialList from '../components/TutorialList';
 
 // images
-import dino from './404/tempscreen.png';
+import dino from './404/dino.gif';
 
 const NotFoundPage = () => {
   return (
