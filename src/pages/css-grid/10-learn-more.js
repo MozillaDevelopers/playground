@@ -57,7 +57,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Ready to be on the cutting edge? Firefox is constantly adding new features and tools that help
       developers build for the open web.

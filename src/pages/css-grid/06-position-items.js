@@ -105,7 +105,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Try changing the <code>grid-row</code> property of item1 to the following:
     </p>

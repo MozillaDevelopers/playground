@@ -1,17 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import logo from '../img/ff-logo.png';
 
-export default ({ children }) => (
+const DevHomework = props => (
   <div className="homework">
     <div className="container">
       <img className="homework__logo" alt="Firefox Logo" src={logo} />
-      <h2 className="homework__title">Firefox DevTools + CSS Grid Layout</h2>
+      <h2 className="homework__title">{props.title}</h2>
       <div className="row">
-        <div className="homework__content">
-          {children}
-        </div>
+        <div className="homework__content">{props.children}</div>
       </div>
     </div>
   </div>
 );
+
+DevHomework.PropTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+export default DevHomework;

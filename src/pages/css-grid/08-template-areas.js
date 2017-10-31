@@ -92,7 +92,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Did you know that FireFox DevTools can display the area names? Try it out! Inspect the grid
       above and open the layout panel. From here you can toggle the overlay grid and the 'Display

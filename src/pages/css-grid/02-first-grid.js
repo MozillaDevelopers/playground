@@ -100,7 +100,7 @@ grid-gap: 1rem;
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Amazing right? Inspect the grid above with your browser's developer tools. Try changing the
       column width, or the row height. Swap out the <code>grid-gap</code> property with the

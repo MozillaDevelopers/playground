@@ -164,7 +164,7 @@ const addTodo = e => {
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
       Another handy tip for monitoring the value of a variable (or any expression) is to use the
       Watch Expressions section in the sidebar. You can set a watch expression by clicking “Add

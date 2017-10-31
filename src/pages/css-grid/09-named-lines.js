@@ -109,7 +109,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Did you know you can customize the color of the grid overlay in Firefox DevTools? The above
       example is on a white background, and the default purple may not be the best color to use.

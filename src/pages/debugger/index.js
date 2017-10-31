@@ -48,7 +48,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
       Sometimes JavaScript code will be “minified” so that the file size is smaller, and faster to
       load. This is great for your users, but it can make the code impossible to read in the

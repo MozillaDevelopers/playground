@@ -92,7 +92,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       This is the perfect time to test out the 'display line numbers' setting on the Firefox CSS
       Grid Layout Panel. Inspect the result above and select the layout panel. Here you can activate

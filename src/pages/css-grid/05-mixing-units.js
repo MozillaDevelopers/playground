@@ -65,7 +65,7 @@ const Tutorial = () => (
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools + CSS Grid Layout">
     <p>
       Inspect the grid above, and change the <code>grid-template-columns</code> property to the
       following:

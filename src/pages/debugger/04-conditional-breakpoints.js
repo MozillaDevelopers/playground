@@ -85,7 +85,7 @@ console.log(items[index].title;
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
       Occasionally, you may find yourself wanting to define your breakpoints in your code, rather
       than in the debugger. If you call <code>debugger</code> from your code, then Firefox Debugger

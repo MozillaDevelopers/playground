@@ -107,7 +107,7 @@ const index = el.dataset.index;
 );
 
 const Homework = () => (
-  <DevHomework>
+  <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
       It was easy to find the function in this example, but what if we had fifty functions across
       multiple files? Thankfully, you can search for a function in the source pane. Just hit
