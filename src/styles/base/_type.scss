@@ -167,6 +167,15 @@ ul.list{
   }
 }
 
+ol.list {
+  margin-left: space(4);
+
+  li {
+    list-style-type: number;
+    margin-bottom: space(1);
+  }
+}
+
 p code {
   background-color: #f3f3f3;
   padding: 0 2px;
@@ -184,4 +193,21 @@ blockquote {
   padding: space(1) space(2);
   font-weight: 300;
   border-left: 5px solid lighten($black, 95%);
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 space(1) 0;
 }

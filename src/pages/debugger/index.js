@@ -61,7 +61,7 @@ const Homework = () => (
       Give it a try! The link below will bring you to a to-do app that is using a minified
       JavaScript file. Simply:
     </p>
-    <ol>
+    <ol className="list">
       <li>Open Debugger (option-command-S on Mac or option-control-S on Windows)</li>
       <li>Find and click on app.js in the source list pane</li>
       <li>Locate and click on the format icon</li>

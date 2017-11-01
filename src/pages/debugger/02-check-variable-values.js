@@ -104,7 +104,22 @@ const addTodo = e => {
     </p>
     <img src="http://placehold.it/1000x500" alt="placeholder" />
     <p>As a refresher, here is what those first four buttons of the toolbar do:</p>
-    <ul>
+
+    <dl>
+      <dt>Play/Pause</dt>
+      <dd>
+        Pauses or resumes execution of the script you're debugging. When it displays a
+        &quot;play&quot; icon, that means the script is paused, either because you've paused it with
+        this button or because you've hit a breakpoint.
+      </dd>
+      <dt>Step over</dt>
+      <dd>Steps across current line of JavaScript code.</dd>
+      <dt>Step in</dt>
+      <dd>Steps into the function call on the current line of JavaScript code.</dd>
+      <dt>Step out</dt>
+      <dd>Runs the script until the current function exits.</dd>
+    </dl>
+    {/* <ul>
       <li>
         <strong>Play/pause:</strong> pauses or resumes execution of the script you're debugging.
         When it displays a &quot;play&quot; icon, that means the script is paused, either because
@@ -120,7 +135,7 @@ const addTodo = e => {
       <li>
         <strong>Step out:</strong> runs the script until the current function exits.
       </li>
-    </ul>
+    </ul> */}
 
     <p>
       Right now, we are going to focus on the ‘Step Over’ button. This will step through the code
