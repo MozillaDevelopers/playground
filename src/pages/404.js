@@ -5,11 +5,11 @@ import Hero from '../components/layout/Hero';
 import TutorialList from '../components/TutorialList';
 
 // images
-import dino from './404/dino2.gif';
+import dino from './img/dino.gif';
 
 const NotFoundPage = () => (
   <div>
-    <Hero breadcrumb className="hero--gray">
+    <Hero className="hero--gray">
       <div className="not-found">
         <div className="container">
           <div className="not-found__dino">
