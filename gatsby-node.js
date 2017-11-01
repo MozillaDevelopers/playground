@@ -29,6 +29,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       toPath: t,
     });
     // Uncomment next line to see forEach in action during build
-    console.log(`\nRedirecting:\n${f}\nTo:\n${t}\n`);
+    // console.log(`\nRedirecting:\n${f}\nTo:\n${t}\n`);
   });
 };

@@ -44,7 +44,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
 
       <Hero breadcrumb>
         <h3>Firefox DevTools</h3>
-        <h1>Introduction to CSS Grid Layout</h1>
+        <h1>Introduction to Debugger</h1>
       </Hero>
       <div className="main">
         <div className="container">
