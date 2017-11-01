@@ -42,7 +42,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
         <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
       </Helmet>
 
-      <Hero>
+      <Hero breadcrumb>
         <h3>Firefox DevTools</h3>
         <h1>Introduction to CSS Grid Layout</h1>
       </Hero>

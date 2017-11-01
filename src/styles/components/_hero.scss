@@ -29,10 +29,41 @@
   }
 }
 
+.hero__breadcrumb {
+  float: left;
+  font-weight: bold;
+  margin-top: -1 * space(8);
+  cursor: pointer;
+  font-size: 14px;
+  opacity: .7;
+  transition: opacity $base-time $base-ease;
+
+  span {
+    color: $white;
+    font-weight: bold;
+    margin-left: space(1);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 .hero--gray {
   background-color: #ECF1FC;
   background-image: none;
   text-align: left;
+}
+
+.hero--gray .hero__breadcrumb {
+
+  span {
+    color: black;
+  }
+
+  img {
+    display: none;
+  }
 }
 .hero__div {
   position: absolute;

@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import DownloadWhite from '../../components/DownloadWhite';
+import DownloadLink from '../../components/DownloadLink';
 
 // images
 import logo from '../img/ffde-logo.png';
@@ -15,7 +16,9 @@ const CTA = () => (
         </div>
         <span className="cta__text">Get the browser with the best tools for Developers</span>
         <div className="cta__download">
-          <DownloadWhite />
+          <DownloadLink content="bottom-cta">
+            <DownloadWhite />
+          </DownloadLink>
         </div>
       </div>
     </div>
