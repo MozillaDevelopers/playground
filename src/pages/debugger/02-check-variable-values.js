@@ -119,23 +119,6 @@ const addTodo = e => {
       <dt>Step out</dt>
       <dd>Runs the script until the current function exits.</dd>
     </dl>
-    {/* <ul>
-      <li>
-        <strong>Play/pause:</strong> pauses or resumes execution of the script you're debugging.
-        When it displays a &quot;play&quot; icon, that means the script is paused, either because
-        you've paused it with this button or because you've hit a breakpoint.
-      </li>
-      <li>
-        <strong>Step over:</strong> steps across current line of JavaScript code.
-      </li>
-      <li>
-        <strong>Step in:</strong> steps into the function call on the current line of JavaScript
-        code.
-      </li>
-      <li>
-        <strong>Step out:</strong> runs the script until the current function exits.
-      </li>
-    </ul> */}
 
     <p>
       Right now, we are going to focus on the ‘Step Over’ button. This will step through the code
