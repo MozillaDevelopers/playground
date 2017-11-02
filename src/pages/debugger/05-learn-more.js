@@ -1,6 +1,6 @@
 import React from 'react';
 import Main from './components/_Main';
-import CodeBlock from '../../components/CodeBlock';
+import DownloadLink from '../../components/DownloadLink';
 
 const Tutorial = () => (
   <div>
@@ -21,20 +21,22 @@ const Tutorial = () => (
 
     <p>
       Mozilla recently rebuilt Firefox Debugger from the ground-up using React and Redux. This new
-      Debugger is designed to be approachable, yet powerful. It is available right now in Firefox
-      Quantum. And the best part? It is completely hackable.{' '}
-      <a href="https://github.com/devtools-html/debugger.html" target="_blank">
+      Debugger is designed to be approachable, yet powerful. And the best part? It is completely
+      hackable. It is available right now in Firefox Quantum.{' '}
+      <a href="https://github.com/devtools-html/debugger.html" target="_blank" rel="noopener noreferrer">
         Check out the repository on GitHub
       </a>.
     </p>
 
     <p>
       That's a wrap! If you haven't yet, check out Firefox Developer Edition. It has the latest
-      features, is blazingly fast, and comses packed with all the development tools you need to
+      features, is blazingly fast, and comes packed with all the development tools you need to
       build for the open web.
     </p>
 
-    <p><a href="#">Download Firefox Developer Edition</a></p>
+    <p>
+      <DownloadLink content="debugger-part5">Download Firefox Developer Edition</DownloadLink>
+    </p>
   </div>
 );
 

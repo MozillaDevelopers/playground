@@ -9,11 +9,15 @@ const Tutorial = () => (
 
     <p>
       Now let’s add some functionality to our todo app. In this example we’ve added the ability to
-      delete a task. Open the app in a new tab and follow along:
+      delete a task. Open the app in a new tab to follow along:
     </p>
 
     <p>
-      <a href="#" target="_blank">
+      <a
+        href="https://mozilladevelopers.github.io/sample-todo/02-call-stack/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Open to-do app in new tab.
       </a>
     </p>
@@ -21,14 +25,14 @@ const Tutorial = () => (
     <p>
       Try adding a few tasks. Now try deleting the first task. It seems to be working. Now try
       deleting the final task. <em>Uh-Oh</em>. Something is not quite right. The top task is deleted
-      from the app every time, regardless of which task we chose to delete.
+      from the app every time, regardless of which task we try to delete.
     </p>
 
     <p>
       Let’s dive into Debugger to see what’s going on in the code. Locate the{' '}
       <code>removeSingle</code>
-      function on Line 44 of app.js. This is the function that handles the removal of a task. Insert
-      a breakpoint on line 45, which will trigger right after an item is deleted. Try to delete the
+      function on Line 39 of app.js. This is the function that handles the removal of a task. Insert
+      a breakpoint on line 40, which will trigger right after an item is deleted. Try to delete the
       last item in our to-do list to trigger this breakpoint. Now we can step through the code to
       find the root of our problem.
     </p>
@@ -66,7 +70,7 @@ const Tutorial = () => (
       On the right side of the Firefox Debugger, there is a section called{' '}
       <strong>Call Stack</strong>. This section provides us with information about which functions
       we have stepped into, what lines those function are on, and how deep we are in the call stack.
-      If you are following along, you should see that there are four items in the call stack. We
+      If you are following along, you will see that there are four items in the call stack. We
       started at the <code>spliceItem</code> function, which invoked the <code>saveList</code>{' '}
       function, which invoked the <code>saveList</code> function, which invoked the{' '}
       <code>createList</code> function.
@@ -76,7 +80,7 @@ const Tutorial = () => (
 
     <p>
       The Call Stack section allows us to move back through the call stack so that we can figure out
-      where this problem started. If we click on <code>saveList</code> we can see that it is a
+      where this problem started. If we click on <code>saveList</code> in the call stack section, we can see that it is a
       simple (and probably unnecessary) function that takes the global <code>items</code> object and
       passes it to the <code>createList</code> function. The bug can’t be here so let’s click on the{' '}
       <code>spliceItem</code> function in the call stack. Do you spot the issue here? The{' '}

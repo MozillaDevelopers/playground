@@ -12,9 +12,14 @@ const Tutorial = () => (
       cases: finding the value of a variable.
     </p>
 
+    <p>Let’s take a look at a simple to-do app: </p>
+
     <p>
-      Let’s take a look at a simple to-do app:{' '}
-      <a href="#" target="_blank">
+      <a
+        href="https://mozilladevelopers.github.io/sample-todo/01-variables/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Open to-do app in new tab.
       </a>
     </p>
@@ -28,7 +33,8 @@ const Tutorial = () => (
 
     <p>
       Something is broken, and we need to debug the code. The temptation is to start adding
-      console.log throughout the function, to pinpoint where the problem is:
+      console.log throughout the function, to pinpoint where the problem is. This approach might
+      look something like this:
     </p>
 
     <CodeBlock>
@@ -55,18 +61,18 @@ const addTodo = e => {
     </p>
 
     <p>
-      A breakpoint is something that signals to Debugger that we wish to pause at a specific place
-      in the code. While paused, we can view the value of a variable at that particular point in the
-      code. Using the example linked above, let’s add a breakpoint to line 12. We can do this by
-      clicking on the number 12 to the left of the code. If done correctly, a little blue flag will
-      appear.{' '}
+      A breakpoint is something that signals to Debugger that we wish to pause execution at a
+      specific place in the code. While paused, we can view the value of a variable at that
+      particular point in the code. Using the example linked above, let’s add a breakpoint to line
+      13. We can do this by clicking on the number 13 to the left of the code. If done correctly, a
+      little blue flag will appear.{' '}
     </p>
 
     <img src="http://placehold.it/1000x500" alt="placeholder" />
 
     <p>
       Now try adding a task. Because of the breakpoint, execution of the code will pause inside the
-      <code>addTodo</code> function, just before line 12 is executed. We want to track the value of
+      <code>addTodo</code> function, just before line 13 is executed. We want to track the value of
       the <code>title</code> and <code>todo</code> variables to see why the value of the input form
       isn’t being used when rendering the to-do list. There are a few ways we can check the value of
       a variable.
@@ -90,30 +96,30 @@ const addTodo = e => {
     <h4>Method 3: Scope Section</h4>
     <p>
       At the bottom right of the Firefox Debugger is a section that displays all objects that are in
-      scope at this point in the program. The first block will list the variables in the current
+      scope at this point in the program. The first block will list variables in the current
       block/function and their values.
     </p>
     <img src="http://placehold.it/1000x500" alt="placeholder" />
 
     <p>
-      If you tried any of those methods while paused at line 12, you may have noticed a little
-      problem: all of the variables are undefined. This is because execution has paused just before
-      line 12, and the lines that would assign a value to those variables haven’t been executed yet.
-      We need to continue to move through the script until those variables are assigned a value.
-      This is where the toolbar comes in.
+      If you tried any of those methods while paused at line 13, you may have noticed a little
+      problem: the title and todo variables are undefined. This is because execution has paused just
+      before line 13, and the lines that would assign a value to those variables haven’t been
+      executed yet. We need to continue to move through the script until those variables are
+      assigned a value. This is where the toolbar comes in.
     </p>
     <img src="http://placehold.it/1000x500" alt="placeholder" />
-    <p>As a refresher, here is what those first four buttons of the toolbar do:</p>
+    <p>Here is what the toolbar buttons do:</p>
 
     <dl>
       <dt>Play/Pause</dt>
       <dd>
-        Pauses or resumes execution of the script you're debugging. When it displays a
-        &quot;play&quot; icon, that means the script is paused, either because you've paused it with
-        this button or because you've hit a breakpoint.
+        Pauses or resumes execution of the script we are debugging. When it displays a "play" icon,
+        that means the script is paused, either because we’ve paused it with this button or because
+        we’ve hit a breakpoint.
       </dd>
       <dt>Step over</dt>
-      <dd>Steps across current line of JavaScript code.</dd>
+      <dd>Steps across the current line of JavaScript code.</dd>
       <dt>Step in</dt>
       <dd>Steps into the function call on the current line of JavaScript code.</dd>
       <dt>Step out</dt>
@@ -129,9 +135,9 @@ const addTodo = e => {
     </p>
 
     <p>
-      Press the ‘Step Over’ button once. The code is still paused, but line 13 is now highlighted.
-      This means line 12 has executed. The <title>title</title> variable is still undefined, but
-      that is because we have paused just before line 13. Press ‘Step Over’ one more time and...now
+      Press the ‘Step Over’ button once. The code is still paused, but line 14 is now highlighted.
+      This means line 13 has executed. The <title>title</title> variable is still undefined, but
+      that is because we have paused just before line 14. Press ‘Step Over’ one more time and...now
       we are getting somewhere! We can now hover over <code>title</code> to get the value. We can
       also check the scope section.{' '}
     </p>
@@ -143,20 +149,20 @@ const addTodo = e => {
       issue. The value isn’t a string like we’d expect, but rather it is an entire object! If we
       hover over <code>title</code> and scroll through its different properties, we’ll find that we
       should have referenced the ‘value’ property of the object instead of the entire object itself.
-      Fix line 13 and the app will work properly.
+      Fix line 14 and the app will work properly.
     </p>
     <p>
-      When we are done stepping through the code, we can press the 'play/pause' button which will
+      When we are done stepping through the code, we can press the 'Play/Pause' button which will
       resume execution of the script (until it hits another breakpoint).
     </p>
     <p>
-      Phew. That was a lot of information. Try adding some other breakpoints in the app, and
-      stepping through the code a bit more. As you get comfortable with the basics of breakpoints
+      Phew. That was a lot of information. Try adding some other breakpoints in the app, and using
+      the toolbar to step through the code. As you get comfortable with the basics of breakpoints
       and stepping through code, you will start to understand how powerful Debugger is.
     </p>
     <p>
-      When you are ready, move on to the next section of the tutorial to learn more about the
-      debugging your code with Debugger
+      When you are ready, move on to the next section of the tutorial to learn more about how we can
+      use Firefox Debugger to debug our code.
     </p>
   </div>
 );
@@ -164,13 +170,13 @@ const addTodo = e => {
 const Homework = () => (
   <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
-      Another handy tip for monitoring the value of a variable (or any expression) is to use the
+      Another handy method for monitoring the value of a variable (or any expression) is to use the
       Watch Expressions section in the sidebar. You can set a watch expression by clicking “Add
       Watch Expression”, and typing the expression (in this case a variable), that you’d like to
       watch. Using the example above, try adding an expression for ‘title’ and another for ‘todo’.
-      Set a breakpoint on line 12, add a todo to trigger the breakpoint, and start stepping through
-      the function. When a value is assigned to the variable, the value will appear in the ‘Watch
-      Expressions’ section. Handy right?
+      Set a breakpoint on line 13, add a new todo item to trigger the breakpoint, and start stepping
+      through the function. When a value is assigned to the variable, the value will appear in the
+      ‘Watch Expressions’ section.
     </p>
 
     <img src="http://placehold.it/1000x500" alt="placeholder" />

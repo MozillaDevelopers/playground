@@ -7,7 +7,7 @@ const Tutorial = () => (
   <div>
     <h2>Conditional Breakpoints</h2>
     <p>
-      Breakpoints are a powerful tool for debugging our JavaScript code, but what if we have a
+      Breakpoints are a powerful tool for debugging JavaScript code, but what if we have a
       breakpoint inside a loop, or a function that is constantly being called? It can become tedious
       to have to constantly be resuming the execution of our code. It would be much better if we
       could control when a breakpoint is triggered. Lucky for us, Firefox DevTools has a useful
@@ -16,16 +16,21 @@ const Tutorial = () => (
 
     <p>
       A conditional breakpoint allows us to associate a condition with a breakpoint. When the
-      program reaches the line, the debugger pauses only if that condition evaluates to true.
+      program reaches the a conditional breakpoint, the debugger pauses only if the condition
+      provided evaluates to true.
     </p>
 
     <p>
-      The best way to understand this, is with an example. Open up the to-do app below and follow
-      along. Open up to-do app in new tab.
+      The best way to understand this, is with an example. Open up the to-do app below in a new tab
+      and follow along.
     </p>
 
     <p>
-      <a href="#" target="_blank">
+      <a
+        href="https://mozilladevelopers.github.io/sample-todo/03-conditional-breakpoints/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Open to-do app in new tab.
       </a>
     </p>
@@ -38,7 +43,7 @@ const Tutorial = () => (
     <p>
       Let’s say we only want to trigger this breakpoint when the to-do item contains the word
       "turtle". We can do this by right clicking on the line number we want to add a breakpoint to
-      (in this case, line 20), and choosing “Add Conditional Breakpoint” from the menu.
+      (in this case, line 24), and choosing “Add Conditional Breakpoint” from the menu.
     </p>
 
     <img src="http://placehold.it/1000x300" alt="placeholder" />
@@ -52,9 +57,9 @@ title.indexOf("turtle") != -1;
     </CodeBlock>
 
     <p>
-      The indexOf() method will returns -1 if a specified value (in this case, “turtle”) is not
-      found. This means the above expression will only evaluate to true if the string contains the
-      word “turtle”.
+      The indexOf() method will returns -1 if the specified value (in this case, “turtle”) is not
+      found. This means the expression provided to our conditional breakpoint will only evaluate to
+      true if the string contains the word “turtle”.
     </p>
 
     <img src="http://placehold.it/1000x400" alt="placeholder" />
@@ -66,7 +71,7 @@ title.indexOf("turtle") != -1;
     </p>
 
     <p>
-      Add a conditional breakpoint on line 67, right after we define the <code>index</code>{' '}
+      Add a conditional breakpoint on line 68, right after we define the <code>index</code>{' '}
       variable. Enter the following as the condition:
     </p>
 
@@ -87,9 +92,9 @@ console.log(items[index].title;
 const Homework = () => (
   <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
-      Occasionally, you may find yourself wanting to define your breakpoints in your code, rather
-      than in the debugger. If you call <code>debugger</code> from your code, then Firefox Debugger
-      will pause execution at that line. Here is an example:
+      Occasionally, we may find ourselves wanting to define our breakpoints in our code, rather than
+      in the debugger. If we call <code>debugger</code> from our code, then Firefox Debugger will
+      pause execution at that line. Here is an example:
     </p>
 
     <CodeBlock>
@@ -112,13 +117,20 @@ const addTodo = (e) => {
     </CodeBlock>
 
     <p>
-      Notice how a line has been added with <code>debugger</code>. This means you do not have to add
-      the breakpoint from Firefox DevTools.{' '}
+      Notice how a line has been added that says: <code>debugger</code>. This means we do not have
+      to add the breakpoint from Firefox DevTools.
     </p>
 
     <p>
-      Try it out. <a href="#" target="_blank">Open this link</a>, launch Firefox Debugger, and add a task. Execution will be paused
-      on that line.
+      Try it out.{' '}
+      <a
+        href="https://mozilladevelopers.github.io/sample-todo/code-breakpoint/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open this link
+      </a>, launch Firefox Debugger, and add a task. Execution will be paused on that line because
+      we defined that breakpoint in our code.
     </p>
   </DevHomework>
 );
