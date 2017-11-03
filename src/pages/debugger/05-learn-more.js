@@ -14,7 +14,7 @@ const Tutorial = () => (
 
     <p>
       If you want to learn more about Firefox Debugger, check out the{' '}
-      <a href="https://developer.mozilla.org/docs/Tools/Debugger" target="_blank">
+      <a href="https://developer.mozilla.org/docs/Tools/Debugger" target="_blank" rel="noreferrer noopener">
         Firefox Debugger Documentation on MDN
       </a>.
     </p>

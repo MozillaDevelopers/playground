@@ -1,0 +1,25 @@
+// ----------------------------------------------------------------------------
+// Image (with caption)
+// ----------------------------------------------------------------------------
+
+
+.img-caption__img {
+  margin-bottom: 0 !important;
+}
+
+.img-caption__text {
+  width: 100%;
+  display: block;
+  background-color: #ebebeb;
+  margin-bottom: space(3);
+  text-align: center;
+  padding: space(1);
+  font-size: 14px;
+}
+
+.img-caption--dark {
+  .img-caption__text {
+    background-color: #282828;
+    color: $white;
+  }
+}

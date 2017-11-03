@@ -2,6 +2,15 @@ import React from 'react';
 import Main from './components/_Main';
 import DevHomework from '../../components/layout/DevHomework';
 import CodeBlock from '../../components/CodeBlock';
+import ImgCaption from '../../components/ImgCaption';
+
+// images
+import add from './img/p2/add.gif';
+import hover from './img/p2/hover.png';
+import scopes from './img/p2/scopes.png';
+import toolbar from './img/p2/toolbar.png';
+import title from './img/p2/title.png';
+import watch from './img/p2/watch.gif';
 
 const Tutorial = () => (
   <div>
@@ -68,7 +77,7 @@ const addTodo = e => {
       little blue flag will appear.{' '}
     </p>
 
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={add} alt="add breakpoint" caption="Adding a breakpoint" />
 
     <p>
       Now try adding a task. Because of the breakpoint, execution of the code will pause inside the
@@ -91,7 +100,7 @@ const addTodo = e => {
       hovering over other items such as an object or a function. Hovering provides us with quick
       access to all sorts of information that can be helpful for debugging.
     </p>
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={hover} alt="hover" caption="Hovering for information" />
 
     <h4>Method 3: Scope Section</h4>
     <p>
@@ -99,7 +108,7 @@ const addTodo = e => {
       scope at this point in the program. The first block will list variables in the current
       block/function and their values.
     </p>
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={scopes} alt="overview" caption="The scopes section in the Firefox Debugger" />
 
     <p>
       If you tried any of those methods while paused at line 13, you may have noticed a little
@@ -108,7 +117,8 @@ const addTodo = e => {
       executed yet. We need to continue to move through the script until those variables are
       assigned a value. This is where the toolbar comes in.
     </p>
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={toolbar} alt="overview" caption="The Firefox Debugger toolbar" />
+
     <p>Here is what the toolbar buttons do:</p>
 
     <dl>
@@ -142,7 +152,11 @@ const addTodo = e => {
       also check the scope section.{' '}
     </p>
 
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption
+      src={title}
+      alt="hovering over title"
+      caption="Hovering over 'title' to see its value"
+    />
 
     <p>
       If we use one of the three methods to look at the value of <code>title</code>, we can spot our
@@ -179,7 +193,12 @@ const Homework = () => (
       ‘Watch Expressions’ section.
     </p>
 
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption
+      src={watch}
+      alt="Using Watch Expressions"
+      caption="Using watch expressions"
+      dark
+    />
   </DevHomework>
 );
 

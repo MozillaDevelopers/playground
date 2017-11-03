@@ -2,6 +2,10 @@ import React from 'react';
 import Main from './components/_Main';
 import DevHomework from '../../components/layout/DevHomework';
 import DownloadLink from '../../components/DownloadLink';
+import ImgCaption from '../../components/ImgCaption';
+
+// images
+import overview from './img/p1/overview.png';
 
 const Tutorial = () => (
   <div>
@@ -33,7 +37,7 @@ const Tutorial = () => (
       The Debugger is divided into three panes: The source list pane, the source pane, and a tool
       pane.
     </p>
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={overview} alt="overview" caption="An overview of the Firefox Debugger Panel" />
     <p>
       The source list pane shows all the JavaScript files related to the current page or project.
       The source pane shows the content of those files, and the tool pane contains sections for the

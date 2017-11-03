@@ -92,21 +92,23 @@ const Tutorial = () => (
     <p>
       Let’s continue through the call stack to the <code>removeSingle</code> function. Look at the
       following:
-      <CodeBlock>
-        {`
+    </p>
+    <CodeBlock>
+      {`
 const index = el.dataset.number;
-        `}
-      </CodeBlock>
+      `}
+    </CodeBlock>
+    <p>
       If we hover over <code>index</code> (or <code>number</code>), we see that it is undefined. If
       we hover over <code>dataset</code> we’ll see that there is no number property. There is only{' '}
       <code>index</code>. A typo! The line should say:
-      <CodeBlock>
-        {`
-const index = el.dataset.index;
-        `}
-      </CodeBlock>
-      <p>Once this is fixed, everything starts working.</p>
     </p>
+    <CodeBlock>
+      {`
+const index = el.dataset.index;
+      `}
+    </CodeBlock>
+    <p>Once this is fixed, everything starts working.</p>
   </div>
 );
 
