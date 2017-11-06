@@ -2,6 +2,10 @@ import React from 'react';
 import Main from './components/_Main';
 import DevHomework from '../../components/layout/DevHomework';
 import CodeBlock from '../../components/CodeBlock';
+import ImgCaption from '../../components/ImgCaption';
+
+// images
+import createbp from './img/p4/createbp.gif';
 
 const Tutorial = () => (
   <div>
@@ -46,7 +50,7 @@ const Tutorial = () => (
       (in this case, line 24), and choosing “Add Conditional Breakpoint” from the menu.
     </p>
 
-    <img src="http://placehold.it/1000x300" alt="placeholder" />
+    <ImgCaption src={createbp} alt="conditional breakpoint" caption="Creating a conditional breakpoint" />
 
     <p>We can now enter an expression. Try the following:</p>
 
@@ -61,8 +65,6 @@ title.indexOf("turtle") != -1;
       found. This means the expression provided to our conditional breakpoint will only evaluate to
       true if the string contains the word “turtle”.
     </p>
-
-    <img src="http://placehold.it/1000x400" alt="placeholder" />
 
     <p>
       We can use any type of expression for a conditional breakpoint. We can even use console.log. A

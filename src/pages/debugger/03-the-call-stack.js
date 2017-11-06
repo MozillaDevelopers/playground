@@ -2,6 +2,13 @@ import React from 'react';
 import Main from './components/_Main';
 import DevHomework from '../../components/layout/DevHomework';
 import CodeBlock from '../../components/CodeBlock';
+import ImgCaption from '../../components/ImgCaption';
+
+// images
+import stepin from './img/p3/stepin.png';
+import callstack from './img/p3/callstack.png';
+import index from './img/p3/index.png';
+import search from './img/p3/search.gif';
 
 const Tutorial = () => (
   <div>
@@ -46,7 +53,7 @@ const Tutorial = () => (
       use the ‘Step In’ button.
     </p>
 
-    <img src="http://placehold.it/1000x200" alt="placeholder" />
+    <ImgCaption src={stepin} alt="step in" caption="The 'step in' button in the toolbar" />
 
     <p>
       The ‘Step In’ button is similar to the ‘Step Over’ Button, but it will allow us to step into a
@@ -54,8 +61,6 @@ const Tutorial = () => (
       until we find ourselves on line 24, inside the <code>createList</code> function. Don’t worry
       if you are a bit confused about what is happening. It will all start to make sense.
     </p>
-
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
 
     <p>
       The <code>createList</code> function receives an object called <code>list</code>, and uses
@@ -76,18 +81,18 @@ const Tutorial = () => (
       <code>createList</code> function.
     </p>
 
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={callstack} alt="step in" caption="The call stack" />
 
     <p>
       The Call Stack section allows us to move back through the call stack so that we can figure out
-      where this problem started. If we click on <code>saveList</code> in the call stack section, we can see that it is a
-      simple (and probably unnecessary) function that takes the global <code>items</code> object and
-      passes it to the <code>createList</code> function. The bug can’t be here so let’s click on the{' '}
-      <code>spliceItem</code> function in the call stack. Do you spot the issue here? The{' '}
-      <code>index</code> argument is undefined! Now we are getting somewhere.
+      where this problem started. If we click on <code>saveList</code> in the call stack section, we
+      can see that it is a simple (and probably unnecessary) function that takes the global{' '}
+      <code>items</code> object and passes it to the <code>createList</code> function. The bug can’t
+      be here so let’s click on the <code>spliceItem</code> function in the call stack. Do you spot
+      the issue here? The <code>index</code> argument is undefined! Now we are getting somewhere.
     </p>
 
-    <img src="http://placehold.it/1000x300" alt="placeholder" />
+    <ImgCaption src={index} alt="index is undefinfed" caption="Spotting a bug by moving through the call stack" />
 
     <p>
       Let’s continue through the call stack to the <code>removeSingle</code> function. Look at the
@@ -121,7 +126,7 @@ const Homework = () => (
       pane. You can search for a function or arrow through the provided list.
     </p>
 
-    <img src="http://placehold.it/1000x500" alt="placeholder" />
+    <ImgCaption src={search} alt="searching" caption="Searching for a function" dark />
   </DevHomework>
 );
 
