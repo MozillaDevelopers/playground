@@ -19,27 +19,31 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
   return (
     <div>
       <Helmet>
-        <title>{`CSS Grid PlayGround | ${currentPageData.title} | Mozilla`}</title>
+        <title>{`Debugger PlayGround | ${currentPageData.title} | Mozilla`}</title>
         <meta
           name="description"
-          content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
+          content="Learn how to use the Firefox Debugger to find and fix bugs."
         />
-        <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
-        <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
+
+        {/* Facebook Meta */}
+        <meta property="og:url" content="https://mozilladevelopers.github.io/playground/debugger" />
+        <meta property="og:title" content="🛑 Stop using console.log! 🛑" />
         <meta
           property="og:description"
-          content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+          content="Still using console.log for debugging JavaScript? There is a better way! Learn how to use Firefox Debugger to debug and fix your code."
         />
         <meta property="og:image" content={facebook} />
+
+        {/* Twitter Meta */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mozilla" />
-        <meta name="twitter:creator" content="@mozilla" />
-        <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
+        <meta name="twitter:site" content="@firefox" />
+        <meta name="twitter:creator" content="@firefox" />
+        <meta name="twitter:title" content="🛑 Stop using console.log! 🛑" />
         <meta
           name="twitter:description"
-          content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+          content="Still using console.log for debugging JavaScript? There is a better way! Learn how to use Firefox Debugger to debug and fix your code."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
+        <meta name="twitter:image" content="https://i.imgur.com/7JPHHiM.png" />
       </Helmet>
 
       <Hero breadcrumb>

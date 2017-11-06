@@ -24,7 +24,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
           name="description"
           content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
         />
-        <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
+        <meta property="og:url" content="https://mozilladevelopers.github.io/playground/css-grid" />
         <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
         <meta
           property="og:description"
@@ -32,8 +32,8 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
         />
         <meta property="og:image" content={facebook} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@mozilla" />
-        <meta name="twitter:creator" content="@mozilla" />
+        <meta name="twitter:site" content="@firefox" />
+        <meta name="twitter:creator" content="@firefox" />
         <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
         <meta
           name="twitter:description"
