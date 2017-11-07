@@ -47,10 +47,9 @@ const Tutorial = () => (
     <p>
       In the previous section, we learned how to use the ‘Step Over’ button to step across lines of
       JavaScript code. We can use the 'Step Over’ button here, but when we reach the{' '}
-      <code>spliceItem</code>
-      function, it will execute the function and then move on to the next line. This is great, but
-      what if the problem exists inside that <code>spliceItem</code> function? This is where we can
-      use the ‘Step In’ button.
+      <code>spliceItem</code> function, it will execute the function and then move on to the next
+      line. This is great, but what if the problem exists inside that <code>spliceItem</code>{' '}
+      function? This is where we can use the ‘Step In’ button.
     </p>
 
     <ImgCaption src={stepin} alt="step in" caption="The 'step in' button in the toolbar" />

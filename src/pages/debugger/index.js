@@ -6,6 +6,7 @@ import ImgCaption from '../../components/ImgCaption';
 
 // images
 import overview from './img/p1/overview.png';
+import tools from './img/p1/tools.png';
 
 const Tutorial = () => (
   <div>
@@ -51,12 +52,12 @@ const Tutorial = () => (
 
     <p>The tool pane can be broken down into five sections:</p>
 
-    <ImgCaption src={overview} alt="overview" caption="An overview of the Firefox Debugger Panel" />
+    <ImgCaption src={tools} alt="tools" caption="All of the tools available in the tools pane" />
 
     <p>
       <ul className="list">
         <li>
-          The <strong>toolbar</strong> section has buttons that control the debugger's movement through the
+          The <strong>toolbar</strong> has buttons that control the debugger's movement through the
           script.
         </li>
         <li>

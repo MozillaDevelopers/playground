@@ -27,7 +27,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
 
         {/* Facebook Meta */}
         <meta property="og:url" content="https://mozilladevelopers.github.io/playground/debugger" />
-        <meta property="og:title" content="🛑 Stop using console.log! 🛑" />
+        <meta property="og:title" content="Go beyond console.log!" />
         <meta
           property="og:description"
           content="Still using console.log for debugging JavaScript? There is a better way! Learn how to use Firefox Debugger to debug and fix your code."
@@ -38,7 +38,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@firefox" />
         <meta name="twitter:creator" content="@firefox" />
-        <meta name="twitter:title" content="🛑 Stop using console.log! 🛑" />
+        <meta name="twitter:title" content="Go beyond console.log" />
         <meta
           name="twitter:description"
           content="Still using console.log for debugging JavaScript? There is a better way! Learn how to use Firefox Debugger to debug and fix your code."
