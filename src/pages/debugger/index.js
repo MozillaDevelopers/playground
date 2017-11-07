@@ -32,16 +32,51 @@ const Tutorial = () => (
       <span className="shortcut">ctrl</span> + <span className="shortcut">S</span> on Windows to
       open the Debugger.{' '}
     </p>
-    <p>
-      The Debugger is divided into three panes: The source list pane, the source pane, and a tool
-      pane.
-    </p>
+    <p>The Debugger is divided into three panes:</p>
     <ImgCaption src={overview} alt="overview" caption="An overview of the Firefox Debugger Panel" />
     <p>
-      The source list pane shows all the JavaScript files related to the current page or project.
-      The source pane shows the content of those files, and the tool pane contains sections for the
-      toolbar, watch expressions, breakpoints, the the call stack.
+      <ul className="list">
+        <li>
+          The <strong>source list pane</strong> shows all the JavaScript files related to the
+          current page or project.
+        </li>
+        <li>
+          The <strong>source pane</strong> shows the content of those files.
+        </li>
+        <li>
+          The <strong>tool pane</strong> contains info and tools.
+        </li>
+      </ul>
     </p>
+
+    <p>The tool pane can be broken down into five sections:</p>
+
+    <ImgCaption src={overview} alt="overview" caption="An overview of the Firefox Debugger Panel" />
+
+    <p>
+      <ul className="list">
+        <li>
+          The <strong>toolbar</strong> section has buttons that control the debugger's movement through the
+          script.
+        </li>
+        <li>
+          The <strong>watch expressions</strong> section allows us to watch expressions as
+          executions are paused.
+        </li>
+        <li>
+          The <strong>breakpoints</strong> section displays all of the breakpoints that have been
+          set. Next to each breakpoint is a checkbox to enable or disable that breakpoint.
+        </li>
+        <li>
+          The <strong>call stack </strong>section displays each level of the call stack, as well as
+          the function name, filename, and line number.
+        </li>
+        <li>
+          The <strong>scopes</strong> section displays all objects that are in scope.
+        </li>
+      </ul>
+    </p>
+
     <p>
       Don’t worry if you don’t understand what all of these terms and symbols mean. We’ll cover them
       in the following sections. Just take note of where things are so that you can follow along.

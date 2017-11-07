@@ -92,7 +92,11 @@ const Tutorial = () => (
       the issue here? The <code>index</code> argument is undefined! Now we are getting somewhere.
     </p>
 
-    <ImgCaption src={index} alt="index is undefinfed" caption="Spotting a bug by moving through the call stack" />
+    <ImgCaption
+      src={index}
+      alt="index is undefinfed"
+      caption="Spotting a bug by moving through the call stack"
+    />
 
     <p>
       Let’s continue through the call stack to the <code>removeSingle</code> function. Look at the
@@ -121,9 +125,12 @@ const Homework = () => (
   <DevHomework title="Firefox DevTools: Hot Tip">
     <p>
       It was easy to find the function in this example, but what if we had fifty functions across
-      multiple files? Thankfully, you can search for a function in the source pane. Just hit
-      shift-command-O on Mac or shift-control-O on Windows to bring up a search field in the source
-      pane. You can search for a function or arrow through the provided list.
+      multiple files? Thankfully, you can search for a function in the source pane. Just hit{' '}
+      <span className="shortcut">shift</span> + <span className="shortcut">command</span> +{' '}
+      <span className="shortcut">O</span> on Mac or <span className="shortcut">shift</span> +{' '}
+      <span className="shortcut">control</span> + <span className="shortcut">O</span> on Windows to
+      bring up a search field in the source pane. You can search for a function or arrow through the
+      provided list.
     </p>
 
     <ImgCaption src={search} alt="searching" caption="Searching for a function" dark />
