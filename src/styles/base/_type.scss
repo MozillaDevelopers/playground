@@ -211,3 +211,17 @@ dd {
   margin: 0 0 0 110px;
   padding: 0 0 space(1) 0;
 }
+
+.shortcut {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #D6DADC;
+  border-bottom-color: #CDD2D4;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  color: #4d4d4d;
+  cursor: default;
+  display: inline-block;
+  font-size: 14px;
+  padding: 1px 10px;
+  font-weight: bold;
+}

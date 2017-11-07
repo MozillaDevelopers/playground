@@ -10,17 +10,14 @@ import overview from './img/p1/overview.png';
 const Tutorial = () => (
   <div>
     <h2>Introduction to Firefox Debugger</h2>
-
     <p>
-      <strong>Stop using console.log!</strong>
-    </p>
-    <p>
-      Are you still using console.log to debug your JavaScript code? It is OK to admit. Using
-      console.log is easy and convenient, but it has limitations. It isn’t great for catching things
-      as they happen, or diving deep into code to see exactly where it is broken. To do that, you’ll
-      need a full-featured debugger. The Firefox Debugger has comprehensive tools to evaluate and
-      repair broken code. Once you learn the basics, you’ll find that using a debugger is not only
-      fast and easy, but it can save you from hours of frustration, and potential
+      Are you only using <code>console.log</code> to debug your JavaScript code? It is OK to admit.
+      Using
+      <code>console.log</code> is easy and convenient, but it has limitations. It isn’t great for
+      catching things as they happen, or diving deep into code to see exactly where it is broken. To
+      do that, you’ll need a full-featured debugger. The Firefox Debugger has comprehensive tools to
+      evaluate and repair broken code. Once you learn the basics, you’ll find that using a debugger
+      is not only fast and easy, but it can save you from hours of frustration, and potential
       ‘bang-head-on-desk’ sessions.
     </p>
     <p>
@@ -30,8 +27,10 @@ const Tutorial = () => (
     </p>
     <p>
       Before diving in, let’s take a look at the Debugger interface. Hit{' '}
-      <code>option-command-S</code> on Mac or
-      <code>option-ctrl-S</code> on Windows to open the Debugger.{' '}
+      <span className="shortcut">option</span> + <span className="shortcut">command</span> +{' '}
+      <span className="shortcut">S</span> on Mac or <span className="shortcut">option</span> +{' '}
+      <span className="shortcut">ctrl</span> + <span className="shortcut">S</span> on Windows to
+      open the Debugger.{' '}
     </p>
     <p>
       The Debugger is divided into three panes: The source list pane, the source pane, and a tool
@@ -76,8 +75,10 @@ const Homework = () => (
         </a>
       </li>
       <li>
-        Open Debugger (<code>option-command-S</code> on Mac or <code>option-control-S</code> on
-        Windows)
+        Open Debugger (<span className="shortcut">option</span> +{' '}
+        <span className="shortcut">command</span> + <span className="shortcut">S</span> on Mac or{' '}
+        <span className="shortcut">option</span> + <span className="shortcut">control</span> +{' '}
+        <span className="shortcut">S</span> on Windows)
       </li>
       <li>Find and click on app.js in the source list pane</li>
       <li>Locate and click on the format icon</li>
