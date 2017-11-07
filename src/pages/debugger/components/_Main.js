@@ -43,7 +43,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
           name="twitter:description"
           content="Still using console.log for debugging JavaScript? There is a better way! Learn how to use Firefox Debugger to debug and fix your code."
         />
-        <meta name="twitter:image" content="https://i.imgur.com/7JPHHiM.png" />
+        <meta name="twitter:image" content="https://i.imgur.com/xyfugPF.png" />
       </Helmet>
 
       <Hero breadcrumb>
