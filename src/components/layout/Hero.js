@@ -1,9 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
 
-const Hero = () => (
-  <div className="hero">
-    <h3>Firefox DevTools</h3>
-    <h1>Introduction to CSS Grid Layout</h1>
+// images
+import arrowLeft from '../img/arrow-left2.svg';
+
+const Hero = props => (
+  <div className={`hero ${props.className ? props.className : ''}`}>
+    {props.breadcrumb && (
+      <div className="container">
+        <Link to="/">
+          <div className="hero__breadcrumb">
+            <img src={arrowLeft} alt="arrow left" />
+            <span>Playground Home</span>
+          </div>
+        </Link>
+      </div>
+    )}
+    {props.children}
 
     <svg
       width="100%"
@@ -25,5 +39,16 @@ const Hero = () => (
     </svg>
   </div>
 );
+
+Hero.propTypes = {
+  className: PropTypes.string,
+  breadcrumb: PropTypes.bool,
+};
+
+Hero.defaultProps = {
+  background: '#FFF',
+  className: undefined,
+  breadcrumb: undefined,
+};
 
 export default Hero;

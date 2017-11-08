@@ -1,0 +1,56 @@
+// ----------------------------------------------------------------------------
+// Tutorial List
+// ----------------------------------------------------------------------------
+
+.tutorial-list {
+  padding: space(8) 0 space(16);
+}
+
+.tutorial-list__title {
+  border-bottom: 0px solid transparent;
+  padding-bottom: 0;
+  margin-bottom: space(12);
+  text-align: center;
+}
+
+.tutorial-item {
+  margin-bottom: space(8);
+
+  @include bp(medium) {
+    margin-bottom: 0;
+  }
+}
+
+.tutorial-item__img {
+  margin-bottom: space(3);
+  transition: opacity $base-time $base-ease;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.tutorial-item__title {
+  border-bottom: 0px solid transparent;
+  margin-bottom: space(3);
+  padding-bottom: 0;
+}
+
+.tutorial-item__btn {
+  background-color: transparent;
+  border: 2px solid $primary;
+  border-radius: 20px;
+  padding: space(1) space(3);
+  font-weight: bold;
+  color: $blue;
+  margin-top: space(2);
+  
+  img {
+    margin-left: space(1);
+  }
+  
+  &:hover {
+    color: $blue;
+    background-color: lighten($blue, 35%);
+  }
+}

@@ -6,17 +6,20 @@ import logo from '../img/logo.svg';
 
 // components
 import DownloadButton from '../../components/DownloadButton';
+import DownloadLink from '../../components/DownloadLink';
 
 const Header = () => (
   <header className="header">
-    <div className="contain">
+    <div className="container">
       <Link to="/">
         <img alt="logo" className="header__logo" src={logo} />
       </Link>
 
-      <DownloadButton float="right" url="https://www.mozilla.org/en-US/firefox/developer/">
-        Download Firefox
-      </DownloadButton>
+      <DownloadLink content="header">
+        <DownloadButton float="right">
+          Download Firefox
+        </DownloadButton>
+      </DownloadLink>
     </div>
   </header>
 );

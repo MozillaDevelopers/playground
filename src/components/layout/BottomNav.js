@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-// data
-import pageData from '../../data/pageData';
 
 // Generate Previous Page Link (if this isn't the first page);
-const PreviousLink = ({ currentPageNum }) => {
+const PreviousLink = ({ currentPageNum, pageData }) => {
   if (currentPageNum !== 1) {
     const previousPage = pageData.find(page => page.order === currentPageNum - 1);
     const prevPageName = previousPage.title;
@@ -26,7 +24,7 @@ const PreviousLink = ({ currentPageNum }) => {
 };
 
 // Generate Next Page Link (if this isn't the first page);
-const NextLink = ({ currentPageNum }) => {
+const NextLink = ({ currentPageNum, pageData }) => {
   if (currentPageNum !== pageData.length) {
     const NextPage = pageData.find(page => page.order === currentPageNum + 1);
     const nextPageName = NextPage.title;
@@ -45,11 +43,11 @@ const NextLink = ({ currentPageNum }) => {
   return <div className="bottom-nav__item bottom-nav__item--right" />;
 };
 
-const BottomNav = ({ currentPageNum }) => (
+const BottomNav = ({ currentPageNum, pageData }) => (
   <div className="bottom-nav">
-    <div className="contain">
-      <PreviousLink currentPageNum={currentPageNum} />
-      <NextLink currentPageNum={currentPageNum} />
+    <div className="container">
+      <PreviousLink currentPageNum={currentPageNum} pageData={pageData} />
+      <NextLink currentPageNum={currentPageNum} pageData={pageData} />
     </div>
   </div>
 );

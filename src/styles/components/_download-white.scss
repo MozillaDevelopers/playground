@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------------
+// Download Button (White)
+// ----------------------------------------------------------------------------
+.download-white {
+  @include typesize(0);
+  border: 0px solid $white;
+  color: $primary;
+  background-color: $white;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: space(2) space(3);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow .2s ease;
+  font-weight: bold;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  }
+  &.float-left {
+    float: left;
+  }
+  &.float-right {
+    float: right;
+  }
+
+  img {
+    margin-right: 10px;
+    max-width: none;
+    height: 14px;
+  }
+}
+
+.download-button__icon {
+  margin-right: space(1);
+}

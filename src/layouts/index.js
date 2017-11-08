@@ -5,7 +5,7 @@ import 'typeface-antonio';
 // images
 import faviconico from './img/favicon.ico';
 import faviconpng from './img/favicon.png';
-import facebook from './img/fb.png';
+import logo from '../pages/img/ffdelogo.png';
 
 // styles
 import '../styles/style.scss';
@@ -13,42 +13,41 @@ import '../styles/style.scss';
 // Components
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
-import Hero from '../components/layout/Hero';
+import CTA from '../components/layout/CTA';
 
 const Layout = ({ children }) => (
   <div className="wrapper">
     <Helmet>
       <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
       <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
-
+      <title>{'Firefox DevTools PlayGround | Mozilla'}</title>
       <meta
         name="description"
-        content="Learn about CSS Grid Layout and Firefox's CSS Grid Layout Tools."
+        content="Learn about CSS Grid Layout, Firefox Debugger, and more with the Firefox DevTools playground."
       />
       <meta property="og:url" content="https://mozilladevelopers.github.io/playground" />
-      <meta property="og:title" content="CSS Grid Layout + Firefox = ❤️" />
+      <meta property="og:title" content="Test, learn, and build with Firefox DevTools" />
       <meta
         property="og:description"
-        content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+        content="Learn about CSS Grid Layout, Firefox Debugger, and more with the Firefox DevTools playground."
       />
-      <meta property="og:image" content={facebook} />
+      <meta property="og:image" content={logo} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@mozilla" />
-      <meta name="twitter:creator" content="@mozilla" />
-      <meta name="twitter:title" content="CSS Grid Layout + Firefox = ❤️" />
+      <meta name="twitter:site" content="@firefox" />
+      <meta name="twitter:creator" content="@firefox" />
+      <meta name="twitter:title" content="Test, learn, and build with Firefox DevTools" />
       <meta
         name="twitter:description"
-        content="CSS Grid Layout is a game-changer for web developers. Learn more about CSS Grid and the CSS Grid Layout panel in Firefox."
+        content="Learn about CSS Grid Layout, Firefox Debugger, and more with the Firefox DevTools playground."
       />
-      <meta name="twitter:image" content="https://i.imgur.com/NLUqs7J.png" />
+      <meta name="twitter:image" content="https://i.imgur.com/uHsUxk0.png" />
     </Helmet>
 
     <Header />
 
-    <Hero />
-
     {children()}
 
+    <CTA />
     <Footer />
   </div>
 );

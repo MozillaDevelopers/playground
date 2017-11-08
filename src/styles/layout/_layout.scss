@@ -10,8 +10,17 @@
 .content {
   padding-bottom: space(6);
   overflow-y: scroll;
+
+  img {
+    margin-bottom: space(3);
+  }
   
   @include bp(medium) {
+    @include span(8);
+    padding-left: space(3);
+  }
+  
+  @include bp(large) {
     @include span(9);
     padding-left: space(9);
   }

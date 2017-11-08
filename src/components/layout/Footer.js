@@ -4,22 +4,39 @@ import logo from '../img/logo-white.svg';
 
 export default () => (
   <footer className="footer">
-    <div className="contain">
+    <div className="container">
       <div className="row">
         <div className="col-md-4">
           <img className="footer__logo" src={logo} alt="Mozilla Logo" />
         </div>
         <div className="col-md-4">
-          <span className="footer__header">CSS Grid Layout Resources</span>
+          <span className="footer__header">Community & Resources</span>
           <ul className="footer__list">
             <li>
-              <a href="http://jensimmons.com/" rel="noopener noreferrer" target="_blank">
-                Jen Simmons
+              <a
+                href="http://github.com/mozilladevelopers/playground/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Contribute on Github
               </a>
             </li>
             <li>
-              <a href="https://gridbyexample.com/" rel="noopener noreferrer" target="_blank">
-                Rachel Andrew
+              <a
+                href="https://twitter.com/FirefoxDevTools"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Firefox DevTools Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://devtools-html-slack.herokuapp.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Firefox DevTools Slack Channel
               </a>
             </li>
             <li>
@@ -67,7 +84,11 @@ export default () => (
           </a>
         </li>
         <li>
-          <a href="https://www.mozilla.org/privacy/websites/#cookies" rel="noopener noreferrer" target="_blank">
+          <a
+            href="https://www.mozilla.org/privacy/websites/#cookies"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
             Cookies
           </a>
         </li>
