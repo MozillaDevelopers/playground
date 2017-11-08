@@ -20,9 +20,7 @@ const index = () => (
       <div className="container">
         <div className="col-md-6 col-md-offset-3 mt3">
           <p className="mb6">
-            With tail in the air paw at your fat belly make meme, make cute face. I can haz fall
-            asleep on the washing machine so flop over make muffins, but see owner, run in terror.
-            Gate keepers of hell demand to be let outside at once.
+            Learn, build, improve, and create with Firefox DevTools.
           </p>
           <DownloadLink content="index-hero">
             <DownloadWhite />
