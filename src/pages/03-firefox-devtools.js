@@ -3,6 +3,6 @@ import Redirect from '../components/Redirect';
 
 export default () => {
   return (
-    <Redirect url="/css-grid/02-first-grid" />
+    <Redirect url="/css-grid/03-firefox-devtools" />
   );
 };

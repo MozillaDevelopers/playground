@@ -5,7 +5,7 @@ import Link from 'gatsby-link';
 
 class Redirect extends React.Component {
   componentDidMount() {
-    window.location.href = this.props.url;
+    window.location.href = `/playground${this.props.url}`;
   }
 
   render() {
@@ -18,7 +18,7 @@ class Redirect extends React.Component {
         </Helmet>
         <div className="container">
           <p className="py12">
-            This page has moved, and you will be redirected. If you are not redirected
+            This page has moved and you will be redirected. If you are not redirected
             automatically, follow this <Link to={this.props.url}>link to example</Link>.
           </p>
         </div>
