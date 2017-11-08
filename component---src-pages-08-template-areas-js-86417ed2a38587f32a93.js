@@ -1,0 +1,2 @@
+webpackJsonp([0xbf18e365346b],{212:function(e,t,u){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var r=u(1),l=a(r),n=u(21),f=a(n);t.default=function(){return l.default.createElement(f.default,{url:"/css-grid/08-template-areas"})},e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-08-template-areas-js-86417ed2a38587f32a93.js.map
