@@ -1,0 +1,2 @@
+webpackJsonp([0xbf18e365346b],{212:function(e,t,u){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var f=u(1),n=r(f),d=u(21),l=r(d);t.default=function(){return n.default.createElement(l.default,{url:"/css-grid/02-first-grid"})},e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-08-template-areas-js-566332769f76156521e4.js.map

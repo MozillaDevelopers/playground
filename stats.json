@@ -1,114 +1,234 @@
 {
   "assetsByChunkName": {
+    "path---css-grid-07-basic-layout": [
+      "path---css-grid-07-basic-layout-1db04e5021b40904aca6.js",
+      "path---css-grid-07-basic-layout-1db04e5021b40904aca6.js.map"
+    ],
     "component---src-pages-10-learn-more-js": [
-      "component---src-pages-10-learn-more-js-25fba0257f96541683c8.js",
-      "component---src-pages-10-learn-more-js-25fba0257f96541683c8.js.map"
+      "component---src-pages-10-learn-more-js-566332769f76156521e4.js",
+      "component---src-pages-10-learn-more-js-566332769f76156521e4.js.map"
+    ],
+    "path---css-grid-08-template-areas": [
+      "path---css-grid-08-template-areas-1db04e5021b40904aca6.js",
+      "path---css-grid-08-template-areas-1db04e5021b40904aca6.js.map"
     ],
     "path---04-fr-unit": [
-      "path---04-fr-unit-a0e39f21c11f6a62c5ab.js",
-      "path---04-fr-unit-a0e39f21c11f6a62c5ab.js.map"
+      "path---04-fr-unit-1db04e5021b40904aca6.js",
+      "path---04-fr-unit-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-05-mixing-units-js": [
+      "component---src-pages-css-grid-05-mixing-units-js-eb1a7d094b5868ef6804.js",
+      "component---src-pages-css-grid-05-mixing-units-js-eb1a7d094b5868ef6804.js.map"
     ],
     "component---src-pages-09-named-lines-js": [
-      "component---src-pages-09-named-lines-js-b49c4de7f20a08a1525f.js",
-      "component---src-pages-09-named-lines-js-b49c4de7f20a08a1525f.js.map"
+      "component---src-pages-09-named-lines-js-566332769f76156521e4.js",
+      "component---src-pages-09-named-lines-js-566332769f76156521e4.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-444eddeaefaccfdeb3e3.js",
-      "component---src-pages-index-js-444eddeaefaccfdeb3e3.js.map"
+      "component---src-pages-index-js-60ad6e49edd1f1f74531.js",
+      "component---src-pages-index-js-60ad6e49edd1f1f74531.js.map"
     ],
     "component---src-pages-02-first-grid-js": [
-      "component---src-pages-02-first-grid-js-e09b67f1a476c7e80d13.js",
-      "component---src-pages-02-first-grid-js-e09b67f1a476c7e80d13.js.map"
+      "component---src-pages-02-first-grid-js-566332769f76156521e4.js",
+      "component---src-pages-02-first-grid-js-566332769f76156521e4.js.map"
     ],
     "component---src-pages-05-mixing-units-js": [
-      "component---src-pages-05-mixing-units-js-f8eb0e434d9a5f84161a.js",
-      "component---src-pages-05-mixing-units-js-f8eb0e434d9a5f84161a.js.map"
+      "component---src-pages-05-mixing-units-js-566332769f76156521e4.js",
+      "component---src-pages-05-mixing-units-js-566332769f76156521e4.js.map"
     ],
     "component---src-pages-07-basic-layout-js": [
-      "component---src-pages-07-basic-layout-js-09d4920e2815df8d4aa0.js",
-      "component---src-pages-07-basic-layout-js-09d4920e2815df8d4aa0.js.map"
+      "component---src-pages-07-basic-layout-js-566332769f76156521e4.js",
+      "component---src-pages-07-basic-layout-js-566332769f76156521e4.js.map"
+    ],
+    "path---css-grid-05-mixing-units": [
+      "path---css-grid-05-mixing-units-1db04e5021b40904aca6.js",
+      "path---css-grid-05-mixing-units-1db04e5021b40904aca6.js.map"
     ],
     "component---src-pages-06-position-items-js": [
-      "component---src-pages-06-position-items-js-ab0c2306db5e3cfa3a1c.js",
-      "component---src-pages-06-position-items-js-ab0c2306db5e3cfa3a1c.js.map"
+      "component---src-pages-06-position-items-js-566332769f76156521e4.js",
+      "component---src-pages-06-position-items-js-566332769f76156521e4.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
+    "path---css-grid": [
+      "path---css-grid-1db04e5021b40904aca6.js",
+      "path---css-grid-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-09-named-lines-js": [
+      "component---src-pages-css-grid-09-named-lines-js-e14a834fd64e2bae44bf.js",
+      "component---src-pages-css-grid-09-named-lines-js-e14a834fd64e2bae44bf.js.map"
+    ],
     "component---src-pages-04-fr-unit-js": [
-      "component---src-pages-04-fr-unit-js-9901df63ff211cba05ce.js",
-      "component---src-pages-04-fr-unit-js-9901df63ff211cba05ce.js.map"
+      "component---src-pages-04-fr-unit-js-566332769f76156521e4.js",
+      "component---src-pages-04-fr-unit-js-566332769f76156521e4.js.map"
     ],
     "path---06-position-items": [
-      "path---06-position-items-a0e39f21c11f6a62c5ab.js",
-      "path---06-position-items-a0e39f21c11f6a62c5ab.js.map"
+      "path---06-position-items-1db04e5021b40904aca6.js",
+      "path---06-position-items-1db04e5021b40904aca6.js.map"
+    ],
+    "path---debugger": [
+      "path---debugger-1db04e5021b40904aca6.js",
+      "path---debugger-1db04e5021b40904aca6.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-424607930b9cef43a263.js",
-      "component---src-layouts-index-js-424607930b9cef43a263.js.map"
+      "component---src-layouts-index-js-d8053ce247e749397012.js",
+      "component---src-layouts-index-js-d8053ce247e749397012.js.map"
+    ],
+    "component---src-pages-debugger-04-conditional-breakpoints-js": [
+      "component---src-pages-debugger-04-conditional-breakpoints-js-6353ab9c4dfd2b8388ad.js",
+      "component---src-pages-debugger-04-conditional-breakpoints-js-6353ab9c4dfd2b8388ad.js.map"
+    ],
+    "path---css-grid-02-first-grid": [
+      "path---css-grid-02-first-grid-1db04e5021b40904aca6.js",
+      "path---css-grid-02-first-grid-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-debugger-05-learn-more-js": [
+      "component---src-pages-debugger-05-learn-more-js-61e1d0fa9b92affeaed0.js",
+      "component---src-pages-debugger-05-learn-more-js-61e1d0fa9b92affeaed0.js.map"
+    ],
+    "component---src-pages-debugger-index-js": [
+      "component---src-pages-debugger-index-js-082a91a22bd0e2e7bf41.js",
+      "component---src-pages-debugger-index-js-082a91a22bd0e2e7bf41.js.map"
+    ],
+    "path---css-grid-10-learn-more": [
+      "path---css-grid-10-learn-more-1db04e5021b40904aca6.js",
+      "path---css-grid-10-learn-more-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-10-learn-more-js": [
+      "component---src-pages-css-grid-10-learn-more-js-1a7925459470d1374a60.js",
+      "component---src-pages-css-grid-10-learn-more-js-1a7925459470d1374a60.js.map"
     ],
     "path---index": [
-      "path---index-a0e39f21c11f6a62c5ab.js",
-      "path---index-a0e39f21c11f6a62c5ab.js.map"
+      "path---index-1db04e5021b40904aca6.js",
+      "path---index-1db04e5021b40904aca6.js.map"
+    ],
+    "path---debugger-05-learn-more": [
+      "path---debugger-05-learn-more-1db04e5021b40904aca6.js",
+      "path---debugger-05-learn-more-1db04e5021b40904aca6.js.map"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-9b8642b4b1932a91a054.js",
-      "component---src-pages-404-js-9b8642b4b1932a91a054.js.map"
+      "component---src-pages-404-js-e32ee3bf13f415e6dd85.js",
+      "component---src-pages-404-js-e32ee3bf13f415e6dd85.js.map"
     ],
     "component---src-pages-03-firefox-devtools-js": [
-      "component---src-pages-03-firefox-devtools-js-e7258d7e8c337bceec75.js",
-      "component---src-pages-03-firefox-devtools-js-e7258d7e8c337bceec75.js.map"
+      "component---src-pages-03-firefox-devtools-js-566332769f76156521e4.js",
+      "component---src-pages-03-firefox-devtools-js-566332769f76156521e4.js.map"
+    ],
+    "path---css-grid-04-fr-unit": [
+      "path---css-grid-04-fr-unit-1db04e5021b40904aca6.js",
+      "path---css-grid-04-fr-unit-1db04e5021b40904aca6.js.map"
     ],
     "commons": [
-      "commons-5388bd2146267daa62c7.js",
-      "commons-5388bd2146267daa62c7.js.map"
+      "commons-332779f4eace1ce44400.js",
+      "commons-332779f4eace1ce44400.js.map"
     ],
     "path---02-first-grid": [
-      "path---02-first-grid-a0e39f21c11f6a62c5ab.js",
-      "path---02-first-grid-a0e39f21c11f6a62c5ab.js.map"
+      "path---02-first-grid-1db04e5021b40904aca6.js",
+      "path---02-first-grid-1db04e5021b40904aca6.js.map"
+    ],
+    "path---debugger-02-check-variable-values": [
+      "path---debugger-02-check-variable-values-1db04e5021b40904aca6.js",
+      "path---debugger-02-check-variable-values-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-06-position-items-js": [
+      "component---src-pages-css-grid-06-position-items-js-7c4ffa3b057a0461bcb0.js",
+      "component---src-pages-css-grid-06-position-items-js-7c4ffa3b057a0461bcb0.js.map"
     ],
     "path---404-html": [
-      "path---404-html-a0e39f21c11f6a62c5ab.js",
-      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+      "path---404-html-1db04e5021b40904aca6.js",
+      "path---404-html-1db04e5021b40904aca6.js.map"
     ],
     "path---07-basic-layout": [
-      "path---07-basic-layout-a0e39f21c11f6a62c5ab.js",
-      "path---07-basic-layout-a0e39f21c11f6a62c5ab.js.map"
+      "path---07-basic-layout-1db04e5021b40904aca6.js",
+      "path---07-basic-layout-1db04e5021b40904aca6.js.map"
+    ],
+    "path---debugger-03-the-call-stack": [
+      "path---debugger-03-the-call-stack-1db04e5021b40904aca6.js",
+      "path---debugger-03-the-call-stack-1db04e5021b40904aca6.js.map"
+    ],
+    "path---css-grid-06-position-items": [
+      "path---css-grid-06-position-items-1db04e5021b40904aca6.js",
+      "path---css-grid-06-position-items-1db04e5021b40904aca6.js.map"
+    ],
+    "path---debugger-04-conditional-breakpoints": [
+      "path---debugger-04-conditional-breakpoints-1db04e5021b40904aca6.js",
+      "path---debugger-04-conditional-breakpoints-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-debugger-03-the-call-stack-js": [
+      "component---src-pages-debugger-03-the-call-stack-js-1868a4f651cee87ff26f.js",
+      "component---src-pages-debugger-03-the-call-stack-js-1868a4f651cee87ff26f.js.map"
     ],
     "path---03-firefox-devtools": [
-      "path---03-firefox-devtools-a0e39f21c11f6a62c5ab.js",
-      "path---03-firefox-devtools-a0e39f21c11f6a62c5ab.js.map"
+      "path---03-firefox-devtools-1db04e5021b40904aca6.js",
+      "path---03-firefox-devtools-1db04e5021b40904aca6.js.map"
+    ],
+    "path---css-grid-09-named-lines": [
+      "path---css-grid-09-named-lines-1db04e5021b40904aca6.js",
+      "path---css-grid-09-named-lines-1db04e5021b40904aca6.js.map"
+    ],
+    "path---css-grid-03-firefox-devtools": [
+      "path---css-grid-03-firefox-devtools-1db04e5021b40904aca6.js",
+      "path---css-grid-03-firefox-devtools-1db04e5021b40904aca6.js.map"
     ],
     "component---src-pages-08-template-areas-js": [
-      "component---src-pages-08-template-areas-js-c9c004dfdbe349d1c37a.js",
-      "component---src-pages-08-template-areas-js-c9c004dfdbe349d1c37a.js.map"
+      "component---src-pages-08-template-areas-js-566332769f76156521e4.js",
+      "component---src-pages-08-template-areas-js-566332769f76156521e4.js.map"
+    ],
+    "component---src-pages-css-grid-index-js": [
+      "component---src-pages-css-grid-index-js-5d16fb2c2dca1c20f7f8.js",
+      "component---src-pages-css-grid-index-js-5d16fb2c2dca1c20f7f8.js.map"
     ],
     "path---09-named-lines": [
-      "path---09-named-lines-a0e39f21c11f6a62c5ab.js",
-      "path---09-named-lines-a0e39f21c11f6a62c5ab.js.map"
+      "path---09-named-lines-1db04e5021b40904aca6.js",
+      "path---09-named-lines-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-08-template-areas-js": [
+      "component---src-pages-css-grid-08-template-areas-js-49e7225dfaf73c47cc1d.js",
+      "component---src-pages-css-grid-08-template-areas-js-49e7225dfaf73c47cc1d.js.map"
     ],
     "path---10-learn-more": [
-      "path---10-learn-more-a0e39f21c11f6a62c5ab.js",
-      "path---10-learn-more-a0e39f21c11f6a62c5ab.js.map"
+      "path---10-learn-more-1db04e5021b40904aca6.js",
+      "path---10-learn-more-1db04e5021b40904aca6.js.map"
     ],
     "app": [
-      "app-9466eb64b5589c1bdc7d.js",
+      "app-b81360f27c185f1d11b5.js",
       "build-js-styles.css",
-      "app-9466eb64b5589c1bdc7d.js.map",
+      "app-b81360f27c185f1d11b5.js.map",
       "build-js-styles.css.map"
     ],
+    "component---src-pages-css-grid-02-first-grid-js": [
+      "component---src-pages-css-grid-02-first-grid-js-ffc42096f25efd898936.js",
+      "component---src-pages-css-grid-02-first-grid-js-ffc42096f25efd898936.js.map"
+    ],
+    "component---src-pages-css-grid-04-fr-unit-js": [
+      "component---src-pages-css-grid-04-fr-unit-js-5688cc4b337847f4420a.js",
+      "component---src-pages-css-grid-04-fr-unit-js-5688cc4b337847f4420a.js.map"
+    ],
     "path---404": [
-      "path---404-a0e39f21c11f6a62c5ab.js",
-      "path---404-a0e39f21c11f6a62c5ab.js.map"
+      "path---404-1db04e5021b40904aca6.js",
+      "path---404-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-css-grid-07-basic-layout-js": [
+      "component---src-pages-css-grid-07-basic-layout-js-5ffa2b65140c7d08f30e.js",
+      "component---src-pages-css-grid-07-basic-layout-js-5ffa2b65140c7d08f30e.js.map"
     ],
     "path---08-template-areas": [
-      "path---08-template-areas-a0e39f21c11f6a62c5ab.js",
-      "path---08-template-areas-a0e39f21c11f6a62c5ab.js.map"
+      "path---08-template-areas-1db04e5021b40904aca6.js",
+      "path---08-template-areas-1db04e5021b40904aca6.js.map"
+    ],
+    "component---src-pages-debugger-02-check-variable-values-js": [
+      "component---src-pages-debugger-02-check-variable-values-js-4a35e3145e095d35dee9.js",
+      "component---src-pages-debugger-02-check-variable-values-js-4a35e3145e095d35dee9.js.map"
+    ],
+    "component---src-pages-css-grid-03-firefox-devtools-js": [
+      "component---src-pages-css-grid-03-firefox-devtools-js-541271bf4dd94b013c61.js",
+      "component---src-pages-css-grid-03-firefox-devtools-js-541271bf4dd94b013c61.js.map"
     ],
     "path---05-mixing-units": [
-      "path---05-mixing-units-a0e39f21c11f6a62c5ab.js",
-      "path---05-mixing-units-a0e39f21c11f6a62c5ab.js.map"
+      "path---05-mixing-units-1db04e5021b40904aca6.js",
+      "path---05-mixing-units-1db04e5021b40904aca6.js.map"
     ]
   }
 }
