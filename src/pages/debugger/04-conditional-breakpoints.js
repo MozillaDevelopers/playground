@@ -79,7 +79,7 @@ title.indexOf("turtle") != -1;
 
     <CodeBlock>
       {`
-console.log(items[index].title;
+console.log(items[index].title);
       `}
     </CodeBlock>
 
