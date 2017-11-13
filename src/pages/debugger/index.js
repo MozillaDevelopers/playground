@@ -29,7 +29,7 @@ const Tutorial = () => (
     <p>
       Before diving in, let’s take a look at the Debugger interface. Hit{' '}
       <span className="shortcut">option</span> + <span className="shortcut">command</span> +{' '}
-      <span className="shortcut">S</span> on Mac or <span className="shortcut">option</span> +{' '}
+      <span className="shortcut">S</span> on Mac or <span className="shortcut">shift</span> +{' '}
       <span className="shortcut">ctrl</span> + <span className="shortcut">S</span> on Windows to
       open the Debugger.{' '}
     </p>
@@ -57,7 +57,7 @@ const Tutorial = () => (
     <p>
       <ul className="list">
         <li>
-          The <strong>toolbar</strong> has buttons that control the debugger's movement through the
+          The <strong>toolbar</strong> has buttons that control the debugger’s movement through the
           script.
         </li>
         <li>
@@ -82,7 +82,7 @@ const Tutorial = () => (
       Don’t worry if you don’t understand what all of these terms and symbols mean. We’ll cover them
       in the following sections. Just take note of where things are so that you can follow along.
     </p>
-    <p>Now that we’ve reviewed the Debugger interface, let's use it to fix a broken to-do app.</p>
+    <p>Now that we’ve reviewed the Debugger interface, let’s use it to fix a broken to-do app.</p>
   </div>
 );
 
@@ -113,7 +113,7 @@ const Homework = () => (
       <li>
         Open Debugger (<span className="shortcut">option</span> +{' '}
         <span className="shortcut">command</span> + <span className="shortcut">S</span> on Mac or{' '}
-        <span className="shortcut">option</span> + <span className="shortcut">control</span> +{' '}
+        <span className="shortcut">shift</span> + <span className="shortcut">control</span> +{' '}
         <span className="shortcut">S</span> on Windows)
       </li>
       <li>Find and click on app.js in the source list pane</li>
