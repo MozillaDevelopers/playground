@@ -31,7 +31,7 @@ const Tutorial = () => (
     <h4>The repeat() notation</h4>
 
     <p>
-      Handy tip: If you find yourself repeating length units, use the repeat() notation. Rewrite the
+      Handy tip: If you find yourself repeating length units, use the CSS repeat() function. Rewrite the
       above code like so:
     </p>
 
