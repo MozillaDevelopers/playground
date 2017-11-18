@@ -76,7 +76,7 @@ const Tutorial = () => (
       we have stepped into, what lines those function are on, and how deep we are in the call stack.
       If you are following along, you will see that there are four items in the call stack. We
       started at the <code>spliceItem</code> function, which invoked the <code>saveList</code>{' '}
-      function, which invoked the <code>saveList</code> function, which invoked the{' '}
+      function, which invoked the{' '}
       <code>createList</code> function.
     </p>
 
