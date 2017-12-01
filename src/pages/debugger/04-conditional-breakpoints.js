@@ -20,7 +20,7 @@ const Tutorial = () => (
 
     <p>
       A conditional breakpoint allows us to associate a condition with a breakpoint. When the
-      program reaches the a conditional breakpoint, the debugger pauses only if the condition
+      program reaches a conditional breakpoint, the debugger pauses only if the condition
       provided evaluates to true.
     </p>
 
@@ -46,7 +46,7 @@ const Tutorial = () => (
 
     <p>
       Let’s say we only want to trigger this breakpoint when the to-do item contains the word
-      "turtle". We can do this by right clicking on the line number we want to add a breakpoint to
+      “turtle”. We can do this by right clicking on the line number we want to add a breakpoint to
       (in this case, line 24), and choosing “Add Conditional Breakpoint” from the menu.
     </p>
 
@@ -61,15 +61,16 @@ title.indexOf("turtle") != -1;
     </CodeBlock>
 
     <p>
-      The indexOf() method will returns -1 if the specified value (in this case, “turtle”) is not
-      found. This means the expression provided to our conditional breakpoint will only evaluate to
-      true if the string contains the word “turtle”.
+      The <code>indexOf()</code> method will return -1 if the specified value (in this case,
+      “turtle”) is not found. This means the expression provided to our conditional breakpoint
+      will only evaluate to true if the string contains the word “turtle”.
     </p>
 
     <p>
-      We can use any type of expression for a conditional breakpoint. We can even use console.log. A
-      console.log expression will return <code>undefined</code> so it won’t pause execution, but it
-      will still print to the console. Let’s try it out.
+      We can use any type of expression for a conditional breakpoint. We can even
+      use <code>console.log</code>. A <code>console.log</code> expression will
+      return <code>undefined</code> so it won’t pause execution, but it will still print to
+      the console. Let’s try it out.
     </p>
 
     <p>
