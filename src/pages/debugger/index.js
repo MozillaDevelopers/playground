@@ -13,8 +13,7 @@ const Tutorial = () => (
     <h2>Introduction to Firefox Debugger</h2>
     <p>
       Are you only using <code>console.log</code> to debug your JavaScript code? It is OK to admit.
-      Using
-      <code>console.log</code> is easy and convenient, but it has limitations. It isn’t great for
+      Using <code>console.log</code> is easy and convenient, but it has limitations. It isn’t great for
       catching things as they happen, or diving deep into code to see exactly where it is broken. To
       do that, you’ll need a full-featured debugger. The Firefox Debugger has comprehensive tools to
       evaluate and repair broken code. Once you learn the basics, you’ll find that using a debugger
