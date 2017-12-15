@@ -16,8 +16,6 @@ const Tutorial = () => (
       names instead of grid lines. To name a grid line, simply add the name in square brackets:
     </p>
 
-    <p>To name a grid line, we simply provide the name in square brackets:</p>
-
     <CodeBlock>
       {`
 .container {
