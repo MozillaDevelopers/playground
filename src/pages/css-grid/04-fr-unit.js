@@ -3,16 +3,20 @@ import Main from './components/_Main';
 import CodeBlock from '../../components/CodeBlock';
 import DevHomework from '../../components/layout/DevHomework';
 import CodepenLink from '../../components/CodepenLink';
+import VideoPlayer from '../../components/VideoPlayer';
 
 const Tutorial = () => (
   <div>
+    <VideoPlayer videoId="UeGPNHAADVw" />
+
     <h2>The fr Unit</h2>
 
     <p>
-      In our first grid, we created columns with a fixed px width. That's great, but it isn't very
-      flexible. Thankfully, CSS Grid Layout introduces a new unit of length called fr, which is
-      short for “fraction”. MDN defines the fr unit as a unit which represents a fraction of the
-      available space in the grid container. If we want to rewrite our previous grid to have three
+      In our first grid, we created columns with a fixed px width. That's great,
+      but it isn't very flexible. Thankfully, CSS Grid Layout introduces a new
+      unit of length called fr, which is short for “fraction”. MDN defines the
+      fr unit as a unit which represents a fraction of the available space in
+      the grid container. If we want to rewrite our previous grid to have three
       equal-width columns, we could change our CSS to use the fr unit:
     </p>
 
@@ -31,8 +35,8 @@ const Tutorial = () => (
     <h4>The repeat() notation</h4>
 
     <p>
-      Handy tip: If you find yourself repeating length units, use the CSS repeat() function. Rewrite the
-      above code like so:
+      Handy tip: If you find yourself repeating length units, use the CSS
+      repeat() function. Rewrite the above code like so:
     </p>
 
     <CodeBlock>
@@ -59,7 +63,6 @@ const Tutorial = () => (
     </div>
 
     <CodepenLink link="https://codepen.io/mozilladevelopers/pen/eGdQRN" />
-
   </div>
 );
 

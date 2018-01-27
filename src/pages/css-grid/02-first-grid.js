@@ -4,24 +4,29 @@ import CodeBlock from '../../components/CodeBlock';
 import DevHomework from '../../components/layout/DevHomework';
 import CodepenLink from '../../components/CodepenLink';
 import DownloadLink from '../../components/DownloadLink';
+import VideoPlayer from '../../components/VideoPlayer';
+
 
 const Tutorial = () => (
   <div>
+    <VideoPlayer videoId="I32g1VYTOAE" />
+
     <h2>Your First Grid</h2>
 
     <h4>Create a grid</h4>
     <p>
-      The first thing we want to do is create a grid container. We can do this by declaring{' '}
-      <code>display: grid</code> on the container element. In this example we are using a div with
-      the class of <code>container</code>.
+      The first thing we want to do is create a grid container. We can do this
+      by declaring <code>display: grid</code> on the container element. In this
+      example we are using a div with the class of <code>container</code>.
     </p>
 
     <h4>Define rows and columns</h4>
     <p>
-      There are several ways to define rows and columns. For our first grid, we will use properties{' '}
-      <code>grid-template-columns</code> and <code>grid-template-rows</code>. These properties allow
-      us to define the size of the rows and columns for our grid. To create two fixed-height rows of
-      150px and three fixed-width columns of 150px, simply write:
+      There are several ways to define rows and columns. For our first grid, we
+      will use properties <code>grid-template-columns</code> and{" "}
+      <code>grid-template-rows</code>. These properties allow us to define the
+      size of the rows and columns for our grid. To create two fixed-height rows
+      of 150px and three fixed-width columns of 150px, simply write:
     </p>
 
     <CodeBlock>
@@ -43,7 +48,10 @@ grid-template-columns: 150px 150px 150px 70px;
 
     <h4>Add a gutter</h4>
 
-    <p>Adding a gutter to your grid is amazingly easy with CSS Grid Layout. Simply add:</p>
+    <p>
+      Adding a gutter to your grid is amazingly easy with CSS Grid Layout.
+      Simply add:
+    </p>
 
     <CodeBlock>
       {`
@@ -52,9 +60,10 @@ grid-gap: 1rem;
     </CodeBlock>
 
     <p>
-      That simple line gives you an equal-sized gutter between all rows and columns. To define the
-      gutter size for columns and rows individually, you can use the <code>grid-column-gap</code>{' '}
-      and <code>grid-row-gap</code> properties instead.
+      That simple line gives you an equal-sized gutter between all rows and
+      columns. To define the gutter size for columns and rows individually, you
+      can use the <code>grid-column-gap</code> and <code>grid-row-gap</code>{" "}
+      properties instead.
     </p>
 
     <p>Now let's put that all together. Here is our HTML:</p>

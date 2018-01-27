@@ -1,0 +1,33 @@
+// ----------------------------------------------------------------------------
+// Video Player
+// ----------------------------------------------------------------------------
+
+.video-player {
+  border-bottom: 1px solid #eee;
+  margin-bottom: space(4);
+  cursor: pointer;
+}
+.video-player__text {
+  border-bottom: 0px transparent;
+  margin-bottom: space(0);
+  display: inline-block;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.video-player__icon {
+  height: space(4);
+  margin-left: space(1);
+  vertical-align: middle;
+  top: 3px;
+  position: relative;
+  opacity: .6;
+}
+
+// fixing package css
+.modal-video-close-btn:hover {
+  background-color: transparent;
+}

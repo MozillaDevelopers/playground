@@ -3,6 +3,7 @@ import Main from './components/_Main';
 
 // components
 import Term from '../../components/Term';
+import VideoPlayer from '../../components/VideoPlayer';
 
 // images
 import line from '../../components/img/terms/line.svg';
@@ -15,6 +16,7 @@ import gutter from '../../components/img/terms/gutter.svg';
 
 const Tutorial = () => (
   <div>
+    <VideoPlayer videoId="s-sYjp9-K6E" />
     <h2>Terminology</h2>
 
     <p className="mb4">

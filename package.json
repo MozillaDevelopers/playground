@@ -24,6 +24,7 @@
     "prop-types": "^15.6.0",
     "react-bodymovin": "^1.1.1",
     "react-helmet": "^5.2.0",
+    "react-modal-video": "^1.0.7",
     "susy": "^3.0.2",
     "typeface-antonio": "^1.0.0"
   },
