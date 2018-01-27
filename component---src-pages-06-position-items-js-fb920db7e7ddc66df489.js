@@ -1,2 +1,2 @@
-webpackJsonp([55616705441138],{210:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var r=u(1),s=n(r),l=u(21),o=n(l);t.default=function(){return s.default.createElement(o.default,{url:"/css-grid/06-position-items"})},e.exports=t.default}});
+webpackJsonp([55616705441138],{216:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var r=u(1),s=n(r),l=u(21),o=n(l);t.default=function(){return s.default.createElement(o.default,{url:"/css-grid/06-position-items"})},e.exports=t.default}});
 //# sourceMappingURL=component---src-pages-06-position-items-js-fb920db7e7ddc66df489.js.map

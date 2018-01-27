@@ -1,2 +1,2 @@
-webpackJsonp([48774483122690],{211:function(e,t,u){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var l=u(1),n=a(l),r=u(21),s=a(r);t.default=function(){return n.default.createElement(s.default,{url:"/css-grid/07-basic-layout"})},e.exports=t.default}});
+webpackJsonp([48774483122690],{217:function(e,t,u){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var l=u(1),n=a(l),r=u(21),s=a(r);t.default=function(){return n.default.createElement(s.default,{url:"/css-grid/07-basic-layout"})},e.exports=t.default}});
 //# sourceMappingURL=component---src-pages-07-basic-layout-js-2b4af9229644eb459218.js.map
