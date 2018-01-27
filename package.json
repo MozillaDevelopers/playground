@@ -4,26 +4,27 @@
   "version": "1.0.0",
   "author": "Dan Brown <dbrown@mozilla.com>",
   "dependencies": {
-    "autoprefixer": "^7.1.4",
-    "babel-eslint": "^8.0.0",
-    "babel-plugin-module-resolver": "2.7.1",
+    "autoprefixer": "^7.2.5",
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-wrap-in-js": "^1.1.0",
     "classnames": "^2.2.5",
-    "eslint": "^4.6.1",
-    "eslint-config-airbnb": "^15.0.2",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.6.1",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
-    "gatsby": "^1.9.87",
-    "gatsby-link": "^1.6.24",
-    "gatsby-plugin-google-analytics": "^1.0.11",
-    "gatsby-plugin-postcss-sass": "^1.0.12",
-    "gatsby-plugin-react-helmet": "^1.0.8",
-    "gh-pages": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.0",
+    "gatsby": "^1.9.169",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-google-analytics": "^1.0.16",
+    "gatsby-plugin-postcss-sass": "^1.0.16",
+    "gatsby-plugin-react-helmet": "^2.0.4",
+    "gh-pages": "^1.1.0",
     "mappy-breakpoints": "^0.2.3",
     "prop-types": "^15.6.0",
-    "react-bodymovin": "^1.1.0",
-    "susy": "^3.0.1",
+    "react-bodymovin": "^1.1.1",
+    "react-helmet": "^5.2.0",
+    "susy": "^3.0.2",
     "typeface-antonio": "^1.0.0"
   },
   "keywords": [
@@ -40,7 +41,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.6.1",
-    "prettier-eslint-cli": "^4.3.2"
+    "prettier": "^1.10.2",
+    "prettier-eslint-cli": "^4.7.0"
   }
 }
