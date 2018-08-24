@@ -20,6 +20,7 @@
     "gatsby-plugin-sass": "next",
     "gh-pages": "^1.1.0",
     "mappy-breakpoints": "^0.2.3",
+    "node-sass": "^4.9.3",
     "prop-types": "^15.6.0",
     "react": "^16.4.2",
     "react-bodymovin": "^1.1.1",
