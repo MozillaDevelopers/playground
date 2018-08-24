@@ -1,6 +1,7 @@
 import React from 'react';
 
 // components
+import Layout from '../components/Layout';
 import Hero from '../components/layout/Hero';
 import DownloadWhite from '../components/DownloadWhite';
 import TutorialList from '../components/TutorialList';
@@ -13,7 +14,7 @@ const logoStyle = {
   width: '80px',
 };
 const index = () => (
-  <div>
+  <Layout>
     <Hero>
       <img className="mb6" style={logoStyle} src={logo} alt="logo" />
       <h1>Firefox DevTools Playground</h1>
@@ -29,7 +30,7 @@ const index = () => (
       </div>
     </Hero>
     <TutorialList />
-  </div>
+  </Layout>
 );
 
 export default index;
