@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 // images
 import done from '../img/done.svg';

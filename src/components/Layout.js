@@ -11,16 +11,16 @@ import logo from '../pages/img/ffdelogo.png';
 import '../styles/style.scss';
 
 // Components
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
-import CTA from '../components/layout/CTA';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+import CTA from './layout/CTA';
 
 const Layout = ({ children }) => (
   <div className="wrapper">
     <Helmet>
       <link rel="shortcut icon" type="image/x-icon" href={faviconico} />
       <link rel="icon" type="image/png" href={faviconpng} sizes="196x196" />
-      <title>{'Firefox DevTools PlayGround | Mozilla'}</title>
+      <title>Firefox DevTools PlayGround | Mozilla</title>
       <meta
         name="description"
         content="Learn about CSS Grid Layout, Firefox Debugger, and more with the Firefox DevTools playground."
@@ -45,7 +45,7 @@ const Layout = ({ children }) => (
 
     <Header />
 
-    {children()}
+    {children}
 
     <CTA />
     <Footer />

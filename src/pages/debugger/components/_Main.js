@@ -9,6 +9,7 @@ import pageData from '../../../data/debugger';
 import facebook from './img/fb.png';
 
 // Components
+import Layout from '../../../components/Layout';
 import Side from '../../../components/layout/Side';
 import BottomNav from '../../../components/layout/BottomNav';
 import Hero from '../../../components/layout/Hero';
@@ -17,7 +18,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
   // Get current page data from data/pageData.js
   const currentPageData = pageData.find(page => page.order === currentPageNum);
   return (
-    <div>
+    <Layout>
       <Helmet>
         <title>{`Debugger PlayGround | ${currentPageData.title} | Mozilla`}</title>
         <meta
@@ -58,7 +59,7 @@ const Main = ({ currentPageNum, tutorial, homework }) => {
         {homework ? <div>{homework}</div> : ''}
       </div>
       <BottomNav currentPageNum={currentPageNum} pageData={pageData} />
-    </div>
+    </Layout>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 // components
+import Layout from '../components/Layout';
 import Hero from '../components/layout/Hero';
 import TutorialList from '../components/TutorialList';
 
@@ -8,7 +9,7 @@ import TutorialList from '../components/TutorialList';
 import dino from './img/dino.gif';
 
 const NotFoundPage = () => (
-  <div>
+  <Layout>
     <Hero className="hero--gray">
       <div className="not-found">
         <div className="container">
@@ -26,7 +27,7 @@ const NotFoundPage = () => (
       </div>
     </Hero>
     <TutorialList />
-  </div>
+  </Layout>
 );
 
 export default NotFoundPage;
