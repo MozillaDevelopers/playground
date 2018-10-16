@@ -41,12 +41,12 @@ const Tutorial = () => (
     <CodeBlock>
       {`
 <div class="container">
-  <div class="header">header</div>
-  <div class="sidebar">sidebar</div>
-  <div class="content-1">Content-1</div>
-  <div class="content-2">Content-2</div>
-  <div class="content-3">Content-3</div>
-  <div class="footer">footer</div>
+  <div class="item header">header</div>
+  <div class="item sidebar">sidebar</div>
+  <div class="item content-1">Content-1</div>
+  <div class="item content-2">Content-2</div>
+  <div class="item content-3">Content-3</div>
+  <div class="item footer">footer</div>
 </div>
       `}
     </CodeBlock>
