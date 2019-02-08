@@ -54,14 +54,14 @@ const Tutorial = () => (
 
     <span className="term__name">Grid container</span>
     <p>
-      The container that holds the entire CSS grid. It will be the element that has the
+      The container that holds the entire CSS grid. It will be the element that has the 
       <code>display: grid</code> or <code>display: inline-grid</code> property on it.
     </p>
 
     <span className="term__name">Grid item</span>
     <p className="mb4">Any element that is a direct child of a grid container.</p>
 
-    <p>Got it? Let's move on to creating our first grid with CSS Grid Layout.</p>
+    <p>Got it? Let’s move on to creating our first grid with CSS Grid Layout.</p>
   </div>
 );
 
