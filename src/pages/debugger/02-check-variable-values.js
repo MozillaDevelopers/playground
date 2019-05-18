@@ -53,11 +53,11 @@ const addTodo = e => {
   const title = document.querySelector(".todo__input");
   console.log('title is: ', title);
   const todo = { title };
-  console.log('todo is: ', todo');
+  console.log('todo is: ', todo);
   
   items.push(todo);
   saveList();
-  console.log(‘The updated to-do list is: ‘, items);
+  console.log('The updated to-do list is: ', items);
   document.querySelector(".todo__add").reset();
 };
       `}
