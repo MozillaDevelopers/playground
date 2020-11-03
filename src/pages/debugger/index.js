@@ -28,7 +28,7 @@ const Tutorial = () => (
     <p>
       Before diving in, let’s take a look at the Debugger interface. Hit{' '}
       <span className="shortcut">option</span> + <span className="shortcut">command</span> +{' '}
-      <span className="shortcut">S</span> on Mac or <span className="shortcut">shift</span> +{' '}
+      <span className="shortcut">Z</span> on Mac or <span className="shortcut">shift</span> +{' '}
       <span className="shortcut">ctrl</span> + <span className="shortcut">S</span> on Windows to
       open the Debugger.{' '}
     </p>
@@ -97,7 +97,7 @@ const Homework = () => (
     </p>
     <p>
       Give it a try! The link below will bring you to a to-do app that is using a minified
-      JavaScript file. Simply:
+      JavaScript file:
     </p>
     <ol className="list">
       <li>
@@ -111,12 +111,12 @@ const Homework = () => (
       </li>
       <li>
         Open Debugger (<span className="shortcut">option</span> +{' '}
-        <span className="shortcut">command</span> + <span className="shortcut">S</span> on Mac or{' '}
+        <span className="shortcut">command</span> + <span className="shortcut">Z</span> on Mac or{' '}
         <span className="shortcut">shift</span> + <span className="shortcut">control</span> +{' '}
         <span className="shortcut">S</span> on Windows)
       </li>
-      <li>Find and click on app.js in the source list pane</li>
-      <li>Locate and click on the format icon</li>
+      <li>Find and click on app.js in the source list pane on the left</li>
+      <li>When app.js opens in the central source pane, right click on the `app.js` tab and select `Pretty Print Source`</li>
     </ol>
   </DevHomework>
 );
