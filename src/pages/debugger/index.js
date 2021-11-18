@@ -28,8 +28,8 @@ const Tutorial = () => (
     <p>
       Before diving in, let’s take a look at the Debugger interface. Hit{' '}
       <span className="shortcut">option</span> + <span className="shortcut">command</span> +{' '}
-      <span className="shortcut">S</span> on Mac or <span className="shortcut">shift</span> +{' '}
-      <span className="shortcut">ctrl</span> + <span className="shortcut">S</span> on Windows to
+      <span className="shortcut">I</span> on Mac or <span className="shortcut">shift</span> +{' '}
+      <span className="shortcut">ctrl</span> + <span className="shortcut">I</span> on Windows to
       open the Debugger.{' '}
     </p>
     <p>The Debugger is divided into three panes:</p>
